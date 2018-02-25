@@ -1,0 +1,49 @@
+.header {
+	width: 100%;
+	padding: 15px 15px 15px;
+	text-align: center;
+
+	.agency-name {
+		float: right;
+		font-size: $font24;
+		text-transform: uppercase;
+		color: $key-color-fonts;
+	}
+
+	.hamburger-menu {
+		float: left;
+		width: 30px;
+	}
+
+	.line-hamburger {
+		height: 3px;
+		margin: 0 0 3px;
+		border-radius: 3px;
+		background: $additional-color;
+	}
+
+	.greeting-and-spirit8 {
+		margin: 30px 0 0;
+		display: inline-block;
+	}
+
+	.greeting {
+		font-size: 25px;
+		text-transform: uppercase;
+		color: $key-color-fonts;
+	}
+
+	.greeting-spirit8 {
+		font-size: 25px;
+		text-transform: uppercase;
+		color: $additional-color;
+	}
+
+	.greeting-text {
+		font-size: 13px;
+		padding: 10px 0 0;
+		color: $key-color-fonts;
+		display: inline-block;
+	}
+
+}

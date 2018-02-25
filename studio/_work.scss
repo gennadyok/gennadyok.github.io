@@ -1,0 +1,108 @@
+.work {
+
+	padding: 10px;
+	text-align: center;
+	background: $key-color;
+
+	.line-long {
+		width: 100px;
+		height: 3px;
+		margin: 10px auto 0;
+		background: $additional-color;
+	}
+
+	.line-short {
+		width: 65px;
+		height: 3px;
+		margin: 10px auto 0;
+		opacity: 0.6;
+		background: $additional-color;
+	}
+
+	.text-work {
+		margin: 10px 0 0 0;
+		font-size: 14px;
+	}
+
+	.filter {
+		margin: 10px 0 0 0;
+		font-size: 16px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $black;
+	}
+
+	.sorting {
+		margin: 10px 0 0 0;
+	}
+
+	.switch {
+		padding: 0 10px 0 10px;
+		border-right: 1px solid $key-color-fonts;
+		font-size: 16px;
+		text-decoration: none;
+		color: $black;
+	}
+
+	.switch:hover {
+		font-weight: bold;
+	}
+
+	.wrapper-icon-work {
+		font-size: 0;
+		display: inline-block;
+	}
+
+	.wrapper-img-and-info {
+		position: relative;
+		width: 263px;
+		height: 237px;
+		margin: 10px 5px 0 5px;
+
+		&:hover {
+			.icon-work {
+			display: none;
+		}
+		
+			.info-work {
+			display: block;
+			}
+		}
+	}
+
+	.icon-work {
+		position: absolute;
+		left: 0;
+		display: block;
+	}
+	
+	.info-work {
+		position: absolute;
+		left: 0;
+		width: 263px;
+		height: 237px;
+		text-align: center;
+		background: $black;
+		display: none;
+	}
+
+	.fashion {
+		font-size: 18px;
+		margin: 70px 0 0;
+		text-transform: uppercase;
+		color: $key-color-fonts;
+		display: inline-block;
+	}
+
+	.website {
+		font-size: 14px;
+		margin: 10px 0 0;
+		text-transform: capitalize;
+		color: $key-color-fonts;
+		display: inline-block;
+	}
+
+	.plus {
+		margin: 10px 0 0;
+	}
+}

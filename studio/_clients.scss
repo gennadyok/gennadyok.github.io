@@ -1,0 +1,50 @@
+.clients {
+
+	padding: 10px;
+	text-align: center;
+	background: $color-dark;
+
+	.line-long {
+		width: 100px;
+		height: 3px;
+		margin: 10px auto 0;
+		background: $additional-color;
+	}
+
+	.line-short {
+		width: 65px;
+		height: 3px;
+		margin: 10px auto 0;
+		opacity: 0.6;
+		background: $additional-color;
+	}
+
+	.name-brand {
+		margin: 10px 5px 0 5px;
+
+	}
+
+	.squares {
+		margin: 10px 0 0;
+		font-size: 0;
+		list-style-type: none;
+	}
+
+	.squares-element {
+		width: 9px;
+		height: 9px;
+		margin: 0 9px 0 0;
+		background: $key-color;
+		display: inline-block;
+	}
+
+	.squares-element.is-active {
+		background: $additional-color;
+		display: inline-block;
+	}
+
+	.squares-element:last-child {
+		margin: 0;
+	}
+
+}

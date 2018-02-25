@@ -1,0 +1,358 @@
+@font-face {
+  font-family: OpenSans;
+  src: local(OpenSans), url(fonts/OpenSans.woff);
+  src: local(OpenSans-Regular), url(fonts/OpenSans-Regular.woff2); }
+@font-face {
+  font-family: OpenSans-Bold;
+  src: local(OpenSans-Bold), url(fonts/OpenSans-Bold.woff);
+  src: local(OpenSans-Bold), url(fonts/OpenSans-Bold.woff2); }
+@font-face {
+  font-family: OpenSans-Italic;
+  src: local(OpenSans-Italic), url(fonts/OpenSans-Italic.woff);
+  src: local(OpenSans-Italic), url(fonts/OpenSans-Italic.woff2); }
+@font-face {
+  font-family: OpenSans-BoldItalic;
+  src: local(OpenSans-BoldItalic), url(fonts/OpenSans-BoldItalic.woff);
+  src: local(OpenSans-BoldItalic), url(fonts/OpenSans-BoldItalic.woff2); }
+body,
+.header {
+  background: #070707; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+p,
+a,
+div,
+body,
+button,
+input {
+  font-family: OpenSans, Georgia, Arial, Times New Roman;
+  color: #999; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.wrapper {
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto; }
+
+.title-normal {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #fff; }
+
+.title-bold {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff; }
+
+.title-normal-black {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #222222; }
+
+.title-bold-black {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #222222; }
+
+.header {
+  width: 100%;
+  padding: 15px 15px 15px;
+  text-align: center; }
+  .header .agency-name {
+    float: right;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #999; }
+  .header .hamburger-menu {
+    float: left;
+    width: 30px; }
+  .header .line-hamburger {
+    height: 3px;
+    margin: 0 0 3px;
+    border-radius: 3px;
+    background: #fcac45; }
+  .header .greeting-and-spirit8 {
+    margin: 30px 0 0;
+    display: inline-block; }
+  .header .greeting {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #999; }
+  .header .greeting-spirit8 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fcac45; }
+  .header .greeting-text {
+    font-size: 13px;
+    padding: 10px 0 0;
+    color: #999;
+    display: inline-block; }
+
+.info {
+  padding: 10px;
+  text-align: center;
+  background: #fff; }
+  .info .tv {
+    width: 100%;
+    max-width: 506px;
+    display: inline-block; }
+  .info .subject-text {
+    padding: 10px 0 0;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 40px;
+    display: inline-block; }
+  .info .line-long {
+    width: 100px;
+    height: 3px;
+    margin: 10px auto 0;
+    background: #fcac45; }
+  .info .text-about-them {
+    margin: 10px 0 0;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: none;
+    display: inline-block; }
+  .info .list-skills {
+    margin: 10px 0 0; }
+  .info .skill {
+    margin: 10px 0 0; }
+  .info .empty-circle {
+    width: 3px;
+    height: 3px;
+    padding: 3px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #999;
+    background: #999;
+    display: inline-block; }
+  .info .name-skill {
+    vertical-align: middle;
+    margin: 0 0 0 10px;
+    font-size: 18px;
+    font-weight: 600; }
+  .info .description-skill {
+    vertical-align: middle;
+    font-size: 16px;
+    font-style: italic; }
+  .info .our-work {
+    width: 190px;
+    height: 45px;
+    margin: 30px 0 0;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 3px;
+    background: #fff;
+    display: inline-block; }
+  .info .reference-example {
+    font-size: 12px;
+    margin: 0 0 0 10px;
+    text-transform: uppercase;
+    color: #070707;
+    display: inline-block; }
+
+.invitation {
+  padding: 10px;
+  text-align: center; }
+  .invitation .line-long {
+    width: 100px;
+    height: 3px;
+    margin: 10px auto 0;
+    background: #fcac45; }
+  .invitation .line-short {
+    width: 65px;
+    height: 3px;
+    margin: 10px auto 0;
+    opacity: 0.6;
+    background: #fcac45; }
+  .invitation .circle {
+    width: 125px;
+    height: 125px;
+    margin: 30px 0 0;
+    border-radius: 50%;
+    background: #d7d7d7;
+    display: inline-block; }
+  .invitation .surname {
+    margin: 10px 0 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize; }
+  .invitation .specialization {
+    margin: 10px 0 0;
+    font-size: 16px;
+    text-transform: capitalize; }
+  .invitation .quote {
+    margin: 10px 0 0;
+    font-size: 14px; }
+  .invitation .squares {
+    margin: 10px 0 0;
+    font-size: 0;
+    list-style-type: none; }
+  .invitation .squares-element {
+    width: 9px;
+    height: 9px;
+    margin: 0 9px 0 0;
+    background: #fff;
+    display: inline-block; }
+  .invitation .squares-element.is-active {
+    background: #fcac45;
+    display: inline-block; }
+  .invitation .squares-element:last-child {
+    margin: 0; }
+
+.services {
+  padding: 10px;
+  text-align: center;
+  background: #fff; }
+  .services .line-long {
+    width: 100px;
+    height: 3px;
+    margin: 10px auto 0;
+    background: #fcac45; }
+  .services .line-short {
+    width: 65px;
+    height: 3px;
+    margin: 10px auto 0;
+    opacity: 0.6;
+    background: #fcac45; }
+  .services .text-services {
+    padding: 10px 0 0;
+    font-size: 14px;
+    font-style: italic;
+    display: inline-block; }
+  .services .wrapper-img-services {
+    width: 115px;
+    height: 115px;
+    margin: 10px auto 0;
+    border: 5px solid #fcac45;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .services .name-services {
+    margin: 10px 0 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #222222; }
+  .services .description-services {
+    padding: 10px 0 0;
+    font-size: 14px;
+    display: inline-block; }
+
+.clients {
+  padding: 10px;
+  text-align: center;
+  background: #070707; }
+  .clients .line-long {
+    width: 100px;
+    height: 3px;
+    margin: 10px auto 0;
+    background: #fcac45; }
+  .clients .line-short {
+    width: 65px;
+    height: 3px;
+    margin: 10px auto 0;
+    opacity: 0.6;
+    background: #fcac45; }
+  .clients .name-brand {
+    margin: 10px 5px 0 5px; }
+  .clients .squares {
+    margin: 10px 0 0;
+    font-size: 0;
+    list-style-type: none; }
+  .clients .squares-element {
+    width: 9px;
+    height: 9px;
+    margin: 0 9px 0 0;
+    background: #fff;
+    display: inline-block; }
+  .clients .squares-element.is-active {
+    background: #fcac45;
+    display: inline-block; }
+  .clients .squares-element:last-child {
+    margin: 0; }
+
+.work {
+  padding: 10px;
+  text-align: center;
+  background: #fff; }
+  .work .line-long {
+    width: 100px;
+    height: 3px;
+    margin: 10px auto 0;
+    background: #fcac45; }
+  .work .line-short {
+    width: 65px;
+    height: 3px;
+    margin: 10px auto 0;
+    opacity: 0.6;
+    background: #fcac45; }
+  .work .text-work {
+    margin: 10px 0 0 0;
+    font-size: 14px; }
+  .work .filter {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #222222; }
+  .work .sorting {
+    margin: 10px 0 0 0; }
+  .work .switch {
+    padding: 0 10px 0 10px;
+    border-right: 1px solid #999;
+    font-size: 16px;
+    text-decoration: none;
+    color: #222222; }
+  .work .switch:hover {
+    font-weight: bold; }
+  .work .wrapper-icon-work {
+    font-size: 0;
+    display: inline-block; }
+  .work .wrapper-img-and-info {
+    position: relative;
+    width: 263px;
+    height: 237px;
+    margin: 10px 5px 0 5px; }
+    .work .wrapper-img-and-info:hover .icon-work {
+      display: none; }
+    .work .wrapper-img-and-info:hover .info-work {
+      display: block; }
+  .work .icon-work {
+    position: absolute;
+    left: 0;
+    display: block; }
+  .work .info-work {
+    position: absolute;
+    left: 0;
+    width: 263px;
+    height: 237px;
+    text-align: center;
+    background: #222222;
+    display: none; }
+  .work .fashion {
+    font-size: 18px;
+    margin: 70px 0 0;
+    text-transform: uppercase;
+    color: #999;
+    display: inline-block; }
+  .work .website {
+    font-size: 14px;
+    margin: 10px 0 0;
+    text-transform: capitalize;
+    color: #999;
+    display: inline-block; }
+  .work .plus {
+    margin: 10px 0 0; }
+
+/*# sourceMappingURL=style.css.map */

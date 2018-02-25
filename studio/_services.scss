@@ -1,0 +1,56 @@
+.services {
+	padding: 10px;
+	text-align: center;
+	background: $key-color;
+
+	.line-long {
+		width: 100px;
+		height: 3px;
+		margin: 10px auto 0;
+		background: $additional-color;
+	}
+
+	.line-short {
+		width: 65px;
+		height: 3px;
+		margin: 10px auto 0;
+		opacity: 0.6;
+		background: $additional-color;
+	}
+
+	.text-services {
+		padding: 10px 0 0;
+		font-size: 14px;
+		font-style: italic;
+		display: inline-block;
+	}
+
+	.wrapper-img-services {
+		width: 115px;
+		height: 115px;
+		margin: 10px auto 0;
+		border: 5px solid $additional-color;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.img-services {
+		
+	}
+
+	.name-services {
+		margin: 10px 0 0;
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $black;
+	}
+
+	.description-services {
+		padding: 10px 0 0;
+		font-size: 14px;
+		display: inline-block;
+	}
+}

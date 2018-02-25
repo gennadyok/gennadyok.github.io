@@ -1,0 +1,85 @@
+.info {
+	padding: 10px;
+	text-align: center;
+	background: $key-color;
+
+	.tv {
+		width: 100%;
+		max-width: 506px;
+		display: inline-block;
+	}
+
+	.subject-text {
+		padding: 10px 0 0;
+		font-size: 25px;
+		text-transform: uppercase;
+		line-height: 40px;
+		display: inline-block;
+	}
+
+	.line-long {
+		width: 100px;
+		height: 3px;
+		margin: 10px auto 0;
+		background: $additional-color;
+	}
+
+	.text-about-them {
+		margin: 10px 0 0;
+		font-size: 18px;
+		line-height: 24px;
+		text-transform: none;
+		display: inline-block;
+	}
+
+	.list-skills {
+		margin: 10px 0 0;
+	}
+
+	.skill {
+		margin: 10px 0 0;
+	}
+
+	.empty-circle {
+		width: 3px;
+		height: 3px;
+		padding: 3px;
+		border-radius: 50%;
+		box-shadow: 0 0 0 3px $key-color, 0 0 0 5px $key-color-fonts;
+		background: $key-color-fonts;
+		display: inline-block;
+	}
+
+	.name-skill {
+		vertical-align: middle;
+		margin: 0 0 0 10px;
+		font-size: 18px;
+		font-weight: 600;
+		
+	}
+
+	.description-skill {
+		vertical-align: middle;
+		font-size: 16px;
+		font-style: italic;
+	}
+
+	.our-work {
+		width: 190px;
+		height: 45px;
+		margin: 30px 0 0;
+		text-align: center;
+		border: 1px solid $key-color-fonts;
+		border-radius: 3px;
+		background: $key-color;
+		display: inline-block;
+	}
+
+	.reference-example {
+		font-size: 12px;
+		margin: 0 0 0 10px;
+		text-transform: uppercase;
+		color: $color-dark;
+		display: inline-block;
+	}
+}

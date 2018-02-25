@@ -1,0 +1,93 @@
+@font-face {
+	font-family: OpenSans;
+	src: local(OpenSans), url(fonts/OpenSans.woff);
+	src: local(OpenSans-Regular), url(fonts/OpenSans-Regular.woff2);
+}
+
+@font-face {
+	font-family: OpenSans-Bold;
+	src: local(OpenSans-Bold), url(fonts/OpenSans-Bold.woff);
+	src: local(OpenSans-Bold), url(fonts/OpenSans-Bold.woff2);
+}
+
+@font-face {
+	font-family: OpenSans-Italic;
+	src: local(OpenSans-Italic), url(fonts/OpenSans-Italic.woff);
+	src: local(OpenSans-Italic), url(fonts/OpenSans-Italic.woff2);
+}
+
+@font-face {
+	font-family: OpenSans-BoldItalic;
+	src: local(OpenSans-BoldItalic), url(fonts/OpenSans-BoldItalic.woff);
+	src: local(OpenSans-BoldItalic), url(fonts/OpenSans-BoldItalic.woff2);
+}
+// color
+$key-color: #fff;
+$color-dark: #070707;
+$black: #222222;
+$key-color-fonts: #999;
+$additional-color: #fcac45;
+// margin-padding
+$margin-zero: 0 auto;
+// font-size
+$font24: 24px;
+
+body,
+.header {
+	background: $color-dark;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+p,
+a,
+div,
+body,
+button,
+input {
+	font-family: OpenSans, Georgia, Arial, Times New Roman;
+	color: #999;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+.title-normal {
+	font-size: 25px;
+	text-transform: uppercase;
+	color: $key-color;
+	}
+
+.title-bold {
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: $key-color;
+}
+
+.title-normal-black {
+	font-size: 25px;
+	text-transform: uppercase;
+	color: $black;
+}
+
+.title-bold-black {
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: $black;
+}
