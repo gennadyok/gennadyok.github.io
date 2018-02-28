@@ -1,0 +1,51 @@
+.contacts {
+	padding: 10px;
+	text-align: center;
+	background: $key-color;
+
+	.content-contacts {
+		width: 100%;
+		margin: 10px 0 0;
+		font-size: 16px;
+		font-style: italic;
+	}
+
+	.info-user {
+		margin: 10px 0 0;
+		font-size: 14px;
+
+		.star {
+			color: #db0000;
+		}
+	}
+
+	.message {
+		margin: 10px 0 0;
+	}
+
+	.requisites {
+		width: 100%;
+		max-width: 300px;
+		height: 40px;
+		border: 1px solid $key-color-fonts;
+	}
+
+	.text-message {
+		width: 100%;
+		max-width: 300px;
+		// для полной версии длинна будет 165пкс
+		height: 80px;
+		border: 1px solid $key-color-fonts;
+	}
+
+	.communications-submit {
+		width: 165px;
+		height: 40px;
+		margin: 10px 0 0;
+		border: 0;
+		font-size: 16px;
+		color: $key-color;
+		text-transform: uppercase;
+		background: $additional-color;
+	}
+}

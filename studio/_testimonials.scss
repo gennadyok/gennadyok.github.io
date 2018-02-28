@@ -1,0 +1,22 @@
+.testimonials {
+	padding: 10px;
+	text-align: center;
+
+	.testimonials-content {
+		margin: 10px 0 0;
+		font-size: 16px;
+		text-transform: uppercase;
+		color: $key-color;
+	}
+
+	.name-clients-bold {
+		margin: 10px 0 0;
+		font-size: 16px;
+		font-weight: 700;
+	}
+	
+	.name-clients {
+		font-size: 16px;
+	}
+
+}
