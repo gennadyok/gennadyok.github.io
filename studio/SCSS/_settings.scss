@@ -22,19 +22,20 @@
 	src: local(OpenSans-BoldItalic), url(fonts/OpenSans-BoldItalic.woff2);
 }
 // color
-$key-color: #fff;
-$color-dark: #070707;
-$black: #222222;
-$key-color-fonts: #999;
-$additional-color: #fcac45;
+$key_color_wihte: #fff;
+$key_color_dark: #070707;
+$black_version: #222222;
+$key_color_fonts: #999;
+$additional_color: #fcac45;
 // margin-padding
-$margin-zero: 0 auto;
+$margin_top_mobile: 10px 0 0;
+$margin_zero: 0 auto;
 // font-size
-$font24: 24px;
+$font_size_title: 25px;
 
 body,
 .header {
-	background: $color-dark;
+	background: $key_color_dark;
 }
 
 * {
@@ -65,67 +66,67 @@ input {
 	min-width: 320px;
 	margin: 0 auto;
 }
-// стили заголовков 
+// title styles
 .title-normal {
-	font-size: 25px;
+	font-size: $font_size_title;
 	text-transform: uppercase;
-	color: $key-color;
+	color: $key_color_wihte;
 	}
 
 .title-bold {
-	font-size: 25px;
+	font-size: $font_size_title;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: $key-color;
+	color: $key_color_wihte;
 }
 
 .title-normal-black {
-	font-size: 25px;
+	font-size: $font_size_title;
 	text-transform: uppercase;
-	color: $black;
+	color: $black_version;
 }
 
 .title-bold-black {
-	font-size: 25px;
+	font-size: $font_size_title;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: $black;
+	color: $black_version;
 }
-// линии
+// line styles
 .line-long {
-		width: 100px;
-		height: 3px;
-		margin: 10px auto 0;
-		background: $additional-color;
+	width: 100px;
+	height: 3px;
+	margin: 10px auto 0;
+	background: $additional-color;
 	}
 
-	.line-short {
-		width: 65px;
-		height: 3px;
-		margin: 10px auto 0;
-		opacity: 0.6;
-		background: $additional-color;
+.line-short {
+	width: 65px;
+	height: 3px;
+	margin: 10px auto 0;
+	opacity: 0.6;
+	background: $additional-color;
 	}
 
 .squares {
-		margin: 10px 0 0;
-		font-size: 0;
-		list-style-type: none;
+	margin: 10px 0 0;
+	font-size: 0;
+	list-style-type: none;
 	}
 
-	.squares-element {
-		width: 9px;
-		height: 9px;
-		margin: 0 9px 0 0;
-		background: $key-color;
-		display: inline-block;
+.squares-element {
+	width: 9px;
+	height: 9px;
+	margin: 0 9px 0 0;
+	background: $key_color_wihte;
+	display: inline-block;
 	}
 
-	.squares-element.is-active {
-		background: $additional-color;
-		display: inline-block;
+.squares-element.is-active {
+	background: $additional_color;
+	display: inline-block;
 	}
 
-	.squares-element:last-child {
-		margin: 0;
+.squares-element:last-child {
+	margin: 0;
 	}

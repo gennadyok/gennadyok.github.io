@@ -1,13 +1,13 @@
 .services {
 	padding: 10px;
 	text-align: center;
-	background: $key-color;
+	background: $key_color_wihte;
 
 	.line-long {
 		width: 100px;
 		height: 3px;
 		margin: 10px auto 0;
-		background: $additional-color;
+		background: $additional_color;
 	}
 
 	.line-short {
@@ -15,7 +15,7 @@
 		height: 3px;
 		margin: 10px auto 0;
 		opacity: 0.6;
-		background: $additional-color;
+		background: $additional_color
 	}
 
 	.text-services {
@@ -29,23 +29,19 @@
 		width: 115px;
 		height: 115px;
 		margin: 10px auto 0;
-		border: 5px solid $additional-color;
+		border: 5px solid $additional_color;
 		border-radius: 50%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 
-	.img-services {
-		
-	}
-
 	.name-services {
-		margin: 10px 0 0;
+		margin: $margin_top_mobile;
 		font-size: 18px;
 		font-weight: 600;
 		text-transform: uppercase;
-		color: $black;
+		color: $black_version;
 	}
 
 	.description-services {

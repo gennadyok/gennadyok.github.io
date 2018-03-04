@@ -2,7 +2,7 @@
 	text-align: center;
 
 	.copyright {
-		margin: 10px 0 0;
+		margin: $margin_top_mobile;
 		font-size: 12px;
 		text-transform: uppercase;
 	}
@@ -12,16 +12,15 @@
 	}
 
 	.social {
-		margin: 10px 0 0;
+		margin: $margin_top_mobile;
 		display: inline-block;
 	}
 
 	.icon-social {
 		margin: 0 15px 0 0;
-	}
 
-	.icon-social:last-child {
-		margin: 0;
-		
+		&:last-child {
+			margin: 0;
+		}
 	}
 }

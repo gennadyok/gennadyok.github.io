@@ -176,18 +176,18 @@ input {
     height: 3px;
     padding: 3px;
     border-radius: 50%;
-    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #999;
+    box-shadow: 0 0 0 3px key_color_wihte, 0 0 0 5px #999;
     background: #999;
     display: inline-block; }
   .info .name-skill {
-    vertical-align: middle;
     margin: 0 0 0 10px;
     font-size: 18px;
-    font-weight: 600; }
+    font-weight: 600;
+    vertical-align: middle; }
   .info .description-skill {
-    vertical-align: middle;
     font-size: 16px;
-    font-style: italic; }
+    font-style: italic;
+    vertical-align: middle; }
   .info .our-work {
     width: 190px;
     height: 45px;
@@ -316,7 +316,7 @@ input {
     opacity: 0.6;
     background: #fcac45; }
   .work .text-work {
-    margin: 10px 0 0 0;
+    margin: 10px 0 0;
     font-size: 14px; }
   .work .filter {
     margin: 10px 0 0;
@@ -325,7 +325,7 @@ input {
     text-transform: uppercase;
     color: #222222; }
   .work .sorting {
-    margin: 10px 0 0 0; }
+    margin: 10px 0 0; }
   .work .switch {
     padding: 0 10px 0 10px;
     border-right: 1px solid #999;
@@ -349,7 +349,7 @@ input {
   .work .icon-work {
     position: absolute;
     left: 0;
-    display: block; }
+    top: 0; }
   .work .info-work {
     position: absolute;
     left: 0;
@@ -397,11 +397,6 @@ input {
     margin: 10px 0 0;
     font-size: 16px;
     font-style: italic; }
-  .contacts .info-user {
-    margin: 10px 0 0;
-    font-size: 14px; }
-    .contacts .info-user .star {
-      color: #db0000; }
   .contacts .message {
     margin: 10px 0 0; }
   .contacts .requisites {
@@ -424,6 +419,12 @@ input {
     text-transform: uppercase;
     background: #fcac45; }
 
+.info-user {
+  margin: 10px 0 0;
+  font-size: 14px; }
+  .info-user .star {
+    color: #db0000; }
+
 .futer {
   text-align: center; }
   .futer .copyright {
@@ -437,7 +438,7 @@ input {
     display: inline-block; }
   .futer .icon-social {
     margin: 0 15px 0 0; }
-  .futer .icon-social:last-child {
-    margin: 0; }
+    .futer .icon-social:last-child {
+      margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

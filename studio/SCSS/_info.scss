@@ -1,7 +1,7 @@
 .info {
 	padding: 10px;
 	text-align: center;
-	background: $key-color;
+	background: $key_color_wihte;
 
 	.tv {
 		width: 100%;
@@ -21,7 +21,7 @@
 		width: 100px;
 		height: 3px;
 		margin: 10px auto 0;
-		background: $additional-color;
+		background: $additional_color;
 	}
 
 	.text-about-them {
@@ -33,11 +33,11 @@
 	}
 
 	.list-skills {
-		margin: 10px 0 0;
+		margin: $margin_top_mobile;
 	}
 
 	.skill {
-		margin: 10px 0 0;
+		margin: $margin_top_mobile;
 	}
 
 	.empty-circle {
@@ -45,23 +45,22 @@
 		height: 3px;
 		padding: 3px;
 		border-radius: 50%;
-		box-shadow: 0 0 0 3px $key-color, 0 0 0 5px $key-color-fonts;
-		background: $key-color-fonts;
+		box-shadow: 0 0 0 3px key_color_wihte, 0 0 0 5px $key_color_fonts;
+		background: $key_color_fonts;
 		display: inline-block;
 	}
 
 	.name-skill {
-		vertical-align: middle;
 		margin: 0 0 0 10px;
 		font-size: 18px;
 		font-weight: 600;
-		
+		vertical-align: middle;
 	}
 
 	.description-skill {
-		vertical-align: middle;
 		font-size: 16px;
 		font-style: italic;
+		vertical-align: middle;
 	}
 
 	.our-work {
@@ -69,9 +68,9 @@
 		height: 45px;
 		margin: 30px 0 0;
 		text-align: center;
-		border: 1px solid $key-color-fonts;
+		border: 1px solid $key_color_fonts;
 		border-radius: 3px;
-		background: $key-color;
+		background: $key_color_wihte;
 		display: inline-block;
 	}
 
@@ -79,7 +78,7 @@
 		font-size: 12px;
 		margin: 0 0 0 10px;
 		text-transform: uppercase;
-		color: $color-dark;
+		color: $key_color_dark;
 		display: inline-block;
 	}
 }

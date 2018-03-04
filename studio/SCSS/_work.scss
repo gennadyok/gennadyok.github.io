@@ -2,7 +2,7 @@
 
 	padding: 10px;
 	text-align: center;
-	background: $key-color;
+	background: $key_color_wihte;
 
 	.line-long {
 		width: 100px;
@@ -16,24 +16,24 @@
 		height: 3px;
 		margin: 10px auto 0;
 		opacity: 0.6;
-		background: $additional-color;
+		background: $additional_color;
 	}
 
 	.text-work {
-		margin: 10px 0 0 0;
+		margin: $margin_top_mobile;
 		font-size: 14px;
 	}
 
 	.filter {
-		margin: 10px 0 0;
+		margin: $margin_top_mobile;
 		font-size: 16px;
 		font-weight: 600;
 		text-transform: uppercase;
-		color: $black;
+		color: $black_version;
 	}
 
 	.sorting {
-		margin: 10px 0 0 0;
+		margin: $margin_top_mobile;
 	}
 
 	.switch {
@@ -41,7 +41,7 @@
 		border-right: 1px solid $key-color-fonts;
 		font-size: 16px;
 		text-decoration: none;
-		color: $black;
+		color: $black_version;
 	}
 
 	.switch:hover {
@@ -73,7 +73,7 @@
 	.icon-work {
 		position: absolute;
 		left: 0;
-		display: block;
+		top: 0;
 	}
 	
 	.info-work {
@@ -82,7 +82,7 @@
 		width: 263px;
 		height: 237px;
 		text-align: center;
-		background: $black;
+		background: $black_version;
 		display: none;
 	}
 
@@ -90,19 +90,19 @@
 		font-size: 18px;
 		margin: 70px 0 0;
 		text-transform: uppercase;
-		color: $key-color-fonts;
+		color: $key_color_fonts;
 		display: inline-block;
 	}
 
 	.website {
 		font-size: 14px;
-		margin: 10px 0 0;
+		margin: $margin_top_mobile;
 		text-transform: capitalize;
-		color: $key-color-fonts;
+		color: $key_color_fonts;
 		display: inline-block;
 	}
 
 	.plus {
-		margin: 10px 0 0;
+		margin: $margin_top_mobile;
 	}
 }
