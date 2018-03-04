@@ -49,3 +49,29 @@
 			color: #db0000;
 		}
 	}
+
+@media screen and (min-width: 768px) {
+	.communications {
+		width: 600px;
+		margin: $margin_zero;
+	}
+
+	.wrapper-block-user-name {
+		float: left;
+		width: 49%;
+	}
+
+	.wrapper-block-user-email {
+		float: right;
+		width: 49%;
+	}
+
+	.message {
+		clear: both;
+	}
+
+	.contacts .text-message {
+		max-width: 100%;
+		margin: $margin_zero;
+	}
+}

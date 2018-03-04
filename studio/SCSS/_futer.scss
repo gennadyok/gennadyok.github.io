@@ -24,3 +24,21 @@
 		}
 	}
 }
+
+@media screen and (min-width: 768px) {
+	.futer {
+		padding: 10px;
+		font-size: 0;
+	}
+
+	.futer .copyright {
+		float: left;
+		margin: 0;
+		line-height: 33px;
+	}
+
+	.futer .social {
+		float: right;
+		margin: 0;
+	}
+}

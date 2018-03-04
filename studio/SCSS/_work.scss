@@ -1,5 +1,4 @@
 .work {
-
 	padding: 10px;
 	text-align: center;
 	background: $key_color_wihte;
@@ -104,5 +103,13 @@
 
 	.plus {
 		margin: $margin_top_mobile;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.wrapper-img-and-info {
+		width: 45%;
+		padding: 5px;
+		display: inline-block;
 	}
 }
