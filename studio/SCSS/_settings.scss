@@ -27,11 +27,17 @@ $key_color_dark: #070707;
 $black_version: #222222;
 $key_color_fonts: #999;
 $additional_color: #fcac45;
+$grey: #292929;
 // margin-padding
 $margin_top_mobile: 10px 0 0;
 $margin_zero: 0 auto;
 // font-size
 $font_size_title: 25px;
+$font_size_title_medium: 44px;
+$font_size_title_high: 44px;
+$fs_16: 16px;
+$fs_18: 18px;
+$font_size_paragraph_high: 20px;
 
 body,
 .header {
@@ -130,3 +136,26 @@ input {
 .squares-element:last-child {
 	margin: 0;
 	}
+
+@media screen and (min-width: 992px) {
+
+	.title-normal {
+		font-size: $font_size_title_medium;
+	}
+
+	.title-bold {
+		font-size: $font_size_title_medium;
+	}
+
+	.title-normal-black {
+		font-size: $font_size_title_medium;
+	}
+
+	.title-bold-black {
+		font-size: $font_size_title_medium;
+	}
+
+	.line-long {
+		margin: 30px 0 0;
+	}
+}

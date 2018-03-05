@@ -96,6 +96,21 @@ input {
 .squares-element:last-child {
   margin: 0; }
 
+@media screen and (min-width: 992px) {
+  .title-normal {
+    font-size: 44px; }
+
+  .title-bold {
+    font-size: 44px; }
+
+  .title-normal-black {
+    font-size: 44px; }
+
+  .title-bold-black {
+    font-size: 44px; }
+
+  .line-long {
+    margin: 30px 0 0; } }
 .header {
   width: 100%;
   padding: 15px 15px 15px;
@@ -113,6 +128,8 @@ input {
     margin: 0 0 3px;
     border-radius: 3px;
     background: #fcac45; }
+  .header .menu {
+    display: none; }
   .header .greeting-and-spirit8 {
     margin: 30px 0 0;
     display: inline-block; }
@@ -142,6 +159,55 @@ input {
     left: 40%;
     top: 36%; }
 
+@media screen and (min-width: 992px) {
+  .header {
+    padding: 0 0 90px; }
+
+  .header .agency-name {
+    float: left;
+    margin: 55px 0 0; }
+
+  .hamburger-menu {
+    display: none; }
+
+  .header .menu {
+    float: right;
+    margin: 55px 0 0;
+    display: inline-block; }
+
+  .wrapper-paragraph {
+    display: inline-block; }
+
+  .name-paragraph {
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff; }
+
+  .line-gray {
+    width: 50%;
+    height: 3px;
+    color: #292929; }
+
+  .line-orang {
+    width: 50%;
+    height: 3px;
+    color: #fcac45; }
+
+  .header .greeting-and-spirit8 {
+    margin: 200px 0 0; }
+
+  .header .greeting {
+    font-size: 44px; }
+
+  .header .greeting-spirit8 {
+    font-size: 44px; }
+
+  .header .greeting-text {
+    font-size: 20px; }
+
+  .header .pointer {
+    margin: 280px 0 0; } }
 .info {
   padding: 10px;
   text-align: center;
@@ -150,6 +216,8 @@ input {
     width: 100%;
     max-width: 506px;
     display: inline-block; }
+  .info .tv-shadow {
+    display: none; }
   .info .subject-text {
     padding: 10px 0 0;
     font-size: 25px;
@@ -203,6 +271,39 @@ input {
     color: #070707;
     display: inline-block; }
 
+@media screen and (min-width: 992px) {
+  .info {
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 20px;
+    text-align: left; }
+
+  .info .tv {
+    display: none; }
+
+  .info .tv-shadow {
+    width: 59%;
+    display: inline-block; }
+
+  .info .wrapper-info-content {
+    width: 39%;
+    display: inline-block; }
+
+  .line-long {
+    display: inline-block; }
+
+  .skill {
+    list-style: none; }
+
+  .subject-text {
+    font-size: 20px; }
+
+  .text-about-them,
+  .name-skill {
+    font-size: 18px; }
+
+  .description-skill {
+    font-size: 16px; } }
 .invitation {
   padding: 10px;
   text-align: center; }
@@ -252,11 +353,24 @@ input {
   .invitation .squares-element:last-child {
     margin: 0; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
+  .wrapper-participant {
+    margin: 70px 0 0; }
+
   .participant {
     width: 45%;
     padding: 5px;
     display: inline-block; } }
+@media screen and (min-width: 992px) {
+  .invitation {
+    padding: 100px 0; }
+
+  .quote {
+    width: 60%;
+    display: inline-block; }
+
+  .invitation .squares {
+    margin: 70px 0 0; } }
 .services {
   padding: 10px;
   text-align: center;
@@ -297,7 +411,7 @@ input {
     font-size: 14px;
     display: inline-block; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .wrapper-services {
     width: 45%;
     padding: 5px;
@@ -383,6 +497,9 @@ input {
     margin: 10px 0 0; }
 
 @media screen and (min-width: 768px) {
+  .wrapper-icon-work {
+    max-width: 550px; }
+
   .wrapper-img-and-info {
     width: 45%;
     padding: 5px;

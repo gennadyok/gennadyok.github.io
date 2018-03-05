@@ -68,11 +68,29 @@
 	}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
+	.wrapper-participant {
+		margin: 70px 0 0;
+	}
 
 	.participant {
 		width: 45%;
 		padding: 5px;
 		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.invitation {
+		padding: 100px 0;
+	}
+
+	.quote {
+		width: 60%;
+		display: inline-block;
+	}
+
+	.invitation .squares {
+		margin: 70px 0 0;
 	}
 }

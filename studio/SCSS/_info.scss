@@ -9,6 +9,10 @@
 		display: inline-block;
 	}
 
+	.tv-shadow {
+		display: none;
+	}
+
 	.subject-text {
 		padding: 10px 0 0;
 		font-size: 25px;
@@ -77,5 +81,49 @@
 		text-transform: uppercase;
 		color: $key_color_dark;
 		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.info {
+		width: 100%;
+		margin: $margin_zero;
+		padding: 100px 20px;
+		text-align: left;
+	}
+
+	.info .tv {
+		display: none;
+	}
+
+	.info .tv-shadow {
+		width: 59%;
+		display: inline-block;
+	}
+
+	.info .wrapper-info-content {
+		width: 39%;
+		display: inline-block;
+	}
+
+	.line-long {
+		display: inline-block;
+	}
+
+	.skill {
+		list-style: none;
+	}
+
+	.subject-text {
+		font-size: $font_size_paragraph_high;
+	}
+
+	.text-about-them,
+	.name-skill {
+		font-size: $fs_18;
+	}
+
+	.description-skill {
+		font-size: $fs_16;
 	}
 }
