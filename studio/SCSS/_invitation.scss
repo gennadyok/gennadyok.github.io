@@ -83,14 +83,27 @@
 @media screen and (min-width: 992px) {
 	.invitation {
 		padding: 100px 0;
-	}
+	
+		.quote {
+			width: 60%;
+			display: inline-block;
+		}
 
-	.quote {
-		width: 60%;
-		display: inline-block;
-	}
+		.wrapper-participant {
+			margin: 70px 0;
+		}
 
-	.invitation .squares {
-		margin: 70px 0 0;
+		.participant {
+			padding: 10px;
+		}
+
+		.circle {
+			margin: 0;
+		}
+
+		.squares {
+			margin: 70px 0 0;
+		}
+
 	}
 }

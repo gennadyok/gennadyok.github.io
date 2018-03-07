@@ -89,41 +89,75 @@
 		width: 100%;
 		margin: $margin_zero;
 		padding: 100px 20px;
+		font-size: 0;
 		text-align: left;
-	}
 
-	.info .tv {
-		display: none;
-	}
+		.tv {
+			display: none;
+		}
 
-	.info .tv-shadow {
-		width: 59%;
-		display: inline-block;
-	}
+		.tv-shadow {
+			width: 59%;
+			display: inline-block;
+		}
 
-	.info .wrapper-info-content {
-		width: 39%;
-		display: inline-block;
-	}
+		.wrapper-info-content {
+			width: 39%;
+			display: inline-block;
+		}
 
-	.line-long {
-		display: inline-block;
-	}
+		.line-long {
+			display: inline-block;
+		}
 
-	.skill {
-		list-style: none;
-	}
+		.skill {
+			list-style: none;
+		}
 
-	.subject-text {
-		font-size: $font_size_paragraph_high;
-	}
+		.subject-text {
+			font-size: $font_size_paragraph_high;
+		}
 
-	.text-about-them,
-	.name-skill {
-		font-size: $fs_18;
-	}
+		.text-about-them,
+		.name-skill {
+			font-size: $fs_18;
+		}
 
-	.description-skill {
-		font-size: $fs_16;
+		.description-skill {
+			font-size: $fs_16;
+		}
+
 	}
 }
+
+@media screen and (min-width: 1200px) {
+	.info {
+		padding: 90px 0 0;
+		.tv-shadow {
+			margin: 10px 0 0;
+		}
+
+		.wrapper-info-content {
+			max-width: 405px;
+			vertical-align: top;
+		}
+
+		.subject-text {
+			padding: 0;
+		}
+
+		.title-normal-black {
+			font-size: $font_size_title_medium;
+		}
+
+		.title-bold-black {
+			font-size: $font_size_title_medium;
+		}
+	}
+}
+
+// ты остановился на: надо ПОПРОБОВАТЬ сделать обертку для телека и
+// писанины справа. потом их надо выровнять посредине
+// и далее указать для них макс-видз.
+// потом надо выставить в ряд картинки и иконки в 
+// следующих блоках. готово!

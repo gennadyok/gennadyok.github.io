@@ -71,64 +71,69 @@
 @media screen and (min-width: 992px) {
 	.header {
 		padding: 0 0 90px;
-	}
 
-	.header .agency-name {
-		float: left;
-		margin: 55px 0 0;
-	}
+		.container-navigation {
+			max-width: 1160px;
+			margin: $margin_zero;
+			padding: 0 10px;
+		}
 
-	.hamburger-menu {
-		display: none;
-	}
+		.agency-name {
+			float: left;
+			margin: 55px 0 0;
+		}
 
-	.header .menu {
-		float: right;
-		margin: 55px 0 0;
-		display: inline-block;
-	}
+		.hamburger-menu {
+			display: none;
+		}
 
-	.wrapper-paragraph {
-		display: inline-block;
-	}
+		.menu {
+			float: right;
+			margin: 55px 0 0;
+			display: inline-block;
+		}
 
-	.name-paragraph {
-		width: 100%;
-		font-size: 14px;
-		text-transform: uppercase;
-		color: $key_color_wihte;
-	}
+		.wrapper-paragraph {
+			margin: 0 15px 0 0;
+			display: inline-block;
+			border-bottom: 3px solid $grey;
+			padding: 0 10px 20px;
 
-	.line-gray {
-		width: 50%;
-		height: 3px;
-		color: $grey;
-	}
+			&:last-child {
+				margin: 0;
+			}
 
-	.line-orang {
-		width: 50%;
-		height: 3px;
-		color: $additional_color;
-	}
+			&:hover {
+				border-bottom: 3px solid $additional_color;
+			}
+		}
 
-	.header .greeting-and-spirit8 {
-		margin: 200px 0 0;
-	}
+		.name-paragraph {
+			width: 100%;
+			font-size: 14px;
+			text-transform: uppercase;
+			color: $key_color_wihte;
+		}
 
-	.header .greeting {
-		font-size: $font_size_title_high;
-	}
+		.greeting-and-spirit8 {
+			margin: 200px 0 0;
+		}
 
-	.header .greeting-spirit8 {
-		font-size: $font_size_title_high;
-	}
+		.greeting {
+			font-size: $font_size_title_high;
+		}
 
-	.header .greeting-text {
-		font-size: $font_size_paragraph_high;
-	}
+		.greeting-spirit8 {
+			font-size: $font_size_title_high;
+		}
 
-	.header .pointer {
-		margin: 280px 0 0;
+		.greeting-text {
+			font-size: $font_size_paragraph_high;
+		}
+
+		.pointer {
+			margin: 280px 0 0;
+		}
 	}
 
 }

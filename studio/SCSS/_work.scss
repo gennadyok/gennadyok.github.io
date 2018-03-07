@@ -117,3 +117,38 @@
 		display: inline-block;
 	}
 }
+
+@media screen and (min-width: 992px) {
+	.work {
+		padding: 100px 15px;
+
+		.text-work {
+			margin: 45px 0 0;
+		}
+
+		.wrapper-filters {
+			margin: 120px 0 0;
+		}
+
+		.filter {
+			float: left;
+			font-size: $fs_18;
+		}
+
+		.sorting {
+			float: right;
+		}
+
+		.switch {
+			font-size: $fs_18;
+		}
+
+		.switch:last-child {
+			border: 0;
+		}
+
+		.wrapper-icon-work {
+			margin: 40px 0 0;
+		}
+	}
+}

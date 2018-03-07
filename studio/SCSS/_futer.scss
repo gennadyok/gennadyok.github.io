@@ -39,6 +39,13 @@
 
 	.futer .social {
 		float: right;
-		margin: 0;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.futer {
+		max-width: 1160px;
+		margin: $margin_zero;
+		padding: 30px 10px;
 	}
 }

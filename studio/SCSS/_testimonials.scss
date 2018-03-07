@@ -4,19 +4,40 @@
 
 	.testimonials-content {
 		margin: $margin_top_mobile;
-		font-size: 16px;
+		font-size: $fs_16;
 		text-transform: uppercase;
 		color: $key_color_wihte;
 	}
 
 	.name-clients-bold {
 		margin: $margin_top_mobile;
-		font-size: 16px;
+		font-size: $fs_16;
 		font-weight: 700;
 	}
 	
 	.name-clients {
-		font-size: 16px;
+		font-size: $fs_16;
+		display: inline-block;
 	}
+}
 
+@media screen and (min-width: 992px) {
+	.testimonials {
+		padding: 100px 15px;
+
+		.testimonials-content {
+			max-width: 930px;
+			margin: 100px 0 0;
+			font-size: $fs_18;
+			display: inline-block;
+		}
+
+		.name-clients-bold {
+			margin: 50px 0 0;
+		}
+
+		.squares {
+			margin: 65px 0 0;
+		}
+	}
 }

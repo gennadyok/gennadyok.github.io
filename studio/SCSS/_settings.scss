@@ -33,7 +33,7 @@ $margin_top_mobile: 10px 0 0;
 $margin_zero: 0 auto;
 // font-size
 $font_size_title: 25px;
-$font_size_title_medium: 44px;
+$font_size_title_medium: 34px;
 $font_size_title_high: 44px;
 $fs_16: 16px;
 $fs_18: 18px;
@@ -104,6 +104,7 @@ input {
 	height: 3px;
 	margin: 10px auto 0;
 	background: $additional-color;
+	display: inline-block;
 	}
 
 .line-short {
@@ -112,6 +113,7 @@ input {
 	margin: 10px auto 0;
 	opacity: 0.6;
 	background: $additional-color;
+	display: inline-block;
 	}
 
 .squares {
@@ -140,19 +142,19 @@ input {
 @media screen and (min-width: 992px) {
 
 	.title-normal {
-		font-size: $font_size_title_medium;
+		font-size: $font_size_title_high;
 	}
 
 	.title-bold {
-		font-size: $font_size_title_medium;
+		font-size: $font_size_title_high;
 	}
 
 	.title-normal-black {
-		font-size: $font_size_title_medium;
+		font-size: $font_size_title_high;
 	}
 
 	.title-bold-black {
-		font-size: $font_size_title_medium;
+		font-size: $font_size_title_high;
 	}
 
 	.line-long {
