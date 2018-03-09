@@ -41,7 +41,7 @@
 
 	.quote {
 		margin: $margin_top_mobile;
-		font-size: 14px;
+		font-size: 13px;
 	}
 
 	.squares {
@@ -104,6 +104,36 @@
 		.squares {
 			margin: 70px 0 0;
 		}
+	}
+}
 
+@media screen and (min-width: 1200px) {
+	.invitation {
+		.wrapper-participant {
+			max-width: 1120px;
+			margin: 70px auto;
+			font-size: 0;
+		}
+
+		.participant {
+			width: 245/1120 * 100%;
+			padding: 0;
+			&:not(:last-of-type) {
+				margin: 0 40px 0 0;
+			}
+		}
+
+		.surname {
+			margin: 20px 0 0;
+		}
+
+		.specialization {
+			margin: 7px 0 0;
+		}
+
+		.quote {
+			width: 100%;
+			margin: 32px 0 0;
+		}
 	}
 }

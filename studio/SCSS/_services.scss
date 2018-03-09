@@ -25,6 +25,10 @@
 		display: inline-block;
 	}
 
+	.list-services {
+		font-size: 0;
+	}
+
 	.wrapper-img-services {
 		width: 115px;
 		height: 115px;
@@ -81,5 +85,32 @@
 			padding: 0;
 		}
 
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.services {
+
+		.text-services {
+			max-width: 1140px;
+		}
+
+		.list-services {
+			max-width: 1120px;
+			margin: 85px auto 0;
+		}
+
+		.wrapper-services {
+			width: 245/1120 * 100%;
+			padding: 0;
+
+			&:not(:last-of-type) {
+				margin: 0 45px 0 0;
+			}
+		}
+
+		.description-services {
+			width: 100%;
+		}
 	}
 }

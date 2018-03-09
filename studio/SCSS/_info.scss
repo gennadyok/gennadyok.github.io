@@ -46,7 +46,7 @@
 		height: 3px;
 		padding: 3px;
 		border-radius: 50%;
-		box-shadow: 0 0 0 3px key_color_wihte, 0 0 0 5px $key_color_fonts;
+		box-shadow: 0 0 0 3px $key_color_wihte, 0 0 0 5px $key_color_fonts;
 		background: $key_color_fonts;
 		display: inline-block;
 	}
@@ -97,13 +97,15 @@
 		}
 
 		.tv-shadow {
-			width: 59%;
+			width: 708/1140 * 100%;
 			display: inline-block;
+			vertical-align: middle;
 		}
 
 		.wrapper-info-content {
-			width: 39%;
+			width: 432/1140 * 100%;
 			display: inline-block;
+			vertical-align: middle;
 		}
 
 		.line-long {
@@ -132,7 +134,13 @@
 
 @media screen and (min-width: 1200px) {
 	.info {
-		padding: 90px 0 0;
+		padding: 90px 0 51px;
+
+		.wrapper-tv-content {
+			margin: $margin_zero;
+			max-width: 1080px;
+		}
+
 		.tv-shadow {
 			margin: 10px 0 0;
 		}
@@ -153,11 +161,21 @@
 		.title-bold-black {
 			font-size: $font_size_title_medium;
 		}
+
+		.text-about-them {
+			margin: 30px 0 0;
+			font-size: $fs_16;
+		}
+
+		.list-skills {
+			margin: 50px 0 0;
+		}
+
+		.our-work {
+			margin: 50px 0 0;
+		}
 	}
 }
 
-// ты остановился на: надо ПОПРОБОВАТЬ сделать обертку для телека и
-// писанины справа. потом их надо выровнять посредине
-// и далее указать для них макс-видз.
-// потом надо выставить в ряд картинки и иконки в 
-// следующих блоках. готово!
+// не выраванивается телек с текстом, не удается сделать элементы
+// нужного размера
