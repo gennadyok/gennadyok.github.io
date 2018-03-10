@@ -8,10 +8,7 @@
 		margin: 10px 5px 0 5px;
 	}
 
-}
-
-@media screen and (min-width: 992px) {
-	.clients {
+	@media screen and (min-width: 992px) {
 		padding: 100px 0;
 
 		.brand {
@@ -30,11 +27,8 @@
 			margin: 100px 0 0;
 		}
 	}
-}
 
-@media screen and (min-width: 1200px) {
-	.clients {
-
+	@media screen and (min-width: 1200px) {
 		.brand {
 			margin: 100px auto 0;
 			max-width: 945px;

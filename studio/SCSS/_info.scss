@@ -17,14 +17,14 @@
 		padding: 10px 0 0;
 		font-size: 25px;
 		text-transform: uppercase;
-		line-height: 40px;
+		line-height: 35px;
 		display: inline-block;
 	}
 
 	.line-long {
 		width: 100px;
 		height: 3px;
-		margin: 10px auto 0;
+		margin: 5px auto 0;
 		background: $additional_color;
 	}
 
@@ -38,17 +38,18 @@
 
 	.list-skills,
 	.skill {
-		margin: $margin_top_mobile;
+		margin: 10px 0 0;
 	}
 
 	.empty-circle {
 		width: 3px;
 		height: 3px;
 		padding: 3px;
-		border-radius: 50%;
+		border-radius: 100%;
 		box-shadow: 0 0 0 3px $key_color_wihte, 0 0 0 5px $key_color_fonts;
 		background: $key_color_fonts;
 		display: inline-block;
+		vertical-align: middle;
 	}
 
 	.name-skill {
@@ -67,7 +68,7 @@
 	.our-work {
 		width: 190px;
 		height: 45px;
-		margin: 30px 0 0;
+		margin: 25px 0 0;
 		text-align: center;
 		border: 1px solid $key_color_fonts;
 		border-radius: 3px;
@@ -82,100 +83,92 @@
 		color: $key_color_dark;
 		display: inline-block;
 	}
-}
 
-@media screen and (min-width: 992px) {
-	.info {
-		width: 100%;
-		margin: $margin_zero;
-		padding: 100px 20px;
-		font-size: 0;
-		text-align: left;
-
-		.tv {
-			display: none;
-		}
-
-		.tv-shadow {
-			width: 708/1140 * 100%;
-			display: inline-block;
-			vertical-align: middle;
-		}
-
-		.wrapper-info-content {
-			width: 432/1140 * 100%;
-			display: inline-block;
-			vertical-align: middle;
-		}
-
-		.line-long {
-			display: inline-block;
-		}
-
-		.skill {
-			list-style: none;
-		}
-
-		.subject-text {
-			font-size: $font_size_paragraph_high;
-		}
-
-		.text-about-them,
-		.name-skill {
-			font-size: $fs_18;
-		}
-
-		.description-skill {
-			font-size: $fs_16;
-		}
-
-	}
-}
-
-@media screen and (min-width: 1200px) {
-	.info {
-		padding: 90px 0 51px;
-
-		.wrapper-tv-content {
+	@media screen and (min-width: 992px) {
+			width: 100%;
 			margin: $margin_zero;
-			max-width: 1080px;
-		}
+			padding: 100px 20px;
+			font-size: 0;
+			text-align: left;
 
-		.tv-shadow {
-			margin: 10px 0 0;
-		}
+			.tv {
+				display: none;
+			}
 
-		.wrapper-info-content {
-			max-width: 405px;
-			vertical-align: top;
-		}
+			.tv-shadow {
+				width: 708/1140 * 100%;
+				margin: 20px -10px -20px 0;
+				display: inline-block;
+				vertical-align: top;
+			}
 
-		.subject-text {
-			padding: 0;
-		}
+			.wrapper-info-content {
+				width: 432/1140 * 100%;
+				display: inline-block;
+				vertical-align: top;
+			}
 
-		.title-normal-black {
-			font-size: $font_size_title_medium;
-		}
+			.line-long {
+				display: inline-block;
+			}
 
-		.title-bold-black {
-			font-size: $font_size_title_medium;
-		}
+			.skill {
+				list-style: none;
+			}
 
-		.text-about-them {
-			margin: 30px 0 0;
-			font-size: $fs_16;
-		}
+			.subject-text {
+				font-size: $font_size_paragraph_high;
+			}
 
-		.list-skills {
-			margin: 50px 0 0;
-		}
+			.text-about-them,
+			.name-skill {
+				font-size: $fs_18;
+			}
 
-		.our-work {
-			margin: 50px 0 0;
-		}
+			.description-skill {
+				font-size: $fs_16;
+			}
 	}
-}
 
-// не выраванивается телек с текстом, не удается сделать элементы
-// нужного размера
+	@media screen and (min-width: 1200px) {
+			padding: 90px 0 10px;
+
+			.wrapper-tv-content {
+				margin: $margin_zero;
+				max-width: 1080px;
+			}
+
+			.tv-shadow {
+				margin: 8px -10px 0 0;
+			}
+
+			.wrapper-info-content {
+				max-width: 405px;
+			}
+
+			.subject-text {
+				padding: 0;
+			}
+
+			.title-normal-black {
+				font-size: $font_size_title_medium;
+			}
+
+			.title-bold-black {
+				font-size: $font_size_title_medium;
+			}
+
+			.text-about-them {
+				margin: 25px 0 0;
+				font-size: $fs_16;
+			}
+
+			.list-skills {
+				margin: 45px 0 0;
+			}
+
+			.our-work {
+				margin: 45px 0 0;
+			}
+		}
+}

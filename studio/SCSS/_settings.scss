@@ -28,9 +28,11 @@ $black_version: #222222;
 $key_color_fonts: #999;
 $additional_color: #fcac45;
 $grey: #292929;
+
 // margin-padding
 $margin_top_mobile: 10px 0 0;
 $margin_zero: 0 auto;
+
 // font-size
 $font_size_title: 25px;
 $font_size_title_medium: 34px;
@@ -48,7 +50,6 @@ body,
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
 }
 
 p,
@@ -72,6 +73,7 @@ input {
 	min-width: 320px;
 	margin: 0 auto;
 }
+
 // title styles
 .title-normal {
 	font-size: $font_size_title;
@@ -98,13 +100,14 @@ input {
 	font-weight: 700;
 	color: $black_version;
 }
+
 // line styles
 .line-long {
 	width: 100px;
 	height: 3px;
 	margin: 10px auto 0;
 	background: $additional-color;
-	display: inline-block;
+	display: block;
 	}
 
 .line-short {
@@ -113,7 +116,7 @@ input {
 	margin: 10px auto 0;
 	opacity: 0.6;
 	background: $additional-color;
-	display: inline-block;
+	display: block;
 	}
 
 .squares {
@@ -158,6 +161,6 @@ input {
 	}
 
 	.line-long {
-		margin: 30px 0 0;
+		margin: 30px auto 0;
 	}
 }

@@ -19,7 +19,8 @@
 	}
 
 	.text-work {
-		margin: $margin_top_mobile;
+		max-width: 1140px;
+		margin: 10px 0 0;
 		font-size: 14px;
 	}
 
@@ -48,6 +49,7 @@
 	}
 
 	.wrapper-icon-work {
+		margin: $margin_top_mobile;
 		font-size: 0;
 		text-align: center;
 	}
@@ -103,7 +105,7 @@
 	@media screen and (min-width: 768px) {
 		.wrapper-icon-work {
 			max-width: 550px;
-			margin: auto;
+			margin: 10px auto 0;
 		}
 
 		.wrapper-img-and-info {
@@ -114,55 +116,59 @@
 	}
 
 	@media screen and (min-width: 992px) {
-		.work {
-			padding: 100px 15px;
+		padding: 100px 0 70px;
 
-			.text-work {
-				margin: 45px 0 0;
-			}
+		.text-work {
+			margin: 20px auto 0;
+		}
 
-			.wrapper-filters {
-				margin: 120px 0 0;
-			}
+		.wrapper-filters {
+			margin: 120px auto 0;
+			max-width: 1140px;
+		}
 
-			.filter {
-				float: left;
-				font-size: $fs_18;
-			}
+		.filter {
+			float: left;
+			font-size: $fs_18;
+		}
 
-			.sorting {
-				float: right;
-			}
+		.sorting {
+			float: right;
+		}
 
-			.switch {
-				font-size: $fs_18;
-			}
+		.switch {
+			font-size: $fs_18;
+		}
 
-			.switch:last-child {
-				border: 0;
-			}
+		.switch:last-child {
+			border: 0;
+		}
 
-			.wrapper-icon-work {
-				margin: 40px auto 0;
-			}
+		.wrapper-icon-work {
+			margin: 40px auto 0;
 		}
 	}
 
 	@media screen and (min-width: 1200px) {
-		.work {
 			.text-work,
 			.wrapper-filters {
 				width: 100%;
 				max-width: 1140px;
 				margin: 45px auto 0;
-				}
+			}
 
 			.wrapper-icon-work {
 				width: 100%;
 				max-width: 1140px;
 				margin: 45px auto 0;
 			}
-		}
+
+			.wrapper-img-and-info {
+				margin: 0 29px 30px 0;
+
+				&:nth-child(4n) {
+					margin: 0 0 30px 0;
+				}
+			}
 	}
 }
-
