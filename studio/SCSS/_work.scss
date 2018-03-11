@@ -25,12 +25,13 @@
 		padding: 0 10px 0 10px;
 		border-right: 1px solid $key-color-fonts;
 		font-size: 16px;
-		text-decoration: none;
-		color: $black_version;
-	}
+		color: $key_color_dark;
+		transition: color .4s;
 
-	.switch:hover {
-		font-weight: bold;
+		&:hover {
+			color: $black_version;
+
+		}
 	}
 
 	.wrapper-icon-work {
@@ -43,7 +44,8 @@
 		position: relative;
 		width: 263px;
 		height: 237px;
-		margin: 0 auto 20px;
+		margin: 0 10px 20px;
+		display: inline-block;
 
 		&:hover {
 			.icon-work {
@@ -103,6 +105,10 @@
 
 	@media screen and (min-width: 992px) {
 		padding: 100px 20px 70px;
+
+		.line-long {
+			margin: 27px auto 0;
+		}
 
 		.text-work {
 			margin: $margin_center;

@@ -71,7 +71,7 @@
 	}
 
 @media screen and (min-width: 992px) {
-		padding: 0 0 90px;
+		padding: 0 20px 90px;
 
 		.container-navigation {
 			max-width: 1160px;
@@ -99,6 +99,7 @@
 			display: inline-block;
 			border-bottom: 3px solid $grey;
 			padding: 0 10px 20px;
+			transition: color .4s linear, border .4s linear;
 
 			&:last-child {
 				margin: 0;

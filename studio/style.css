@@ -558,7 +558,7 @@ a {
     top: 36%; }
   @media screen and (min-width: 992px) {
     .header {
-      padding: 0 0 90px; }
+      padding: 0 20px 90px; }
       .header .container-navigation {
         max-width: 1160px;
         margin: 0 auto;
@@ -576,7 +576,8 @@ a {
         margin: 0 15px 0 0;
         display: inline-block;
         border-bottom: 3px solid #292929;
-        padding: 0 10px 20px; }
+        padding: 0 10px 20px;
+        transition: color .4s linear, border .4s linear; }
         .header .wrapper-paragraph:last-child {
           margin: 0; }
         .header .wrapper-paragraph:hover {
@@ -725,12 +726,12 @@ a {
     background: #d7d7d7;
     display: inline-block; }
   .invitation .surname {
-    margin: 20px 0 0;
+    margin: 16px 0 0;
     font-size: 18px;
     font-weight: 600;
     text-transform: capitalize; }
   .invitation .specialization {
-    margin: 20px 0 0;
+    margin: 6px 0 0;
     font-size: 16px;
     text-transform: capitalize; }
   .invitation .quote {
@@ -746,6 +747,8 @@ a {
   @media screen and (min-width: 992px) {
     .invitation {
       padding: 100px 0; }
+      .invitation .line-long {
+        margin: 27px auto 0; }
       .invitation .quote {
         width: 60%;
         display: inline-block; }
@@ -818,6 +821,8 @@ a {
   @media screen and (min-width: 992px) {
     .services {
       padding: 100px 20px; }
+      .services .line-long {
+        margin: 27px auto 0; }
       .services .text-services {
         margin: 40px 0 0; }
       .services .list-services {
@@ -851,6 +856,8 @@ a {
   @media screen and (min-width: 992px) {
     .clients {
       padding: 100px 0; }
+      .clients .line-long {
+        margin: 27px auto 0; }
       .clients .brand {
         margin: 100px 0 0; }
       .clients .name-brand {
@@ -885,10 +892,10 @@ a {
     padding: 0 10px 0 10px;
     border-right: 1px solid #999;
     font-size: 16px;
-    text-decoration: none;
-    color: #222222; }
-  .work .switch:hover {
-    font-weight: bold; }
+    color: #070707;
+    transition: color .4s; }
+    .work .switch:hover {
+      color: #222222; }
   .work .wrapper-icon-work {
     margin: 20px 0 0;
     font-size: 0;
@@ -897,7 +904,8 @@ a {
     position: relative;
     width: 263px;
     height: 237px;
-    margin: 0 auto 20px; }
+    margin: 0 10px 20px;
+    display: inline-block; }
     .work .wrapper-img-and-info:hover .icon-work {
       display: none; }
     .work .wrapper-img-and-info:hover .info-work {
@@ -937,6 +945,8 @@ a {
   @media screen and (min-width: 992px) {
     .work {
       padding: 100px 20px 70px; }
+      .work .line-long {
+        margin: 27px auto 0; }
       .work .text-work {
         margin: 20px auto 0; }
       .work .wrapper-filters {
@@ -988,6 +998,8 @@ a {
   @media screen and (min-width: 992px) {
     .testimonials {
       padding: 100px 20px; }
+      .testimonials .line-long {
+        margin: 27px auto 0; }
       .testimonials .testimonials-content {
         max-width: 930px;
         margin: 100px 0 0;
@@ -1052,6 +1064,8 @@ a {
   @media screen and (min-width: 992px) {
     .contacts {
       padding: 100px 20px; }
+      .contacts .line-long {
+        margin: 27px auto 0; }
       .contacts .content-contacts {
         max-width: 750px;
         margin: 40px 0 0;
@@ -1107,6 +1121,6 @@ a {
     .futer {
       max-width: 1160px;
       margin: 0 auto;
-      padding: 30px 10px; } }
+      padding: 30px 20px; } }
 
 /*# sourceMappingURL=style.css.map */
