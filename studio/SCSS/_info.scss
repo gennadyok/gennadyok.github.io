@@ -29,7 +29,7 @@
 	}
 
 	.text-about-them {
-		margin: 10px 0 0;
+		margin: $margin_top_mobile;
 		font-size: 18px;
 		line-height: 24px;
 		text-transform: none;
@@ -38,7 +38,7 @@
 
 	.list-skills,
 	.skill {
-		margin: 10px 0 0;
+		margin: $margin_top_mobile;
 	}
 
 	.empty-circle {

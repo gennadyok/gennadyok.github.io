@@ -50,6 +50,10 @@
 		display: block;
 	}
 
+	.greeting-text-bold {
+		font-weight: 700;
+	}
+
 	.pointer {
 		position: relative;
 		width: 50px;
@@ -66,10 +70,7 @@
 		top: 36%;
 	}
 
-}
-
 @media screen and (min-width: 992px) {
-	.header {
 		padding: 0 0 90px;
 
 		.container-navigation {

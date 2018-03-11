@@ -23,30 +23,26 @@
 			margin: 0;
 		}
 	}
-}
 
-@media screen and (min-width: 768px) {
-	.futer {
+	@media screen and (min-width: 768px) {
 		padding: 10px;
 		font-size: 0;
+
+		.copyright {
+			float: left;
+			margin: 0;
+			line-height: 33px;
+		}
+
+		.social {
+			float: right;
+			margin: 0;
+		}
 	}
 
-	.futer .copyright {
-		float: left;
-		margin: 0;
-		line-height: 33px;
-	}
-
-	.futer .social {
-		float: right;
-		margin: 0;
-	}
-}
-
-@media screen and (min-width: 992px) {
-	.futer {
-		max-width: 1160px;
-		margin: $margin_zero;
-		padding: 30px 10px;
+	@media screen and (min-width: 992px) {
+			max-width: 1160px;
+			margin: $margin_zero;
+			padding: 30px 10px;
 	}
 }

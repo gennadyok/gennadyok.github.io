@@ -5,7 +5,7 @@
 	.line-long {
 		width: 100px;
 		height: 3px;
-		margin: 10px auto 0;
+		margin: $margin_center;
 		background: $additional_color;
 	}
 
@@ -66,7 +66,6 @@
 	.squares-element:last-child {
 		margin: 0;
 	}
-}
 
 @media screen and (min-width: 576px) {
 	.wrapper-participant {
@@ -81,7 +80,6 @@
 }
 
 @media screen and (min-width: 992px) {
-	.invitation {
 		padding: 100px 0;
 	
 		.quote {
@@ -105,10 +103,9 @@
 			margin: 70px 0 0;
 		}
 	}
-}
 
 @media screen and (min-width: 1200px) {
-	.invitation {
+	
 		.wrapper-participant {
 			max-width: 1120px;
 			margin: 70px auto;

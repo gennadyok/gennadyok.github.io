@@ -1,6 +1,6 @@
 @font-face {
 	font-family: OpenSans;
-	// src: local(OpenSans), url(fonts/OpenSans.woff);
+	src: local(OpenSans), url(fonts/OpenSans.woff);
 	src: local(OpenSans-Regular), url(fonts/OpenSans-Regular.woff2);
 }
 
@@ -21,6 +21,7 @@
 	src: local(OpenSans-BoldItalic), url(fonts/OpenSans-BoldItalic.woff);
 	src: local(OpenSans-BoldItalic), url(fonts/OpenSans-BoldItalic.woff2);
 }
+
 // color
 $key_color_wihte: #fff;
 $key_color_dark: #070707;
@@ -31,6 +32,7 @@ $grey: #292929;
 
 // margin-padding
 $margin_top_mobile: 10px 0 0;
+$margin_center: 10px auto 0;
 $margin_zero: 0 auto;
 
 // font-size

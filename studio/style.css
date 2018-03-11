@@ -391,6 +391,7 @@ template {
 
 @font-face {
   font-family: OpenSans;
+  src: local(OpenSans), url(fonts/OpenSans.woff);
   src: local(OpenSans-Regular), url(fonts/OpenSans-Regular.woff2); }
 @font-face {
   font-family: OpenSans-Bold;
@@ -538,6 +539,8 @@ input {
     padding: 10px 0 0;
     color: #999;
     display: block; }
+  .header .greeting-text-bold {
+    font-weight: 700; }
   .header .pointer {
     position: relative;
     width: 50px;
@@ -550,47 +553,47 @@ input {
     position: absolute;
     left: 40%;
     top: 36%; }
+  @media screen and (min-width: 992px) {
+    .header {
+      padding: 0 0 90px; }
+      .header .container-navigation {
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 0 10px; }
+      .header .agency-name {
+        float: left;
+        margin: 55px 0 0; }
+      .header .hamburger-menu {
+        display: none; }
+      .header .menu {
+        float: right;
+        margin: 55px 0 0;
+        display: inline-block; }
+      .header .wrapper-paragraph {
+        margin: 0 15px 0 0;
+        display: inline-block;
+        border-bottom: 3px solid #292929;
+        padding: 0 10px 20px; }
+        .header .wrapper-paragraph:last-child {
+          margin: 0; }
+        .header .wrapper-paragraph:hover {
+          border-bottom: 3px solid #fcac45; }
+      .header .name-paragraph {
+        width: 100%;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #fff; }
+      .header .greeting-and-spirit8 {
+        margin: 200px 0 0; }
+      .header .greeting {
+        font-size: 44px; }
+      .header .greeting-spirit8 {
+        font-size: 44px; }
+      .header .greeting-text {
+        font-size: 20px; }
+      .header .pointer {
+        margin: 280px 0 0; } }
 
-@media screen and (min-width: 992px) {
-  .header {
-    padding: 0 0 90px; }
-    .header .container-navigation {
-      max-width: 1160px;
-      margin: 0 auto;
-      padding: 0 10px; }
-    .header .agency-name {
-      float: left;
-      margin: 55px 0 0; }
-    .header .hamburger-menu {
-      display: none; }
-    .header .menu {
-      float: right;
-      margin: 55px 0 0;
-      display: inline-block; }
-    .header .wrapper-paragraph {
-      margin: 0 15px 0 0;
-      display: inline-block;
-      border-bottom: 3px solid #292929;
-      padding: 0 10px 20px; }
-      .header .wrapper-paragraph:last-child {
-        margin: 0; }
-      .header .wrapper-paragraph:hover {
-        border-bottom: 3px solid #fcac45; }
-    .header .name-paragraph {
-      width: 100%;
-      font-size: 14px;
-      text-transform: uppercase;
-      color: #fff; }
-    .header .greeting-and-spirit8 {
-      margin: 200px 0 0; }
-    .header .greeting {
-      font-size: 44px; }
-    .header .greeting-spirit8 {
-      font-size: 44px; }
-    .header .greeting-text {
-      font-size: 20px; }
-    .header .pointer {
-      margin: 280px 0 0; } }
 .info {
   padding: 10px;
   text-align: center;
@@ -755,46 +758,45 @@ input {
     display: inline-block; }
   .invitation .squares-element:last-child {
     margin: 0; }
-
-@media screen and (min-width: 576px) {
-  .wrapper-participant {
-    margin: -25px 0 0; }
-
-  .participant {
-    width: 45%;
-    padding: 5px;
-    display: inline-block; } }
-@media screen and (min-width: 992px) {
-  .invitation {
-    padding: 100px 0; }
-    .invitation .quote {
-      width: 60%;
-      display: inline-block; }
+  @media screen and (min-width: 576px) {
     .invitation .wrapper-participant {
-      margin: 70px 0; }
+      margin: -25px 0 0; }
     .invitation .participant {
-      padding: 10px; }
-    .invitation .circle {
-      margin: 0; }
-    .invitation .squares {
-      margin: 70px 0 0; } }
-@media screen and (min-width: 1200px) {
-  .invitation .wrapper-participant {
-    max-width: 1120px;
-    margin: 70px auto;
-    font-size: 0; }
-  .invitation .participant {
-    width: 21.875%;
-    padding: 0; }
-    .invitation .participant:not(:last-of-type) {
-      margin: 0 40px 0 0; }
-  .invitation .surname {
-    margin: 20px 0 0; }
-  .invitation .specialization {
-    margin: 7px 0 0; }
-  .invitation .quote {
-    width: 100%;
-    margin: 32px 0 0; } }
+      width: 45%;
+      padding: 5px;
+      display: inline-block; } }
+  @media screen and (min-width: 992px) {
+    .invitation {
+      padding: 100px 0; }
+      .invitation .quote {
+        width: 60%;
+        display: inline-block; }
+      .invitation .wrapper-participant {
+        margin: 70px 0; }
+      .invitation .participant {
+        padding: 10px; }
+      .invitation .circle {
+        margin: 0; }
+      .invitation .squares {
+        margin: 70px 0 0; } }
+  @media screen and (min-width: 1200px) {
+    .invitation .wrapper-participant {
+      max-width: 1120px;
+      margin: 70px auto;
+      font-size: 0; }
+    .invitation .participant {
+      width: 21.875%;
+      padding: 0; }
+      .invitation .participant:not(:last-of-type) {
+        margin: 0 40px 0 0; }
+    .invitation .surname {
+      margin: 20px 0 0; }
+    .invitation .specialization {
+      margin: 7px 0 0; }
+    .invitation .quote {
+      width: 100%;
+      margin: 32px 0 0; } }
+
 .services {
   padding: 10px;
   text-align: center;
@@ -961,7 +963,8 @@ input {
     color: #999;
     display: inline-block; }
   .work .plus {
-    margin: 10px 0 0; }
+    margin: 10px auto 0;
+    display: block; }
   @media screen and (min-width: 768px) {
     .work .wrapper-icon-work {
       max-width: 550px;
@@ -972,7 +975,7 @@ input {
       vertical-align: middle; } }
   @media screen and (min-width: 992px) {
     .work {
-      padding: 100px 0 70px; }
+      padding: 100px 10px 70px; }
       .work .text-work {
         margin: 20px auto 0; }
       .work .wrapper-filters {
@@ -1125,24 +1128,21 @@ input {
     margin: 0 15px 0 0; }
     .futer .icon-social:last-child {
       margin: 0; }
-
-@media screen and (min-width: 768px) {
-  .futer {
-    padding: 10px;
-    font-size: 0; }
-
-  .futer .copyright {
-    float: left;
-    margin: 0;
-    line-height: 33px; }
-
-  .futer .social {
-    float: right;
-    margin: 0; } }
-@media screen and (min-width: 992px) {
-  .futer {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 30px 10px; } }
+  @media screen and (min-width: 768px) {
+    .futer {
+      padding: 10px;
+      font-size: 0; }
+      .futer .copyright {
+        float: left;
+        margin: 0;
+        line-height: 33px; }
+      .futer .social {
+        float: right;
+        margin: 0; } }
+  @media screen and (min-width: 992px) {
+    .futer {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 30px 10px; } }
 
 /*# sourceMappingURL=style.css.map */
