@@ -1,21 +1,6 @@
 .invitation {
-	padding: 10px;
+	padding: $padding_blocks;
 	text-align: center;
-
-	.line-long {
-		width: 100px;
-		height: 3px;
-		margin: $margin_center;
-		background: $additional_color;
-	}
-
-	.line-short {
-		width: 65px;
-		height: 3px;
-		margin: 10px auto 0;
-		opacity: 0.6;
-		background: $additional_color;
-	}
 
 	.circle {
 		width: 125px;
@@ -44,32 +29,9 @@
 		font-size: 13px;
 	}
 
-	.squares {
-		margin: $margin_top_mobile;
-		font-size: 0;
-		list-style-type: none;
-	}
-
-	.squares-element {
-		width: 9px;
-		height: 9px;
-		margin: 0 9px 0 0;
-		background: $key_color_wihte;
-		display: inline-block;
-	}
-
-	.squares-element.is-active {
-		background: $additional_color;
-		display: inline-block;
-	}
-
-	.squares-element:last-child {
-		margin: 0;
-	}
-
 @media screen and (min-width: 576px) {
 	.wrapper-participant {
-		margin: -25px 0 0;
+		margin: 25px 0 0;
 	}
 
 	.participant {
@@ -92,7 +54,7 @@
 		}
 
 		.participant {
-			padding: 10px;
+			padding: $padding_blocks;
 		}
 
 		.circle {

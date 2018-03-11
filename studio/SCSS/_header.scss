@@ -1,6 +1,6 @@
 .header {
 	width: 100%;
-	padding: 15px 15px 15px;
+	padding: $padding_blocks;
 	text-align: center;
 
 	.agency-name {
@@ -45,7 +45,7 @@
 
 	.greeting-text {
 		font-size: 13px;
-		padding: 10px 0 0;
+		padding: $margin_top_mobile;
 		color: $key_color_fonts;
 		display: block;
 	}
@@ -58,7 +58,7 @@
 		position: relative;
 		width: 50px;
 		height: 50px;
-		margin: 10px 0 0;
+		margin: $margin_top_mobile;
 		border: 2px solid $key_color_fonts;
 		border-radius: 50%;
 		display: inline-block;

@@ -1,26 +1,11 @@
 .work {
-	padding: 10px;
+	padding: $padding_blocks;
 	text-align: center;
 	background: $key_color_wihte;
 
-	.line-long {
-		width: 100px;
-		height: 3px;
-		margin: $margin_center;
-		background: $additional-color;
-	}
-
-	.line-short {
-		width: 65px;
-		height: 3px;
-		margin: $margin_center;
-		opacity: 0.6;
-		background: $additional_color;
-	}
-
 	.text-work {
 		max-width: 1140px;
-		margin: 10px 0 0;
+		margin: $margin_top_mobile;
 		font-size: 14px;
 	}
 
@@ -58,7 +43,7 @@
 		position: relative;
 		width: 263px;
 		height: 237px;
-		margin: 0 auto 10px;
+		margin: 0 auto 20px;
 
 		&:hover {
 			.icon-work {
@@ -105,22 +90,22 @@
 
 	@media screen and (min-width: 768px) {
 		.wrapper-icon-work {
-			max-width: 550px;
+			max-width: 575px;
 			margin: $margin_center;
 		}
 
 		.wrapper-img-and-info {
-			margin: 0 5px 10px;
+			margin: 0 10px 20px;
 			display: inline-block;
 			vertical-align: middle;
 		}
 	}
 
 	@media screen and (min-width: 992px) {
-		padding: 100px 10px 70px;
+		padding: 100px 20px 70px;
 
 		.text-work {
-			margin: 20px auto 0;
+			margin: $margin_center;
 		}
 
 		.wrapper-filters {

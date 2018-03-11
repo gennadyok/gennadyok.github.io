@@ -1,11 +1,10 @@
 .clients {
-
-	padding: 10px;
+	padding: $padding_blocks;
 	text-align: center;
 	background: $key_color_dark;
 
 	.name-brand {
-		margin: 10px 5px 0 5px;
+		margin: 20px 5px 0 5px;
 	}
 
 	@media screen and (min-width: 992px) {

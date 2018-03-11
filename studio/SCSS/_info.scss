@@ -1,5 +1,5 @@
 .info {
-	padding: 10px;
+	padding: $padding_blocks;
 	text-align: center;
 	background: $key_color_wihte;
 
@@ -14,7 +14,7 @@
 	}
 
 	.subject-text {
-		padding: 10px 0 0;
+		padding: $margin_top_mobile;
 		font-size: 25px;
 		text-transform: uppercase;
 		line-height: 35px;
@@ -24,7 +24,7 @@
 	.line-long {
 		width: 100px;
 		height: 3px;
-		margin: 5px auto 0;
+		margin: $margin_center;
 		background: $additional_color;
 	}
 
@@ -38,7 +38,8 @@
 
 	.list-skills,
 	.skill {
-		margin: $margin_top_mobile;
+		margin: 21px 0 0;
+		list-style: none;
 	}
 
 	.empty-circle {
@@ -97,7 +98,7 @@
 
 			.tv-shadow {
 				width: 708/1140 * 100%;
-				margin: 20px -10px -20px 0;
+				margin: 30px -10px -20px 0;
 				display: inline-block;
 				vertical-align: top;
 			}
@@ -110,10 +111,6 @@
 
 			.line-long {
 				display: inline-block;
-			}
-
-			.skill {
-				list-style: none;
 			}
 
 			.subject-text {
@@ -131,11 +128,11 @@
 	}
 
 	@media screen and (min-width: 1200px) {
-			padding: 90px 0 10px;
+			padding: 90px 0 5px;
 
 			.wrapper-tv-content {
 				margin: $margin_zero;
-				max-width: 1080px;
+				max-width: 1140px;
 			}
 
 			.tv-shadow {
@@ -144,6 +141,10 @@
 
 			.wrapper-info-content {
 				max-width: 405px;
+			}
+
+			.line-long {
+				margin: 5px auto 0;
 			}
 
 			.subject-text {

@@ -1,6 +1,10 @@
 .testimonials {
-	padding: 10px;
+	padding: $padding_blocks;
 	text-align: center;
+
+	.title-normal {
+		font-weight: 500;
+	}
 
 	.testimonials-content {
 		margin: $margin_top_mobile;
@@ -21,7 +25,7 @@
 	}
 
 	@media screen and (min-width: 992px) {
-		padding: 100px 15px;
+		padding: 100px 20px;
 
 		.testimonials-content {
 			max-width: 930px;

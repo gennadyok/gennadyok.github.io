@@ -1,5 +1,5 @@
 .services {
-	padding: 10px;
+	padding: $padding_blocks;
 	text-align: center;
 	background: $key_color_wihte;
 
@@ -10,16 +10,8 @@
 		background: $additional_color;
 	}
 
-	.line-short {
-		width: 65px;
-		height: 3px;
-		margin: $margin_center;
-		opacity: 0.6;
-		background: $additional_color
-	}
-
 	.text-services {
-		padding: 10px 0 0;
+		padding: $margin_top_mobile;
 		font-size: 14px;
 		font-style: italic;
 		display: inline-block;
@@ -63,7 +55,7 @@
 	}
 
 	@media screen and (min-width: 992px) {
-		padding: 100px 15px;
+		padding: 100px 20px;
 
 		.text-services {
 			margin: 40px 0 0;
