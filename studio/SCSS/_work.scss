@@ -25,7 +25,7 @@
 		padding: 0 10px 0 10px;
 		border-right: 1px solid $key-color-fonts;
 		font-size: 16px;
-		color: $key_color_dark;
+		color: $key_color_fonts;
 		transition: color .4s;
 
 		&:hover {
@@ -45,15 +45,16 @@
 		width: 263px;
 		height: 237px;
 		margin: 0 10px 20px;
+		background: $black_version;
 		display: inline-block;
-
+		
 		&:hover {
 			.icon-work {
-			display: none;
+				opacity: 0;
 		}
 		
 			.info-work {
-			display: block;
+				opacity: 1;
 			}
 		}
 	}
@@ -64,9 +65,10 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
+		opacity: 0;
 		text-align: center;
 		background: $black_version;
-		display: none;
+		transition: opacity .4s linear;
 	}
 
 	.fashion {
