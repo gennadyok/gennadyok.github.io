@@ -518,7 +518,8 @@ a {
     color: #999; }
   .header .hamburger-menu {
     float: left;
-    width: 30px; }
+    width: 30px;
+    margin: 6px 0 0; }
   .header .line-hamburger {
     height: 3px;
     margin: 0 0 3px;
