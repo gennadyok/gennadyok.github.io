@@ -47,6 +47,7 @@
 		margin: 0 10px 20px;
 		background: $black_version;
 		display: inline-block;
+		transition: transform .4s linear;
 		
 		&:hover {
 			.icon-work {
@@ -55,6 +56,10 @@
 		
 			.info-work {
 				opacity: 1;
+			}
+
+			.wrapper-info-work-content {
+				transform: translate(0,0);
 			}
 		}
 	}
@@ -69,7 +74,11 @@
 		text-align: center;
 		background: $black_version;
 		transition: opacity .4s linear;
-		
+	}
+
+	.wrapper-info-work-content {
+		transform: translate(0,30px);
+		transition: transform .4s linear;
 	}
 
 	.fashion {

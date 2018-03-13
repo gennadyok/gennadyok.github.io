@@ -907,11 +907,14 @@ a {
     height: 237px;
     margin: 0 10px 20px;
     background: #222222;
-    display: inline-block; }
+    display: inline-block;
+    transition: transform .4s linear; }
     .work .wrapper-img-and-info:hover .icon-work {
       opacity: 0; }
     .work .wrapper-img-and-info:hover .info-work {
       opacity: 1; }
+    .work .wrapper-img-and-info:hover .wrapper-info-work-content {
+      transform: translate(0, 0); }
   .work .info-work {
     position: absolute;
     top: 0;
@@ -922,6 +925,9 @@ a {
     text-align: center;
     background: #222222;
     transition: opacity .4s linear; }
+  .work .wrapper-info-work-content {
+    transform: translate(0, 30px);
+    transition: transform .4s linear; }
   .work .fashion {
     font-size: 18px;
     margin: 70px 0 0;
