@@ -55,6 +55,7 @@
 
 			.wrapper-info-work-content {
 				transform: translate(0,0);
+				visibility: visible;
 			}
 		}
 	}
@@ -68,12 +69,13 @@
 		opacity: 0;
 		text-align: center;
 		background: $black_version;
-		transition: opacity .4s linear;
+		transition: opacity .2s linear;
 	}
 
 	.wrapper-info-work-content {
+		visibility: hidden;
 		transform: translate(0,30px);
-		transition: opacity .4s linear, transform .4s linear;
+		transition: opacity .2s linear, transform .2s linear, visibility .2s linear;
 	}
 
 	.fashion {
