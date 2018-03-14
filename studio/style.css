@@ -908,15 +908,10 @@ a {
     margin: 0 10px 20px;
     background: #222222;
     display: inline-block; }
-    .work .wrapper-img-and-info:hover .icon-work {
-      opacity: 0; }
     .work .wrapper-img-and-info:hover .info-work {
       opacity: 1; }
     .work .wrapper-img-and-info:hover .wrapper-info-work-content {
       transform: translate(0, 0); }
-  .work .icon-work {
-    opacity: 1;
-    transition: opacity .6s linear; }
   .work .info-work {
     position: absolute;
     top: 0;
@@ -926,10 +921,10 @@ a {
     opacity: 0;
     text-align: center;
     background: #222222;
-    transition: opacity .6s linear; }
+    transition: opacity .4s linear; }
   .work .wrapper-info-work-content {
     transform: translate(0, 30px);
-    transition: opacity .6s linear, transform .6s linear; }
+    transition: opacity .4s linear, transform .4s linear; }
   .work .fashion {
     font-size: 18px;
     margin: 70px 0 0;

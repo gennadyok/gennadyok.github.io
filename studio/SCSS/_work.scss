@@ -49,10 +49,6 @@
 		display: inline-block;
 		
 		&:hover {
-			.icon-work {
-				opacity: 0;
-		}
-		
 			.info-work {
 				opacity: 1;
 			}
@@ -61,11 +57,6 @@
 				transform: translate(0,0);
 			}
 		}
-	}
-
-	.icon-work {
-		opacity: 1;
-		transition: opacity .6s linear;
 	}
 	
 	.info-work {
@@ -77,12 +68,12 @@
 		opacity: 0;
 		text-align: center;
 		background: $black_version;
-		transition: opacity .6s linear;
+		transition: opacity .4s linear;
 	}
 
 	.wrapper-info-work-content {
 		transform: translate(0,30px);
-		transition: opacity .6s linear, transform .6s linear;
+		transition: opacity .4s linear, transform .4s linear;
 	}
 
 	.fashion {
