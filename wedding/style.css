@@ -464,6 +464,7 @@ input {
 
 .badge {
 	float: left;
+	padding: 0 0 0 5px;
 	font-size: 12px;
 	text-transform: capitalize;
 	color: #c2c2c2;
@@ -471,6 +472,7 @@ input {
 
 .template {
 	float: right;
+	padding: 0 5px 0 0;
 	font-size: 12px;
 	text-transform: capitalize;
 	color: #c2c2c2;
@@ -650,8 +652,9 @@ input {
 		line-height: 25px;
 	}
 
-	.badge
+	.badge,
 	.template {
 		float: none;
+		padding: 0;
 	}
 }
