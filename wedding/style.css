@@ -110,12 +110,14 @@ input {
 	color: #c2c2c2;
 	background: #1f1f1f;
 }
+
 .button-search {
 	padding: 0 10px;
 	border: 0;
 	font-size: 12px;
 	text-transform: uppercase;
 	background: #d24260;
+	cursor: pointer;
 }
 /*End Header*/
 
@@ -210,7 +212,7 @@ input {
 
 .sign {
 	padding: 0 35px 0 0;
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 23px;
 	color: #c2c2c2;
 }
@@ -243,7 +245,6 @@ input {
 }
 
 .wrap-title-text-gallery {
-	border-bottom: 1px solid #ebebeb;
 	display: inline-block;
 }
 
@@ -270,13 +271,17 @@ input {
 }
 
 .button-gallery {
-	margin: 30px 0 40px;
-	text-align: center;
+	max-width: 915px;
+	margin: 30px auto 0;
+	padding: 0 0 40px;
+	border-bottom: 1px solid #ebebeb;
+	display: block;
 }
 
 .text-button {
 	width: 330px;
 	height: 45px;
+	margin: 0 auto 0;
 	border-radius: 8px;
 	text-align: center;
 	text-decoration: none;
@@ -285,7 +290,7 @@ input {
 	line-height: 46px;
 	text-transform: uppercase;
 	color: #fff;
-	display: inline-block;
+	display: block;
 	background: #d24260;
 }
 
@@ -553,7 +558,7 @@ input {
 	}
 
 	.sign {
-		font-size: 10px;
+		font-size: 12px;
 		line-height: 18px;
 	}
 
@@ -572,7 +577,7 @@ input {
 
 	.text-title {
 		font-size: 42px;
-		line-height: 38px;
+		line-height: 50px;
 		margin: 15px;
 	}
 
