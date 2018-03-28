@@ -1,0 +1,77 @@
+@font-face {
+	font-family: Arial;
+	src: local(Arial), url(fonts/Arial.woff);
+	src: local(Arial), url(fonts/Arial.woff2);
+}
+
+@font-face {
+	font-family: Arial-Bold;
+	src: local(Arial-Bold), url(fonts/Arial-Bold.woff);
+	src: local(Arial-Bold), url(fonts/Arial-Bold.woff2);
+}
+
+@font-face {
+	font-family: Arial-Italic;
+	src: local(Arial-Italic), url(fonts/Arial-Italic.woff);
+	src: local(Arial-Italic), url(fonts/Arial-Italic.woff2);
+}
+
+@font-face {
+	font-family: Arial-BoldItalic;
+	src: local(Arial-BoldItalic), url(fonts/Arial-BoldItalic.woff);
+	src: local(Arial-BoldItalic), url(fonts/Arial-BoldItalic.woff2);
+}
+
+@font-face {
+	font-family: "Century Gothic";
+	src: local("Century Gothic"), url(fonts/"Century Gothic.woff");
+	src: local("Century Gothic"), url(fonts/"Century Gothic.woff2");
+}
+
+// color
+$key_clr: #105a8f;
+$border_clr: #d3d3d3;
+$dark: #333;
+
+// margin-padding
+
+// font-size
+$fs_13: 13px;
+$fs_18: 18px;
+
+body,
+.header {
+	background: #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+p,
+a,
+div,
+body,
+button,
+input {
+	font-family: Arial, OpenSans, Georgia, Arial, Times New Roman;
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+	width: 100%;
+	min-width: 400px;
+	margin: 0 auto;
+}

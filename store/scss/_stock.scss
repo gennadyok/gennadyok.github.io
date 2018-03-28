@@ -1,0 +1,59 @@
+.stock {
+	width: 580px;
+	margin: 50px auto 0;
+
+	.title-stock {
+		font-size: 18px;
+		font-weight: 900;
+		font-style: italic;
+		color: red;
+	}
+
+	.proposition-stock {
+		margin: 20px 0 0;
+		height: 50px;
+		display: flex;
+		align-items: center;
+	}
+
+	.icon-proposition {
+		display: inline-block;
+	}
+
+	.text-proposition {
+		margin: 0 0 0 25px;
+		font-size: 14px;
+		display: inline-block;
+	}
+
+	.link-proposition {
+		color: $key_clr;
+		border-bottom: 1px solid $key_clr;
+		transition: color .4s linear;
+
+		&:hover {
+			color: #6640c7;
+			border-bottom: 1px solid #6640c7;
+		}
+	}
+
+	.button-stock {
+		width: 120px;
+		height: 25px;
+		margin: 25px 0 0;
+		border: 1px solid $border_clr;
+		border-radius: 5px;
+		cursor: pointer;
+		background: #fff;
+		transform: skew(-20deg);
+	}
+
+	.all-stock {
+		font-size: 15px;
+		font-weight: 700;
+		color: $key_clr;
+		border-bottom: 2px solid $key_clr;
+		display: inline-block;
+		transform: skew(20deg);
+	}
+}
