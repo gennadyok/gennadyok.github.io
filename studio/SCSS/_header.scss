@@ -95,7 +95,7 @@
 
 		.agency-name {
 			float: left;
-			margin: 55px 0 0;
+			margin: 52px 0 0;
 		}
 
 		.hamburger-menu {
@@ -104,30 +104,28 @@
 
 		.menu {
 			float: right;
-			margin: 55px 0 0;
+			margin: 35px 15px 0 0;
 			display: inline-block;
 		}
 
 		.wrapper-paragraph {
-			margin: 0 15px 0 0;
 			display: inline-block;
-			border-bottom: 3px solid $grey;
-			padding: 0 10px 20px;
-			transition: color .4s linear, border .4s linear;
+			padding: 0 4px 0;
+		}
 
-			&:last-child {
-				margin: 0;
-			}
+		.name-paragraph {
+			padding: 0 8px 0;
+			font-size: 14px;
+			line-height: 55px;
+			border-bottom: 3px solid $grey;
+			text-transform: uppercase;
+			color: $key_color_wihte;
+			display: inline-block;
+			transition: color .4s linear, border .4s linear;
 
 			&:hover {
 				border-bottom: 3px solid $additional_color;
 			}
-		}
-
-		.name-paragraph {
-			font-size: 14px;
-			text-transform: uppercase;
-			color: $key_color_wihte;
 		}
 
 		.greeting-and-spirit8 {

@@ -45,6 +45,7 @@
 	.empty-circle {
 		width: 3px;
 		height: 3px;
+		margin: 0 0 0 4px;
 		padding: 3px;
 		border-radius: 100%;
 		box-shadow: 0 0 0 3px $key_color_wihte, 0 0 0 5px $key_color_fonts;
@@ -54,7 +55,7 @@
 	}
 
 	.name-skill {
-		margin: 0 0 0 10px;
+		margin: 0 0 0 15px;
 		font-size: 18px;
 		font-weight: 600;
 		vertical-align: middle;
@@ -118,6 +119,15 @@
 				font-size: $font_size_paragraph_high;
 			}
 
+			.title-normal-black {
+				margin: 0 0 0 -2px;
+				font-size: $font_size_title_medium;
+			}
+
+			.title-bold-black {
+				font-size: $font_size_title_medium;
+			}
+
 			.text-about-them,
 			.name-skill {
 				font-size: $fs_18;
@@ -141,7 +151,7 @@
 			}
 
 			.wrapper-info-content {
-				max-width: 405px;
+				max-width: 417px;
 			}
 
 			.line-long {
@@ -152,21 +162,13 @@
 				padding: 0;
 			}
 
-			.title-normal-black {
-				font-size: $font_size_title_medium;
-			}
-
-			.title-bold-black {
-				font-size: $font_size_title_medium;
-			}
-
 			.text-about-them {
 				margin: 25px 0 0;
 				font-size: $fs_16;
 			}
 
 			.list-skills {
-				margin: 45px 0 0;
+				margin: 44px 0 0;
 			}
 
 			.our-work {

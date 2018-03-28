@@ -576,27 +576,27 @@ a {
         padding: 0 10px; }
       .header .agency-name {
         float: left;
-        margin: 55px 0 0; }
+        margin: 52px 0 0; }
       .header .hamburger-menu {
         display: none; }
       .header .menu {
         float: right;
-        margin: 55px 0 0;
+        margin: 35px 15px 0 0;
         display: inline-block; }
       .header .wrapper-paragraph {
-        margin: 0 15px 0 0;
         display: inline-block;
-        border-bottom: 3px solid #292929;
-        padding: 0 10px 20px;
-        transition: color .4s linear, border .4s linear; }
-        .header .wrapper-paragraph:last-child {
-          margin: 0; }
-        .header .wrapper-paragraph:hover {
-          border-bottom: 3px solid #fcac45; }
+        padding: 0 4px 0; }
       .header .name-paragraph {
+        padding: 0 8px 0;
         font-size: 14px;
+        line-height: 55px;
+        border-bottom: 3px solid #292929;
         text-transform: uppercase;
-        color: #fff; }
+        color: #fff;
+        display: inline-block;
+        transition: color .4s linear, border .4s linear; }
+        .header .name-paragraph:hover {
+          border-bottom: 3px solid #fcac45; }
       .header .greeting-and-spirit8 {
         margin: 200px auto 0; }
       .header .greeting {
@@ -642,6 +642,7 @@ a {
   .info .empty-circle {
     width: 3px;
     height: 3px;
+    margin: 0 0 0 4px;
     padding: 3px;
     border-radius: 100%;
     box-shadow: 0 0 0 3px #fff, 0 0 0 5px #999;
@@ -649,7 +650,7 @@ a {
     display: inline-block;
     vertical-align: middle; }
   .info .name-skill {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 15px;
     font-size: 18px;
     font-weight: 600;
     vertical-align: middle; }
@@ -695,6 +696,11 @@ a {
         display: inline-block; }
       .info .subject-text {
         font-size: 20px; }
+      .info .title-normal-black {
+        margin: 0 0 0 -2px;
+        font-size: 34px; }
+      .info .title-bold-black {
+        font-size: 34px; }
       .info .text-about-them,
       .info .name-skill {
         font-size: 18px; }
@@ -709,20 +715,16 @@ a {
       .info .tv-shadow {
         margin: 8px -10px 0 0; }
       .info .wrapper-info-content {
-        max-width: 405px; }
+        max-width: 417px; }
       .info .line-long {
         margin: 5px auto 0; }
       .info .subject-text {
         padding: 0; }
-      .info .title-normal-black {
-        font-size: 34px; }
-      .info .title-bold-black {
-        font-size: 34px; }
       .info .text-about-them {
         margin: 25px 0 0;
         font-size: 16px; }
       .info .list-skills {
-        margin: 45px 0 0; }
+        margin: 44px 0 0; }
       .info .our-work {
         margin: 45px 0 0; } }
 
