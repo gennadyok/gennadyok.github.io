@@ -1,0 +1,70 @@
+.propositions {
+	width: 577px;
+	height: 380px;
+	margin: 35px auto 0;
+	border: 1px solid $key_clr;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	.product {
+		display: flex;
+		flex-flow: column;
+	}
+
+	.img-sticker-product {
+		position: relative;
+		width: 155px;
+		height: 125px;
+	}
+
+	.gift {
+		position: absolute;
+		top: -15px;
+		left: -10px;
+	}
+
+	.description-gift {
+		width: 190px;
+		margin: 5px 0 0;
+		font-size: $fs_13;
+		color: red;
+		display: block;
+	}
+
+	.name-link-product {
+		margin: 6px 0 0;
+		font-size: $fs_13;
+		text-decoration: underline;
+		color: $key_clr;
+		display: inline-block;
+	}
+
+	.price-list {
+		width: 130px;
+		height: 25px;
+		margin: 10px 0 0;
+		border: 2px solid $border_clr;
+		border-radius: 5px;
+		transform: skew(-20deg);
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.cash {
+		font-weight: 700;
+	}
+
+	.basket-propositions {
+		transform: skew(20deg);
+	}
+
+	.price-dollar {
+		margin: 5px 0 0 15px;
+		font-size: 14px;
+		color: green;
+	}
+}
