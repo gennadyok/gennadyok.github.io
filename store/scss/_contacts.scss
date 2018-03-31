@@ -23,11 +23,11 @@
 	}
 
 	.address {
-		font-size: 15px;
+		font-size: 13px;
 	}
 
 	.call-back-phone {
-		font-size: 30px;
+		font-size: 24px;
 		font-weight: 700;
 	}
 
@@ -41,10 +41,10 @@
 	}
 
 	.link-feedback {
-		font-size: 15px;
+		font-size: 13px;
 		font-weight: 500;
 		color: $key_clr;
-		border-bottom: 1px solid $key_clr;
+		border-bottom: 1px dashed $key_clr;
 		display: inline-block;
 	}
 }

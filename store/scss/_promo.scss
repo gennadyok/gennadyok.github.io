@@ -31,6 +31,25 @@
 		display: inline-block;
 	}
 
+	.gallery-decisions {
+		margin: 12px 0 0;
+		display: inline-block;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.batton-gallery-decisions {
+		width: 276px;
+		height: 46px;
+		background: url("img/batton-gradient.png") no-repeat;
+		font-family: "Century Gothic";
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 43px;
+		color: #ffffff;
+		display: inline-block;
+	}
+
 	.wrapper-list-nomber-promo {
 		position: absolute;
 		top: 235px;
@@ -39,19 +58,42 @@
 	}
 
 	.list-nomber-promo {
-		text-align: center;
-		list-style: none;
-		display: inline-block;
+		width: 112px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
 	}
 
 	.nomber-promo {
-		width: 18px;
-		height: 24px;
+		width: 20px;
+		height: 26px;
 		border-radius: 5px;
-		font-size: 12px;
-		background: $key_clr;
+		text-align: center;
+		font-size: 13px;
+		text-shadow: 0 1px 0 rgba(5, 6, 6, 0.3);
+		background: #689cbe;
 		line-height: 25px;
 		color: #fff;
+		display: inline-block;
+	}
+
+	.nomber-promo-align {
+		margin: 2px 0 0;
+		display: inline-block;
+	}
+
+	.is-active {
+		width: 20px;
+		height: 26px;
+		border: 2px solid #689cbe;
+		border-top: 0;
+		border-radius: 0 0 5px 5px;
+		text-align: center;
+		font-size: 13px;
+		text-shadow: 0 1px 0 #ffffff;
+		background: #fff;
+		line-height: 25px;
+		color: $red;
 		display: inline-block;
 	}
 }

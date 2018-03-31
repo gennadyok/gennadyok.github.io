@@ -3,7 +3,7 @@
 	margin: 50px auto 0;
 
 	.title-stock {
-		font-size: 18px;
+		font-size: 25px;
 		font-weight: 900;
 		font-style: italic;
 		color: red;
@@ -16,13 +16,21 @@
 		align-items: center;
 	}
 
-	.icon-proposition {
-		display: inline-block;
+	.icon-proposition-kaspersky {
+		margin: 0 32px 0 0;
 	}
 
+	.icon-proposition-abbyy {
+		margin: 0 20px 0 0;
+	}
+
+	.icon-proposition-microsoft {
+		margin: 0 18px 0 0;
+	}
+
+
 	.text-proposition {
-		margin: 0 0 0 25px;
-		font-size: 14px;
+		line-height: 20px;
 		display: inline-block;
 	}
 
@@ -38,21 +46,34 @@
 	}
 
 	.button-stock {
-		width: 120px;
-		height: 25px;
+		width: 122px;
+		height: 27px;
 		margin: 25px 0 0;
 		border: 1px solid $border_clr;
 		border-radius: 5px;
 		cursor: pointer;
 		background: #fff;
+		background-image: linear-gradient(to top, #ffffff 0%, #eceded 37%, #ffffff 100%);
 		transform: skew(-20deg);
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
 	}
 
 	.all-stock {
+		margin: 0 0 3px 0;
+		border-bottom: 2px solid $key_clr;
 		font-size: 15px;
 		font-weight: 700;
+		text-shadow: 0 1px 0 #ffffff;
 		color: $key_clr;
-		border-bottom: 2px solid $key_clr;
+		display: inline-block;
+		transform: skew(20deg);
+	}
+
+	.all-stock-run {
+		width: 19px;
+		height: 11px;
 		display: inline-block;
 		transform: skew(20deg);
 	}

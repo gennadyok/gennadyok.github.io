@@ -1,12 +1,72 @@
 .propositions {
 	width: 577px;
-	height: 380px;
 	margin: 35px auto 0;
-	border: 1px solid $key_clr;
 	border-radius: 5px;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+
+	.wrapper-tab-propositions {
+		background: #fff;
+		display: inline-block;
+	}
+
+	.border-tab-propositions {
+		position: relative;
+		border-left: 1px solid $key_clr;
+		border-top: 1px solid $key_clr;
+		border-right: 1px solid $key_clr;
+		border-radius: 5px 5px 0 0;
+	}
+
+	.tab-propositions-active {
+		width: 267px;
+		height: 56px;
+		background-color: #ffffff;
+		background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, #b9b9b9 40%, #f5f4f4 95%, #ffffff 100%);
+		opacity: 0.3;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.tab-content-active {
+		position: absolute;
+		top: 14px;
+		left: 14px;
+		font-size: 20px;
+		font-style: italic;
+		letter-spacing: -0.5px;
+		color: #d10000;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.77);
+	}
+
+	.tab-propositions {
+		width: 267px;
+		height: 56px;
+		background-color: #ffffff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		display: none;
+	}
+
+	.tab-content {
+		font-size: 18px;
+		font-style: italic;
+		letter-spacing: -0.45px;
+		color: #105a8f;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.77);
+		border-bottom: 1px dashed $key_clr;
+		color: $key_clr;
+	}
+
+	.wrapper-product {
+		height: 332px;
+		margin: -4px 0 0 0;
+		border: 1px solid $key_clr;
+		border-radius: 0 5px 5px 5px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 
 	.product {
 		display: flex;

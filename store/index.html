@@ -19,10 +19,12 @@
 						<a href="#" class="call-back">Обратный звонок</a>
 					</div>
 
-					<form class="search">
-						<input type="text" class="search-text" placeholder="Поиск">
-						<button class="search-button">&crarr;</button>
-					</form>
+					<div class="search">
+						<form class="form-search">
+							<input type="text" class="search-text" placeholder="Поиск">
+							<button class="search-button"><img src="img/shape.png" alt="" class="img-search-button"></button>
+						</form>
+					</div>
 				</div>
 			</div>
 			
@@ -34,6 +36,8 @@
 						<img src="img/basket.png" alt="basket" class="img-basket">
 						<select name="sale" id="basket" class="basket">
 							<option value="Корзина" class="basket-text">Корзина</option>
+							<option value="Корзина" class="basket-text">Товар1</option>
+							<option value="Корзина" class="basket-text">Товар2</option>
 						</select>	
 					</div>
 				</div>
@@ -52,8 +56,8 @@
 					<button class="gamburger-menu">
 						<div class="line-gamburger"></div>
 						<div class="line-gamburger"></div>
-						<div class="line-gamburger"></button>
-					</div>
+						<div class="line-gamburger"></div>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -63,17 +67,17 @@
 			<div class="block-promo">
 				<span class="title-promo">Инновационные решения Cisco Catalyst Switches</span>
 				<span class="content-promos">Постройте свою безграничную сеть с уникальным предложением безопасных и надежных решений</span>
-				<a href="#" class="gallery-decisions"></a>
+				<a href="#" class="gallery-decisions"><batton class="batton-gallery-decisions">Ознакомиться с решением</batton></a>
 				
 			</div>
 			
 			<div class="wrapper-list-nomber-promo">
 				<ul class="list-nomber-promo">
-					<li class="nomber-promo">1</li>
-					<li class="nomber-promo is-active">2</li>
-					<li class="nomber-promo">3</li>
-					<li class="nomber-promo">4</li>
-					<li class="nomber-promo">5</li>
+					<li class="nomber-promo"><span class="nomber-promo-align">1</span></li>
+					<li class="nomber-promo is-active"><span class="nomber-promo-align">2</span></li>
+					<li class="nomber-promo"><span class="nomber-promo-align">3</span></li>
+					<li class="nomber-promo"><span class="nomber-promo-align">4</span></li>
+					<li class="nomber-promo"><span class="nomber-promo-align">5</span></li>
 				</ul>
 			</div>
 		</div>
@@ -83,54 +87,66 @@
 			<span class="title-stock">Акции</span>
 
 			<div class="proposition-stock">
-				<img src="img/kaspersky.png" alt="" class="icon-proposition">
+				<img src="img/kaspersky.png" alt="kaspersky" class="icon-proposition-kaspersky">
 
 				<span class="text-proposition"><a href="#" class="link-proposition">Коробочные продукты "Лаборатории Касперского"</a> без увеличения стоимости!</span>
 			</div>
 
 			<div class="proposition-stock">
-				<img src="img/abbyy.png" alt="" class="icon-proposition">
+				<img src="img/abbyy.png" alt="abbyy" class="icon-proposition-abbyy">
 
 				<span class="text-proposition"><a href="#" class="link-proposition">Специальные цены на ABBYY FineReader </a>10 Professional Edition!</span>
 			</div>
 
 			<div class="proposition-stock">
-				<img src="img/microsoft.png" alt="" class="icon-proposition">
+				<img src="img/microsoft.png" alt="microsoft" class="icon-proposition-microsoft">
 
 				<span class="text-proposition"><a href="#" class="link-proposition">Скидка до 80% на программные продукты </a>Microsoft для академических пользователей и научных учреждений</span>
 			</div>
 
-			<button class="button-stock"><div class="wrapper-all-stock"><a href="#" class="all-stock">Все акции &#8594;</a></div></button>
+			<button class="button-stock"><a href="#" class="all-stock">Все акции</a><img src="img/all-stock-run.png" alt="" class="all-stock-run"></button>
 		</div>
 		<!-- end stock -->
 
 		<div class="propositions">
-			<div class="product">
-				<div class="img-sticker-product">
-					<img src="img/book.png" alt="product" class="img-product">
-					<img src="img/gift.png" alt="gift" class="gift">
+			<div class="wrapper-tab-propositions">
+				<div class="border-tab-propositions">
+					<div class="tab-propositions-active"></div>
+					<span class="tab-content-active">Спецпредложения</span>
 				</div>
+				<div class="tab-propositions"><span class="tab-content">Бестселлеры</span></div>
+				<div class="tab-propositions"><span class="tab-content">Новинки</span></div>
+				<div class="tab-propositions"><span class="tab-content">Скоро в продаже</span></div>
+			</div>
+			
+			<div class="wrapper-product">
+				<div class="product">
+					<div class="img-sticker-product">
+						<img src="img/book.png" alt="product" class="img-product">
+						<img src="img/gift.png" alt="gift" class="gift">
+					</div>
 
-				<span class="description-gift">+ в подарок мышка и стильная сумка</span>
-				<a href="#" class="name-link-product">Asus ee PC 1015PE White</a>
+					<span class="description-gift">+ в подарок мышка и стильная сумка</span>
+					<a href="#" class="name-link-product">Asus ee PC 1015PE White</a>
 
-				<button class="price-list"><span class="cash">6 257 грн </span><img src="img/basket.png" alt="basket" class="basket-propositions"></button>
+					<button class="price-list"><span class="cash">6 257 грн </span><img src="img/basket.png" alt="basket" class="basket-propositions"></button>
 
-				<span class="price-dollar">756 $</span>
+					<span class="price-dollar">756 $</span>
 				</div>
 
 				<div class="product">
 					<div class="img-sticker-product">
 					<img src="img/book.png" alt="product" class="img-product">
 					<img src="img/gift.png" alt="gift" class="gift">
+					</div>
+
+					<span class="description-gift">+ в подарок мышка и стильная сумка</span>
+					<a href="#" class="name-link-product">Asus ee PC 1015PE White</a>
+
+					<button class="price-list"><span class="cash">6 257 грн </span><img src="img/basket.png" alt="basket" class="basket-propositions"></button>
+
+					<span class="price-dollar">756 $</span>
 				</div>
-
-				<span class="description-gift">+ в подарок мышка и стильная сумка</span>
-				<a href="#" class="name-link-product">Asus ee PC 1015PE White</a>
-
-				<button class="price-list"><span class="cash">6 257 грн </span><img src="img/basket.png" alt="basket" class="basket-propositions"></button>
-
-				<span class="price-dollar">756 $</span>
 			</div>
 		</div>
 		<!-- end proposition -->
