@@ -28,6 +28,12 @@
 	src: local("Century Gothic"), url(fonts/"Century Gothic.woff2");
 }
 
+@font-face {
+	font-family: Arial Black;
+	src: local("Arial Black"), url(fonts/"Arial Black.woff");
+	src: local("Arial Black"), url(fonts/"Arial Black.woff2");
+}
+
 // color
 $key_clr: #105a8f;
 $border_clr: #d3d3d3;
@@ -76,4 +82,33 @@ a {
 	width: 100%;
 	min-width: 400px;
 	margin: 0 auto;
+}
+
+.gamburger-menu {
+	float: right;
+	width: 28px;
+	height: 23px;
+	margin: 5px 15px 0 0;
+	padding: 4px 3px;
+	border: 1px solid $dark;
+	border-radius: 5px;
+	background: #fff;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+
+.line-gamburger {
+	width: 15px;
+	height: 3px;
+	background: $border_clr;
+}
+
+.all-stock-run {
+	width: 19px;
+	height: 11px;
+	display: inline-block;
+	transform: skew(20deg);
 }

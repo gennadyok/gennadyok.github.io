@@ -5,6 +5,7 @@
 	.solution {
 		float: left;
 		max-width: 272px;
+		font-size: 15px;
 		font-style: italic;
 		font-weight: 700;
 		display: inline-block;
@@ -15,20 +16,45 @@
 		width: 200px;
 		height: 25px;
 		margin: 5px 0 0;
-		border: 2px solid $border_clr;
+		border: 1px solid #e4e4e4;
 		border-radius: 5px;
 		transform: skew(-20deg);
 		cursor: pointer;
-		background: #fff;
+		background-image: linear-gradient(to top, #ffffff 0%, #eceded 37%, #ffffff 100%);
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
 	}
 
 	.all-brand {
+		border-bottom: 2px solid $key_clr;
+		margin: 0 0 3px 0;
+		text-shadow: 0 1px 0 #ffffff;
+		color: $key_clr;
 		font-size: 15px;
 		font-weight: 700;
-		color: $key_clr;
-		border-bottom: 1px solid $key_clr;
 		display: inline-block;
 		transform: skew(20deg);
+	}
+
+	.table-brand {
+		margin: 5px 0 0;
+	}
+
+	.block-name-brand {
+		width: 288px;
+		height: 128px;
+		background: url("img/line-grey.png") repeat;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: wrap;
+	}
+
+	.wrapper-name-brand {
+		width: 144px;
+		display: flex;
+		justify-content: center;
 	}
 
 	.wrapper-list-link-brand {

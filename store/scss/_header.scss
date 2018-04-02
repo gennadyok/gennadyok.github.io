@@ -129,26 +129,4 @@
 		font-size: $fs_18;
 		font-weight: 700;
 	}
-
-	.gamburger-menu {
-		float: right;
-		width: 25px;
-		height: 25px;
-		margin: 5px 15px 0 0;
-		padding: 4px 3px;
-		border: 1px solid $dark;
-		border-radius: 5px;
-		background: #fff;
-		display: flex;
-		flex-flow: column;
-		justify-content: space-between;
-		align-items: center;
-		cursor: pointer;
-	}
-
-	.line-gamburger {
-		width: 15px;
-		height: 3px;
-		background: $border_clr;
-	}
 }

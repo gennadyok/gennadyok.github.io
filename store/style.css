@@ -18,6 +18,10 @@
   font-family: "Century Gothic";
   src: local("Century Gothic"), url(fonts/"Century Gothic.woff");
   src: local("Century Gothic"), url(fonts/"Century Gothic.woff2"); }
+@font-face {
+  font-family: Arial Black;
+  src: local("Arial Black"), url(fonts/"Arial Black.woff");
+  src: local("Arial Black"), url(fonts/"Arial Black.woff2"); }
 body,
 .header {
   background: #fff; }
@@ -49,6 +53,32 @@ a {
   width: 100%;
   min-width: 400px;
   margin: 0 auto; }
+
+.gamburger-menu {
+  float: right;
+  width: 28px;
+  height: 23px;
+  margin: 5px 15px 0 0;
+  padding: 4px 3px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: #fff;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer; }
+
+.line-gamburger {
+  width: 15px;
+  height: 3px;
+  background: #d3d3d3; }
+
+.all-stock-run {
+  width: 19px;
+  height: 11px;
+  display: inline-block;
+  transform: skew(20deg); }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -538,24 +568,6 @@ template {
     border: 1px solid #333;
     font-size: 18px;
     font-weight: 700; }
-  .header .gamburger-menu {
-    float: right;
-    width: 25px;
-    height: 25px;
-    margin: 5px 15px 0 0;
-    padding: 4px 3px;
-    border: 1px solid #333;
-    border-radius: 5px;
-    background: #fff;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer; }
-  .header .line-gamburger {
-    width: 15px;
-    height: 3px;
-    background: #d3d3d3; }
 
 .stock {
   width: 580px;
@@ -606,11 +618,6 @@ template {
     font-weight: 700;
     text-shadow: 0 1px 0 #ffffff;
     color: #105a8f;
-    display: inline-block;
-    transform: skew(20deg); }
-  .stock .all-stock-run {
-    width: 19px;
-    height: 11px;
     display: inline-block;
     transform: skew(20deg); }
 
@@ -743,6 +750,7 @@ template {
   .propositions .tab-content {
     position: relative;
     z-index: 2;
+    font-family: Arial Black;
     font-size: 20px;
     font-style: italic;
     letter-spacing: -0.45px;
@@ -750,6 +758,10 @@ template {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.77);
     border-bottom: 1px dashed #105a8f;
     color: #105a8f; }
+  .propositions .gamburger-menu {
+    position: relative;
+    z-index: 3;
+    margin: 0 0 0 15px; }
   .propositions .wrapper-product {
     height: 332px;
     border: 1px solid #105a8f;
@@ -768,11 +780,21 @@ template {
     position: absolute;
     top: -15px;
     left: -10px; }
+  .propositions .gift-text {
+    position: absolute;
+    top: -2px;
+    left: -10px;
+    text-shadow: 0 -1px 0 rgba(5, 6, 6, 0.5);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    font-style: italic;
+    transform: rotate(-15deg); }
   .propositions .description-gift {
     width: 190px;
     margin: 5px 0 0;
     font-size: 13px;
-    color: red;
+    color: #d10000;
     display: block; }
   .propositions .name-link-product {
     margin: 6px 0 0;
@@ -781,24 +803,31 @@ template {
     color: #105a8f;
     display: inline-block; }
   .propositions .price-list {
-    width: 130px;
-    height: 25px;
+    width: 133px;
+    height: 27px;
     margin: 10px 0 0;
-    border: 2px solid #d3d3d3;
+    border: 1px solid #e4e4e4;
     border-radius: 5px;
+    background-image: linear-gradient(to top, #ffffff 0%, #eceded 37%, #ffffff 100%);
     transform: skew(-20deg);
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-evenly; }
   .propositions .cash {
+    font-size: 18px;
+    font-family: Arial Black; }
+  .propositions .cash-uan {
+    font-size: 13px;
     font-weight: 700; }
   .propositions .basket-propositions {
+    width: 17px;
+    height: 18px;
     transform: skew(20deg); }
   .propositions .price-dollar {
     margin: 5px 0 0 15px;
-    font-size: 14px;
-    color: green; }
+    font-size: 11px;
+    color: #5c9559; }
   @media screen and (min-width: 1000px) {
     .propositions .tab-propositions {
       display: block; } }
@@ -809,6 +838,7 @@ template {
   .brand .solution {
     float: left;
     max-width: 272px;
+    font-size: 15px;
     font-style: italic;
     font-weight: 700;
     display: inline-block; }
@@ -817,18 +847,37 @@ template {
     width: 200px;
     height: 25px;
     margin: 5px 0 0;
-    border: 2px solid #d3d3d3;
+    border: 1px solid #e4e4e4;
     border-radius: 5px;
     transform: skew(-20deg);
     cursor: pointer;
-    background: #fff; }
+    background-image: linear-gradient(to top, #ffffff 0%, #eceded 37%, #ffffff 100%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
   .brand .all-brand {
+    border-bottom: 2px solid #105a8f;
+    margin: 0 0 3px 0;
+    text-shadow: 0 1px 0 #ffffff;
+    color: #105a8f;
     font-size: 15px;
     font-weight: 700;
-    color: #105a8f;
-    border-bottom: 1px solid #105a8f;
     display: inline-block;
     transform: skew(20deg); }
+  .brand .table-brand {
+    margin: 5px 0 0; }
+  .brand .block-name-brand {
+    width: 288px;
+    height: 128px;
+    background: url("img/line-grey.png") repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap; }
+  .brand .wrapper-name-brand {
+    width: 144px;
+    display: flex;
+    justify-content: center; }
   .brand .wrapper-list-link-brand {
     margin: 25px 0 0;
     display: flex;
@@ -874,5 +923,8 @@ template {
     color: #105a8f;
     border-bottom: 1px dashed #105a8f;
     display: inline-block; }
+
+.articles {
+  display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
