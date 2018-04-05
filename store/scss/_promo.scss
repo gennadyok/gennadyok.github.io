@@ -59,9 +59,9 @@
 
 	.list-nomber-promo {
 		width: 112px;
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
+		@include flexbox;
+		@include justify-content(space-evenly);
+		@include align-items(center);
 	}
 
 	.nomber-promo {

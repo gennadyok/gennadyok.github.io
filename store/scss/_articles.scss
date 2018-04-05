@@ -25,9 +25,9 @@
 		transform: skew(-20deg);
 		cursor: pointer;
 		background-image: linear-gradient(to top, #ffffff 0%, #eceded 37%, #ffffff 100%);
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
+		@include flexbox;
+		@include justify-content(space-evenly);
+		@include align-items(center);
 	}
 
 	.all-brand {

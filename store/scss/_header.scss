@@ -93,9 +93,9 @@
 		margin: 8px 0 0;
 		border: 1px solid $border_clr;
 		border-radius: 5px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@include flexbox;
+		@include justify-content(center);
+		@include align-items(center);
 	}
 
 	.basket {

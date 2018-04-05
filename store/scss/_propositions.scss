@@ -5,7 +5,7 @@
 
 	.wrapper-tab-propositions {
 		background: #fff;
-		display: flex;
+		@include flexbox;
 	}
 
 	.tab-propositions {
@@ -23,9 +23,9 @@
 		&.is-active {
 			border: 1px solid $key_clr;
 			border-bottom: 0;
-			display: flex;
-		    justify-content: center;
-		    align-items: center;
+			@include flexbox;
+		    @include justify-content(center);
+		    @include align-items(center);
 
 			.tab-gradient,
 			.tab-empty-block {
@@ -85,9 +85,9 @@
 		height: 332px;
 		border: 1px solid $key_clr;
 		border-radius: 0 5px 5px 5px;
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
+		@include flexbox;
+		@include justify-content(space-evenly);
+		@include align-items(center)
 	}
 
 	.product {
@@ -144,9 +144,9 @@
 		background-image: linear-gradient(to top, #ffffff 0%, #eceded 37%, #ffffff 100%);
 		transform: skew(-20deg);
 		cursor: pointer;
-		display: flex;
-		align-items: center;
-		justify-content: space-evenly;
+		@include flexbox;
+		@include justify-content(space-evenly);
+		@include align-items(center)
 	}
 
 	.cash {

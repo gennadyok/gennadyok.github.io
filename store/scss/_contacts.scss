@@ -62,9 +62,9 @@
 		transform: skew(-20deg);
 		cursor: pointer;
 		background-image: linear-gradient(to top, #ffffff 0%, #eceded 37%, #ffffff 100%);
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
+		@include flexbox;
+		@include justify-content(space-evenly);
+		@include align-items(center);
 	}
 
 	.form-feedback {
@@ -118,12 +118,13 @@
 
 	.wrapper-social {
 		margin: 49px 0 0;
+		@include flexbox;
 	}
 
 	.icon-social-name-social {
 		margin: 0 0 0 39px;
-		display: inline-flex;
-		align-items: center;
+		@include flexbox;
+		@include align-items(center);
 
 		&:nth-child(1) {
 			margin: 0;

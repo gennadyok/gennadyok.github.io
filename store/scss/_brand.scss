@@ -21,9 +21,9 @@
 		transform: skew(-20deg);
 		cursor: pointer;
 		background-image: linear-gradient(to top, #ffffff 0%, #eceded 37%, #ffffff 100%);
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
+		@include flexbox;
+		@include justify-content(space-evenly);
+		@include align-items(center)
 	}
 
 	.all-brand {
@@ -39,19 +39,19 @@
 
 	.table-brand {
 		margin: 5px 0 0;
-		display: inline-flex;
-		justify-content: center;
-		flex-flow: wrap;
+		@include flexbox;
+		@include justify-content(center);
+		@include flex-flow(wrap);
 	}
 
 	.block-name-brand {
 		width: 289px;
 		height: 128px;
 		background: url("img/line-grey.png") repeat;
-		display: inline-flex;
-		justify-content: center;
-		align-items: center;
-		flex-flow: wrap;
+		@include flexbox;
+		@include justify-content(center);
+		@include align-items(center);
+		@include flex-flow(wrap);
 
 		&:nth-child(even) {
 		border-left: 1px solid;
@@ -61,14 +61,14 @@
 
 	.wrapper-name-brand {
 		width: 144px;
-		display: flex;
-		justify-content: center;
+		@include flexbox;
+		@include justify-content(center);
 	}
 
 	.wrapper-list-link-brand {
 		margin: 25px 0 0;
-		display: flex;
-		justify-content: space-between;
+		@include flexbox;
+		@include justify-content(space-between);
 	}
 
 	.list-link-brand {

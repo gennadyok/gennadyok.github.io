@@ -13,7 +13,7 @@
 		margin: 20px 0 0;
 		height: 50px;
 		display: flex;
-		align-items: center;
+		@include align-items(center);
 	}
 
 	.icon-proposition-kaspersky {
@@ -55,9 +55,9 @@
 		background: #fff;
 		background-image: linear-gradient(to top, #ffffff 0%, #eceded 37%, #ffffff 100%);
 		transform: skew(-20deg);
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
+		@include flexbox;
+		@include justify-content(space-evenly);
+		@include align-items(center);
 	}
 
 	.all-stock {
