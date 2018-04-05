@@ -1,5 +1,4 @@
 .stock {
-	width: 580px;
 	margin: 50px auto 0;
 
 	.title-stock {
@@ -69,5 +68,9 @@
 		color: $key_clr;
 		display: inline-block;
 		transform: skew(20deg);
+	}
+
+	@media screen and (min-width: 600px) {
+		width: 580px;
 	}
 }

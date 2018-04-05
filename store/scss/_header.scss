@@ -114,7 +114,6 @@
 	.menu-site {
 		height: 35px;
 		margin: 12px 0 0;
-		width: 583px;
 		border-radius: 5px;
 		display: inline-block;
 		background: $key_clr;
@@ -129,4 +128,10 @@
 		font-size: $fs_18;
 		font-weight: 700;
 	}
+
+	@media screen and (min-width: 600px) {
+			.menu-site {
+				width: 583px;
+			}
+		}
 }

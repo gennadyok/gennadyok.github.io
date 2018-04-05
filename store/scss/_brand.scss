@@ -1,6 +1,5 @@
 .brand {
 	margin: 45px auto 0;
-	max-width: 585px;
 
 	.solution {
 		float: left;
@@ -82,5 +81,9 @@
 		color: $key_clr;
 		border-bottom: 1px solid $key_clr;
 		display: inline-block;
+	}
+
+	@media screen and (min-width: 600px) {
+		max-width: 585px;
 	}
 }

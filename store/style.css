@@ -568,7 +568,6 @@ template {
   .header .menu-site {
     height: 35px;
     margin: 12px 0 0;
-    width: 583px;
     border-radius: 5px;
     display: inline-block;
     background: #105a8f; }
@@ -580,9 +579,11 @@ template {
     border: 1px solid #333;
     font-size: 18px;
     font-weight: 700; }
+  @media screen and (min-width: 600px) {
+    .header .menu-site {
+      width: 583px; } }
 
 .stock {
-  width: 580px;
   margin: 50px auto 0; }
   .stock .title-stock {
     font-size: 25px;
@@ -648,6 +649,9 @@ template {
     color: #105a8f;
     display: inline-block;
     transform: skew(20deg); }
+  @media screen and (min-width: 600px) {
+    .stock {
+      width: 580px; } }
 
 .promo {
   position: relative;
@@ -655,7 +659,6 @@ template {
   margin: 10px auto 0;
   text-align: center; }
   .promo .block-promo {
-    width: 580px;
     height: 248px;
     padding: 15px 40px 0;
     text-align: left;
@@ -739,9 +742,11 @@ template {
     line-height: 25px;
     color: #d10000;
     display: inline-block; }
+  @media screen and (min-width: 600px) {
+    .promo .block-promo {
+      width: 580px; } }
 
 .propositions {
-  width: 577px;
   margin: 35px auto 0;
   border-radius: 5px; }
   .propositions .wrapper-tab-propositions {
@@ -908,13 +913,15 @@ template {
     margin: 5px 0 0 15px;
     font-size: 11px;
     color: #5c9559; }
+  @media screen and (min-width: 600px) {
+    .propositions {
+      width: 577px; } }
   @media screen and (min-width: 1000px) {
     .propositions .tab-propositions {
       display: block; } }
 
 .brand {
-  margin: 45px auto 0;
-  max-width: 585px; }
+  margin: 45px auto 0; }
   .brand .solution {
     float: left;
     max-width: 272px;
@@ -1031,6 +1038,9 @@ template {
     color: #105a8f;
     border-bottom: 1px solid #105a8f;
     display: inline-block; }
+  @media screen and (min-width: 600px) {
+    .brand {
+      max-width: 585px; } }
 
 .contacts {
   max-width: 585px;
@@ -1150,7 +1160,6 @@ template {
     text-decoration: underline; }
 
 .articles {
-  width: 577px;
   margin: 44px auto 0;
   border-top: 1px solid grey; }
   .articles .wrapper-title-all-articles {
@@ -1220,6 +1229,9 @@ template {
     margin: 14px 0 0;
     line-height: 20px;
     display: inline-block; }
+  @media screen and (min-width: 600px) {
+    .articles {
+      width: 577px; } }
 
 .futer {
   margin: 30px 0 0;
