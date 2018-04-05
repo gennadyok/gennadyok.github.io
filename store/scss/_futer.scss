@@ -1,0 +1,31 @@
+.futer {
+	margin: 30px 0 0;
+	text-align: center;
+
+	.logo-owox {
+		margin: 2px 0 0;
+		vertical-align: top;
+	}
+
+	.about-developer {
+		width: 193px;
+		margin: 0 0 0 4px;
+		font-size: 11px;
+		line-height: 15px;
+		text-align: left;
+		display: inline-block;
+	}
+
+	.link-developer {
+		font-size: 11px;
+		line-height: 15px;
+		color: #0066aa;
+		text-decoration: underline;
+	}
+	
+	.year {
+		font-size: 11px;
+		color: #999;
+		display: inline-block;
+	}
+}

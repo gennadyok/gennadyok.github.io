@@ -865,15 +865,21 @@ template {
     display: inline-block;
     transform: skew(20deg); }
   .brand .table-brand {
-    margin: 5px 0 0; }
+    margin: 5px 0 0;
+    display: inline-flex;
+    justify-content: center;
+    flex-flow: wrap; }
   .brand .block-name-brand {
-    width: 288px;
+    width: 289px;
     height: 128px;
     background: url("img/line-grey.png") repeat;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     flex-flow: wrap; }
+    .brand .block-name-brand:nth-child(even) {
+      border-left: 1px solid;
+      border-image: linear-gradient(rgba(0, 0, 0, 0), grey, rgba(0, 0, 0, 0)) 1 10%; }
   .brand .wrapper-name-brand {
     width: 144px;
     display: flex;
@@ -894,7 +900,9 @@ template {
 
 .contacts {
   max-width: 585px;
-  margin: 23px auto 0; }
+  margin: 23px auto 0;
+  padding: 0 0 30px;
+  border-bottom: 1px solid grey; }
   .contacts .copyrite {
     display: block; }
   .contacts .link-divisions {
@@ -905,13 +913,12 @@ template {
     display: inline-block; }
   .contacts .wrapper-call-back-conditions {
     margin: 24px 0 0; }
-  .contacts .call-back-phone {
-    display: inline-block; }
   .contacts .address {
     font-size: 13px; }
   .contacts .call-back-phone {
     font-size: 24px;
-    font-weight: 700; }
+    font-weight: 700;
+    display: inline-block; }
   .contacts .wrapper-form-feedback-conditions {
     width: 49%;
     display: inline-block; }
@@ -925,7 +932,7 @@ template {
     display: inline-block; }
   .contacts .wrapper-form-feedback-conditions {
     width: 185px;
-    margin: 0 0 0 102px;
+    margin: 0 0 0 91px;
     vertical-align: top;
     display: inline-block; }
   .contacts .form-feedback-bottom {
@@ -947,16 +954,41 @@ template {
     display: inline-block;
     transform: skew(20deg); }
   .contacts .conditions {
-    margin: 17px 0 0;
+    margin: 16px 0 0;
+    text-decoration: underline;
     display: inline-block; }
   .contacts .wrapper-time-payment {
-    width: 192px;
     margin: 31px 0 0; }
+  .contacts .work-time {
+    width: 190px;
+    display: inline-block; }
   .contacts .day-time-bold {
     font-weight: 700; }
   .contacts .day-time {
-    margin: 13px 0 0;
+    margin: 7px 0 0;
     display: inline-block; }
+  .contacts .payment {
+    width: 220px;
+    margin: 0 0 0 80px;
+    vertical-align: super;
+    display: inline-block; }
+  .contacts .title-payment {
+    display: inline-block; }
+  .contacts .icon-payment {
+    margin: 8px 0 0;
+    display: inline-block; }
+  .contacts .wrapper-social {
+    margin: 49px 0 0; }
+  .contacts .icon-social-name-social {
+    margin: 0 0 0 39px;
+    display: inline-flex;
+    align-items: center; }
+    .contacts .icon-social-name-social:nth-child(1) {
+      margin: 0; }
+  .contacts .name-social {
+    margin: 0 0 0 3px;
+    color: #105a8f;
+    text-decoration: underline; }
 
 .articles {
   width: 577px;
@@ -1014,6 +1046,31 @@ template {
     border-bottom: 1px solid #105a8f;
     display: inline-block; }
   .articles .preview-content {
+    margin: 14px 0 0;
+    line-height: 20px;
+    display: inline-block; }
+
+.futer {
+  margin: 30px 0 0;
+  text-align: center; }
+  .futer .logo-owox {
+    margin: 2px 0 0;
+    vertical-align: top; }
+  .futer .about-developer {
+    width: 193px;
+    margin: 0 0 0 4px;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: left;
+    display: inline-block; }
+  .futer .link-developer {
+    font-size: 11px;
+    line-height: 15px;
+    color: #0066aa;
+    text-decoration: underline; }
+  .futer .year {
+    font-size: 11px;
+    color: #999;
     display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

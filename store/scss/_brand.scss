@@ -39,16 +39,24 @@
 
 	.table-brand {
 		margin: 5px 0 0;
+		display: inline-flex;
+		justify-content: center;
+		flex-flow: wrap;
 	}
 
 	.block-name-brand {
-		width: 288px;
+		width: 289px;
 		height: 128px;
 		background: url("img/line-grey.png") repeat;
-		display: flex;
+		display: inline-flex;
 		justify-content: center;
 		align-items: center;
 		flex-flow: wrap;
+
+		&:nth-child(even) {
+		border-left: 1px solid;
+        border-image: linear-gradient(rgba(0, 0, 0, 0), grey, rgba(0, 0, 0, 0)) 1 10%;
+		}
 	}
 
 	.wrapper-name-brand {
