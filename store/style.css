@@ -52,7 +52,8 @@ a {
 .wrapper {
   width: 100%;
   min-width: 400px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 10px 0; }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -448,8 +449,11 @@ template {
 .header {
   margin: 15px auto 0;
   text-align: center; }
+  .header .logo {
+    margin: 0 auto;
+    display: block; }
   .header .wrapper-call-search {
-    margin: 0 0 0 40px;
+    margin: 10px 0 0;
     vertical-align: top;
     display: inline-block; }
   .header .header-phone {
@@ -470,7 +474,7 @@ template {
     border: 1px solid #d3d3d3;
     border-radius: 5px 2px 5px 2px;
     transform: skew(-20deg);
-    margin: 15px 0 0;
+    margin: 15px auto 0;
     text-align: left; }
   .header .form-search {
     width: 100%;
@@ -496,23 +500,17 @@ template {
   .header .img-search-button {
     margin: 0 0 2px 0;
     transform: skew(20deg); }
-  .header .user-block {
-    margin: 0 0 0 35px;
-    vertical-align: top;
-    display: inline-block; }
   .header .enter {
-    text-align: left; }
+    margin: 10px 0 0; }
   .header .enter-link {
     vertical-align: text-top;
     font-size: 13px;
     border-bottom: 1px dashed #105a8f;
     color: #105a8f; }
-  .header .icon-user {
-    margin: 0 0 0 15px; }
   .header .sale-menu {
     width: 116px;
     height: 33px;
-    margin: 8px 0 0;
+    margin: 8px auto 0;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
     display: -webkit-box;
@@ -660,33 +658,29 @@ template {
       width: 580px; } }
 
 .promo {
-  position: relative;
   max-width: 585px;
   margin: 10px auto 0;
   text-align: center; }
-  .promo .block-promo {
-    height: 248px;
-    padding: 15px 0 0;
-    text-align: left;
+  .promo .wrapper-block-promo {
+    position: relative;
+    width: 100%;
     display: inline-block; }
   .promo .image-block-promo {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%; }
-  .promo .title-promo {
+  .promo .block-promo {
     position: absolute;
-    top: 11px;
-    left: 21px;
+    top: 0;
+    left: 0; }
+  .promo .title-promo {
     font-size: 25px;
     letter-spacing: -2px;
     font-family: Century Gothic;
     display: inline-block;
     color: #6640c7; }
   .promo .content-promos {
-    position: absolute;
-    top: 64px;
-    left: 22px;
     width: 220px;
     margin: 4px 0 0;
     font-size: 10px;
@@ -694,9 +688,6 @@ template {
     font-family: Century Gothic;
     display: inline-block; }
   .promo .gallery-decisions {
-    position: absolute;
-    top: 110px;
-    left: 21px;
     margin: 12px 0 0;
     display: inline-block;
     text-align: center;
@@ -711,10 +702,7 @@ template {
     color: #ffffff;
     display: inline-block; }
   .promo .wrapper-list-nomber-promo {
-    position: absolute;
-    top: 235px;
-    left: 8px;
-    text-align: left; }
+    display: inline-block; }
   .promo .list-nomber-promo {
     width: 112px;
     display: -webkit-box;

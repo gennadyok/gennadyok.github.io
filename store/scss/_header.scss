@@ -2,8 +2,13 @@
 	margin: 15px auto 0;
 	text-align: center;
 
+	.logo {
+		margin: 0 auto;
+		display: block;
+	}
+
 	.wrapper-call-search {
-		margin: 0 0 0 40px;
+		margin: 10px 0 0;
 		vertical-align: top;
 		display: inline-block;
 	}
@@ -30,7 +35,7 @@
 		border: 1px solid $border_clr;
 		border-radius: 5px 2px 5px 2px;
 		transform: skew(-20deg);
-		margin: 15px 0 0;
+		margin: 15px auto 0;
 		text-align: left;
 	}
 
@@ -66,14 +71,8 @@
 		transform: skew(20deg);
 	}
 
-	.user-block {
-		margin: 0 0 0 35px;
-		vertical-align: top;
-		display: inline-block;
-	}
-
 	.enter {
-		text-align: left;
+		margin: 10px 0 0;
 	}
 
 	.enter-link {
@@ -83,14 +82,10 @@
 		color: $key_clr;
 	}
 
-	.icon-user {
-		margin: 0 0 0 15px;
-	}
-
 	.sale-menu {
 		width: 116px;
 		height: 33px;
-		margin: 8px 0 0;
+		margin: 8px auto 0;
 		border: 1px solid $border_clr;
 		border-radius: 5px;
 		@include flexbox;
