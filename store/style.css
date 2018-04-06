@@ -54,32 +54,6 @@ a {
   min-width: 400px;
   margin: 0 auto; }
 
-.gamburger-menu {
-  float: right;
-  width: 28px;
-  height: 23px;
-  margin: 5px 15px 0 0;
-  padding: 4px 3px;
-  border: 1px solid #333;
-  border-radius: 5px;
-  background: #fff;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer; }
-
-.line-gamburger {
-  width: 15px;
-  height: 3px;
-  background: #d3d3d3; }
-
-.all-stock-run {
-  width: 19px;
-  height: 11px;
-  display: inline-block;
-  transform: skew(20deg); }
-
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -563,22 +537,54 @@ template {
     font-weight: 700;
     border-bottom: 1px dashed #105a8f;
     color: #105a8f; }
-  .header .wrapper-menu-site {
-    padding: 0 8px 0; }
   .header .menu-site {
+    width: 390px;
     height: 35px;
-    margin: 12px 0 0;
+    margin: 12px auto 0;
     border-radius: 5px;
-    display: inline-block;
-    background: #105a8f; }
+    background: #105a8f;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+    -moz-justify-content: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center; }
   .header .categories {
-    float: left;
     width: 300px;
     height: 25px;
-    margin: 5px 0 0 15px;
     border: 1px solid #333;
     font-size: 18px;
     font-weight: 700; }
+  .header .gamburger-menu {
+    width: 28px;
+    height: 23px;
+    padding: 4px 3px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer; }
+  .header .line-gamburger {
+    width: 15px;
+    height: 3px;
+    background: #d3d3d3; }
+  .header .all-stock-run {
+    width: 19px;
+    height: 11px;
+    display: inline-block;
+    transform: skew(20deg); }
   @media screen and (min-width: 600px) {
     .header .menu-site {
       width: 583px; } }
@@ -660,35 +666,46 @@ template {
   text-align: center; }
   .promo .block-promo {
     height: 248px;
-    padding: 15px 40px 0;
+    padding: 15px 0 0;
     text-align: left;
-    background: url("img/pc.png") no-repeat;
     display: inline-block; }
+  .promo .image-block-promo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
   .promo .title-promo {
-    width: 395px;
-    font-size: 30px;
+    position: absolute;
+    top: 11px;
+    left: 21px;
+    font-size: 25px;
     letter-spacing: -2px;
     font-family: Century Gothic;
     display: inline-block;
     color: #6640c7; }
   .promo .content-promos {
-    width: 274px;
+    position: absolute;
+    top: 64px;
+    left: 22px;
+    width: 220px;
     margin: 4px 0 0;
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 10px;
+    line-height: 16px;
     font-family: Century Gothic;
     display: inline-block; }
   .promo .gallery-decisions {
+    position: absolute;
+    top: 110px;
+    left: 21px;
     margin: 12px 0 0;
     display: inline-block;
     text-align: center;
     cursor: pointer; }
   .promo .batton-gallery-decisions {
-    width: 276px;
-    height: 46px;
     background: url("img/batton-gradient.png") no-repeat;
+    background-size: contain;
     font-family: "Century Gothic";
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 43px;
     color: #ffffff;

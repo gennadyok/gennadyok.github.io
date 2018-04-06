@@ -6,15 +6,24 @@
 
 	.block-promo {
 		height: 248px;
-		padding: 15px 40px 0;
+		padding: 15px 0 0;
 		text-align: left;
-		background: url("img/pc.png") no-repeat;
 		display: inline-block;
 	}
 
+	.image-block-promo {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+
 	.title-promo {
-		width: 395px;
-		font-size: 30px;
+		position: absolute;
+		top: 11px;
+		left: 21px;
+		font-size: 25px;
 		letter-spacing: -2px;
 		font-family: Century Gothic;
 		display: inline-block;
@@ -22,15 +31,21 @@
 	}
 
 	.content-promos {
-		width: 274px;
+		position: absolute;
+		top: 64px;
+		left: 22px;
+		width: 220px;
 		margin: 4px 0 0;
-		font-size: 15px;
-		line-height: 22px;
+		font-size: 10px;
+		line-height: 16px;
 		font-family: Century Gothic;
 		display: inline-block;
 	}
 
 	.gallery-decisions {
+		position: absolute;
+		top: 110px;
+		left: 21px;
 		margin: 12px 0 0;
 		display: inline-block;
 		text-align: center;
@@ -38,11 +53,10 @@
 	}
 
 	.batton-gallery-decisions {
-		width: 276px;
-		height: 46px;
 		background: url("img/batton-gradient.png") no-repeat;
+		background-size: contain;
 		font-family: "Century Gothic";
-		font-size: 18px;
+		font-size: 14px;
 		font-weight: 700;
 		line-height: 43px;
 		color: #ffffff;
