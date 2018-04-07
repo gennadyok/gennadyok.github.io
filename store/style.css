@@ -671,9 +671,7 @@ template {
     left: 0;
     width: 100%; }
   .promo .block-promo {
-    position: absolute;
-    top: 0;
-    left: 0; }
+    width: 50%; }
   .promo .title-promo {
     font-size: 25px;
     letter-spacing: -2px;
