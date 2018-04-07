@@ -1,5 +1,6 @@
 .stock {
-	margin: 50px auto 0;
+	margin: 15px auto 0; // на 600 - margin: 50px auto 0;
+	width: 380px;
 
 	.title-stock {
 		font-size: 25px;
@@ -47,7 +48,7 @@
 	.button-stock {
 		width: 122px;
 		height: 27px;
-		margin: 25px 0 0;
+		margin: 25px auto 0;
 		border: 1px solid $border_clr;
 		border-radius: 5px;
 		cursor: pointer;
@@ -67,6 +68,10 @@
 		text-shadow: 0 1px 0 #ffffff;
 		color: $key_clr;
 		display: inline-block;
+		transform: skew(20deg);
+	}
+
+	.all-stock-run {
 		transform: skew(20deg);
 	}
 

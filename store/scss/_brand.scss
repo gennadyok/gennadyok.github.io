@@ -1,20 +1,22 @@
 .brand {
 	margin: 45px auto 0;
+	text-align: center;
 
 	.solution {
-		float: left;
+		// float: left;
 		max-width: 272px;
+		margin: 0 auto;
 		font-size: 15px;
 		font-style: italic;
 		font-weight: 700;
-		display: inline-block;
+		display: block;
 	}
 
 	.button-all-brand {
-		float: right;
+		// float: right;
 		width: 200px;
 		height: 25px;
-		margin: 5px 0 0;
+		margin: 10px auto 0; // margin: 5px 0 0;
 		border: 1px solid #e4e4e4;
 		border-radius: 5px;
 		transform: skew(-20deg);
@@ -36,11 +38,17 @@
 		transform: skew(20deg);
 	}
 
+	.all-stock-run {
+		transform: skew(20deg);
+	}
+
 	.table-brand {
-		margin: 5px 0 0;
-		@include flexbox;
-		@include justify-content(center);
-		@include flex-flow(wrap);
+		max-width: 300px;
+		margin: 5px auto 0;
+		display: block;
+		// @include flexbox;
+		// @include justify-content(center);
+		// @include flex-flow(wrap);
 	}
 
 	.block-name-brand {
@@ -52,10 +60,10 @@
 		@include align-items(center);
 		@include flex-flow(wrap);
 
-		&:nth-child(even) {
-		border-left: 1px solid;
-        border-image: linear-gradient(rgba(0, 0, 0, 0), grey, rgba(0, 0, 0, 0)) 1 10%;
-		}
+		// &:nth-child(even) {
+		// border-left: 1px solid;
+  //       border-image: linear-gradient(rgba(0, 0, 0, 0), grey, rgba(0, 0, 0, 0)) 1 10%;
+		// }
 	}
 
 	.wrapper-name-brand {
@@ -65,13 +73,20 @@
 	}
 
 	.wrapper-list-link-brand {
+		width: 100%;
 		margin: 25px 0 0;
 		@include flexbox;
 		@include justify-content(space-between);
 	}
 
 	.list-link-brand {
+		width: 100%;
 		list-style-type: none;
+	}
+
+	.wrapper-link-brand {
+		width: 45%;
+		display: inline-block;
 	}
 
 	.link-brand {

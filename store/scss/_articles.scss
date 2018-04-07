@@ -1,13 +1,14 @@
 .articles {
 	margin: 44px auto 0;
 	border-top: 1px solid grey;
+	text-align: center;
 
 	.wrapper-title-all-articles {
 		margin: 45px 0 0;
 	}
 
 	.title-articles {
-		float: left;
+		// float: left;
 		font-size: 20px;
 		font-style: italic;
 		font-family: Arial Black;
@@ -15,10 +16,10 @@
 	}
 
 	.all-articles-button {
-		float: right;
+		// float: right;
 		width: 235px;
 		height: 27px;
-		margin: 5px 0 0;
+		margin: 5px auto 0;
 		border: 1px solid #e4e4e4;
 		border-radius: 5px;
 		transform: skew(-20deg);
@@ -37,6 +38,10 @@
 		font-size: 15px;
 		font-weight: 700;
 		display: inline-block;
+		transform: skew(20deg);
+	}
+
+	.all-stock-run {
 		transform: skew(20deg);
 	}
 
