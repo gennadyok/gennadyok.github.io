@@ -128,10 +128,10 @@
 		border: 1px solid $dark;
 		border-radius: 5px;
 		background: #fff;
-		display: flex;
-		flex-flow: column;
-		justify-content: space-between;
-		align-items: center;
+		@include flex-flow (column);
+		@include flexbox;
+		@include justify-content (space-between);
+		@include align-items(center);
 		cursor: pointer;
 	}
 
@@ -149,8 +149,45 @@
 	}
 
 	@media screen and (min-width: 600px) {
+		    text-align: right;
+		    display: inline-block;
+
+			.logo {
+				display: inline-block;
+			}
+
+			.wrapper-call-search {
+				margin: 10px 0 0 38px;
+			}
+
+			.search {
+				margin: 15px 0;
+			}
+
+			.user-block {
+				margin: 0 0 0 37px;
+				display: inline-block;
+			}
+
+			.enter-link {
+				margin: 0 51px 0 0;
+			}
+
+			.header-phone {
+				margin: 0 0 0 5px;
+			}
+
 			.menu-site {
 				width: 583px;
+				@include justify-content (space-between);
+			}
+
+			.list-categories {
+				margin: 0 0 0 10px;
+			}
+
+			.gamburger-menu {
+				margin: 0 10px 0 0;
 			}
 		}
 }
