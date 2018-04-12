@@ -24,7 +24,6 @@
 
 	.title-promo {
 		font-size: 20px;
-		// на 600 - font-size: 25px;
 		letter-spacing: -2px;
 		font-family: Century Gothic;
 		display: inline-block;
@@ -40,20 +39,13 @@
 	}
 
 	.gallery-decisions {
-		// на 600 - width: 276px;
-  //   	height: 46px;
 		margin: 8px 0 0;
-		// на 600 - margin: 12px 0 0;
 		display: inline-block;
 		text-align: center;
 		cursor: pointer;
 	}
 
 	.batton-gallery-decisions {
-		// на 600 - width: 276px;
-  //   	height: 46px;
-		// background: url("img/batton-gradient.png") no-repeat;
-		// line-height: 43px;
 		background: #6640c7;
     	border: 2px solid #689cbe;
    		padding: 2px;
@@ -110,8 +102,55 @@
 	}
 
 	@media screen and (min-width: 600px) {
+
+		.wrapper-block-promo {
+			width: 579px;
+		    margin: 0;
+		    display: inline-block;
+		}
+
 		.block-promo {
-			width: 580px;
+			width: 366px;
+		}
+
+		.title-promo {
+			width: 366px;
+			margin: 0 0 0 20px;
+			font-size: 31px;
+		}
+
+		.content-promos {
+			font-size: 17px;
+			line-height: 21.97px;
+			margin: 10px 0 0 20px;
+		}
+
+		.gallery-decisions {
+			width: 276px;
+	  		height: 46px;
+			margin: 12px 0 0 20px;
+		}
+
+		.batton-gallery-decisions {
+			width: 276px;
+  			height: 46px;
+			background: url("img/batton-gradient.png") no-repeat;
+			line-height: 43px;
+		}
+
+		.image-block-promo {
+			width: 579px;
+		}
+
+		.batton-gallery-decisions {
+			border: 0;
+			font-size: 18px;
+			letter-spacing: -0.1px;
+		}
+
+		.wrapper-list-nomber-promo {
+			margin: -10px 0 0 8px;
+    		display: block;
 		}
 	}
 }

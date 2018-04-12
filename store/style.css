@@ -600,7 +600,7 @@ template {
     transform: skew(20deg); }
   @media screen and (min-width: 600px) {
     .header {
-      text-align: right;
+      width: 100%;
       display: inline-block; }
       .header .logo {
         display: inline-block; }
@@ -791,8 +791,38 @@ template {
     color: #d10000;
     display: inline-block; }
   @media screen and (min-width: 600px) {
+    .promo .wrapper-block-promo {
+      width: 579px;
+      margin: 0;
+      display: inline-block; }
     .promo .block-promo {
-      width: 580px; } }
+      width: 366px; }
+    .promo .title-promo {
+      width: 366px;
+      margin: 0 0 0 20px;
+      font-size: 31px; }
+    .promo .content-promos {
+      font-size: 17px;
+      line-height: 21.97px;
+      margin: 10px 0 0 20px; }
+    .promo .gallery-decisions {
+      width: 276px;
+      height: 46px;
+      margin: 12px 0 0 20px; }
+    .promo .batton-gallery-decisions {
+      width: 276px;
+      height: 46px;
+      background: url("img/batton-gradient.png") no-repeat;
+      line-height: 43px; }
+    .promo .image-block-promo {
+      width: 579px; }
+    .promo .batton-gallery-decisions {
+      border: 0;
+      font-size: 18px;
+      letter-spacing: -0.1px; }
+    .promo .wrapper-list-nomber-promo {
+      margin: -10px 0 0 8px;
+      display: block; } }
 
 .propositions {
   max-width: 390px;
