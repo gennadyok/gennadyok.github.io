@@ -71,6 +71,10 @@
 		transform: skew(20deg);
 	}
 
+	.consultant {
+		display: none;
+	}
+
 	.enter {
 		margin: 10px 0 0;
 	}
@@ -80,6 +84,10 @@
 		font-size: $fs_13;
 		border-bottom: 1px dashed $key_clr;
 		color: $key_clr;
+	}
+
+	.enter-link-constant {
+		display: none;
 	}
 
 	.sale-menu {
@@ -100,6 +108,10 @@
 		font-weight: 700;
 		border-bottom: 1px dashed $key_clr;
 		color: $key_clr;
+	}
+
+	.divisions {
+		display: none;
 	}
 
 	.menu-site {

@@ -121,7 +121,6 @@
 	}
 
 	.description-gift {
-		// width: 190px;
 		margin: 5px 0 0;
 		font-size: $fs_13;
 		color: #d10000;
@@ -173,7 +172,19 @@
 	}
 
 	@media screen and (min-width: 600px) {
-		width: 577px;
+		max-width: 577px;
+
+		.wrapper-product {
+			@include justify-content(safe);
+		}
+
+		.product {
+			width: 189px;
+		}
+
+		.description-gift {
+			width: 190px;
+		}
 	}
 
 	@media screen and (min-width: 1000px) {

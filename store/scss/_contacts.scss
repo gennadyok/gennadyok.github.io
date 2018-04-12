@@ -1,5 +1,5 @@
 .contacts {
-	max-width: 390px; // max-width: 585px;
+	max-width: 390px;
 	margin: 23px auto 0;
 	padding: 0 0 30px;
 	border-bottom: 1px solid grey;
@@ -40,7 +40,7 @@
 
 	.wrapper-link-feedback {
 		margin: 10px auto;
-		display: block; // @include flexbox;
+		display: block;
 	}
 
 	.link-feedback {
@@ -56,8 +56,6 @@
 		margin: 10px auto 0;
 		vertical-align: top;
 		display: block;
-    	// margin: 0 0 0 91px;
-		// display: inline-block;
 	}
 
 	.form-feedback-bottom {
@@ -69,9 +67,6 @@
 		cursor: pointer;
 		background-image: linear-gradient(to top, #ffffff 0%, #eceded 37%, #ffffff 100%);
 		display: inline-block
-		// @include flexbox;
-		// @include justify-content(space-evenly);
-		// @include align-items(center);
 	}
 
 	.form-feedback {
@@ -110,7 +105,6 @@
 	.payment {
 		width: 220px;
 		margin: 20px 0 0;
-		// margin: 0 0 0 80px;
 		vertical-align: super;
 		display: inline-block;
 	}
@@ -143,5 +137,37 @@
 		margin: 0 0 0 3px;
 		color: #105a8f;
 		text-decoration: underline;
+	}
+
+	@media screen and (min-width: 600px) {
+		max-width: 585px;
+		text-align: left;
+
+		.wrapper-call-back-conditions {
+			margin: 11px 0 0 0;
+		}
+
+		.wrapper-link-feedback {
+			@include flexbox;
+		}
+
+		.wrapper-form-feedback-conditions {
+	    	margin: 10px 0 0 91px;
+			display: inline-block;
+		}
+
+		.call-back-phone {
+			margin: 0;
+		}
+
+		.form-feedback-bottom {
+			@include flexbox;
+			@include justify-content(space-evenly);
+			@include align-items(center);
+		}
+
+		.payment {
+			margin: 0 0 0 80px;
+		}
 	}
 }
