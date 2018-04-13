@@ -202,4 +202,74 @@
 				margin: 0 10px 0 0;
 			}
 		}
+
+	@media screen and (min-width: 1000px) {
+			.header-phone-bold {
+				font-size: 34px;
+				letter-spacing: -0.45px;
+			}
+
+			.search {
+				width: 320px;
+				margin: 17px 0 0;
+			}
+
+			.consultant {
+				width: 87px;
+				height: 88px;
+				margin: 0 0 0 95px;
+				border: 1px solid #6cbe68;
+				border-radius: 5px;
+				display: inline-block;
+			}
+
+			.bearded-man {
+				position: static;
+				z-index: 1;
+				width: 89px;
+				height: 62px;
+				margin: -6px 0 0 1px;
+			}
+
+			.text-help {
+				width: 53px;
+				height: 24px;
+				text-shadow: 0 1px 0 #ffffff;
+				color: #333333;
+				font-weight: 900;
+				font-size: 13px;
+			}
+
+			.enter-link {
+				display: none;
+			}
+
+			.enter-link-constant {
+				vertical-align: text-top;
+				font-size: $fs_13;
+				border-bottom: 1px dashed $key_clr;
+				color: $key_clr;
+				display: inline-block;
+			}
+
+			.sale-menu {
+				width: 209px;
+				height: 56px;
+				margin: 8px auto 0;
+				border: 1px solid #cecdcd;
+				border-radius: 5px;
+				@include flexbox;
+				@include justify-content(center);
+				@include align-items(center);
+			}
+
+			.basket {
+				border: 0;
+				font-size: 23px;
+				font-style: italic;
+				font-weight: 700;
+				border-bottom: 1px dashed $key_clr;
+				color: $key_clr;
+			}
+	}
 }
