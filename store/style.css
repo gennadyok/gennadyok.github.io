@@ -636,6 +636,8 @@ template {
     .header .header-phone-bold {
       font-size: 34px;
       letter-spacing: -0.45px; }
+    .header .call-back {
+      vertical-align: top; }
     .header .search {
       width: 320px;
       margin: 17px 0 0; }
@@ -653,8 +655,6 @@ template {
       height: 62px;
       margin: -6px 0 0 1px; }
     .header .text-help {
-      width: 53px;
-      height: 24px;
       text-shadow: 0 1px 0 #ffffff;
       color: #333333;
       font-weight: 900;
@@ -694,7 +694,44 @@ template {
       font-style: italic;
       font-weight: 700;
       border-bottom: 1px dashed #105a8f;
-      color: #105a8f; } }
+      color: #105a8f; }
+    .header .divisions {
+      width: 100%;
+      height: 115px;
+      margin: -20px 0 0;
+      background: url("img/substrate-long.png") repeat;
+      display: inline-block; }
+    .header .wrapper-link-divisions {
+      width: 1000px;
+      margin: 0 auto;
+      text-align: left; }
+    .header .link-divisions {
+      margin: 8px 10px 0 0;
+      font-size: 15px;
+      color: #105a8f;
+      border-bottom: 1px solid #105a8f;
+      display: inline-block; }
+    .header .wrapper-menu-site {
+      display: none; }
+    .header .full-menu {
+      width: 966px;
+      height: 56px;
+      border: 1px solid #246188;
+      background-color: #0c5d92;
+      background-image: linear-gradient(to top, #5497c3 0%, #0e639a 5%, #044977 16%, #0c5c8f 60%, #186ca3 97%, #7dafcf 100%); }
+    .header .paragraph-menu {
+      width: 159px; }
+    .header .text-paragraph-menu {
+      width: 89px;
+      display: inline-block; }
+    .header .img-paragraph-menu {
+      width: 13px;
+      height: 11px;
+      box-shadow: inset 0 1px 0 rgba(5, 6, 6, 0.71);
+      background-color: #999999;
+      background-image: linear-gradient(to top, #ffffff 0%, #96b9d0 100%);
+      opacity: 0.5;
+      display: inline-block; } }
 
 .stock {
   margin: 15px auto 0;
