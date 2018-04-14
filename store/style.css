@@ -1501,6 +1501,9 @@ template {
         align-items: center; }
       .contacts .payment {
         margin: 0 0 0 80px; } }
+  @media screen and (min-width: 1000px) {
+    .contacts {
+      max-width: 1000px; } }
 
 .articles {
   max-width: 390px;
