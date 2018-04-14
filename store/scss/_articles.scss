@@ -93,4 +93,27 @@
 			float: right;
 		}
 	}
+
+	@media screen and (min-width: 1000px) {
+		max-width: 1000px;
+
+		.news {
+			width: 203px;
+			margin: 28px 41px 0 0;
+			display: inline-block;
+
+			&:last-child {
+				margin: 28px 0 0;
+			}
+		}
+
+		.img-news {
+			display: block;
+    		width: 100%;
+		}
+
+		.content-news {
+			margin: 0;
+		}
+	}
 }

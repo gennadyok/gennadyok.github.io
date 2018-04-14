@@ -155,4 +155,9 @@
     		display: block;
 		}
 	}
+
+	@media screen and (min-width: 1000px) {
+		margin: 30px 0 0;
+		display: inline-block;
+	}
 }

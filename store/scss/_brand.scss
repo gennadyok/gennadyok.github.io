@@ -110,7 +110,7 @@
 
 		.block-name-brand:nth-child(even) {
 				border-left: 1px solid;
-	            border-image: linear-gradient(rgba(0, 0, 0, 0), grey, rgba(0, 0, 0, 0)) 1 10%;
+	            border-image: linear-gradient(rgba(0, 0, 0, 0), #c5bfbf, rgba(0, 0, 0, 0)) 1 10%;
 		}
 
 		.list-link-brand {
@@ -127,6 +127,36 @@
 
 		.list-link-brand {
 			text-align: left;
+		}
+	}
+
+	@media screen and (min-width: 1000px) {
+		max-width: 1000px;
+
+		.solution {
+			max-width: 100%;
+		}
+
+		.table-brand {
+			max-width: 100%;
+		}
+
+		.table-brand {
+			max-width: 100%;
+		}
+
+		.block-name-brand {
+			width: 240px;
+    		display: inline-block;
+		}
+
+		.wrapper-name-brand {
+			width: 45%;
+			display: inline-block;
+		}
+
+		.wrapper-link-brand {
+			width: 12%;
 		}
 	}
 }
