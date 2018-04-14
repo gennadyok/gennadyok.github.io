@@ -274,6 +274,14 @@
 				font-size: 13px;
 			}
 
+			.user-block {
+				vertical-align: top;
+			}
+
+			.enter {
+				margin: 0;
+			}
+
 			.enter-link {
 				display: none;
 			}
@@ -307,10 +315,11 @@
 			}
 
 			.divisions {
-				width: 100%;
+				width: 96.6%;
 				height: 115px;
 				margin: -33px 0;
 				background: linear-gradient(to bottom, #ffffff 0%,#eaeaea 50%,#eaeaea 52%,#ffffff 100%);
+				background: -webkit-linear-gradient(top, #ffffff 0%,#eaeaea 50%,#eaeaea 52%,#ffffff 100%);
 				display: block;
 			}
 

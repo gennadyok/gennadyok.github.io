@@ -679,6 +679,10 @@ template {
         color: #333333;
         font-weight: 900;
         font-size: 13px; }
+      .header .user-block {
+        vertical-align: top; }
+      .header .enter {
+        margin: 0; }
       .header .enter-link {
         display: none; }
       .header .enter-link-constant {
@@ -716,10 +720,11 @@ template {
         border-bottom: 1px dashed #105a8f;
         color: #105a8f; }
       .header .divisions {
-        width: 100%;
+        width: 96.6%;
         height: 115px;
         margin: -33px 0;
         background: linear-gradient(to bottom, #ffffff 0%, #eaeaea 50%, #eaeaea 52%, #ffffff 100%);
+        background: -webkit-linear-gradient(top, #ffffff 0%, #eaeaea 50%, #eaeaea 52%, #ffffff 100%);
         display: block; }
       .header .wrapper-link-divisions {
         width: 1000px;
@@ -858,6 +863,7 @@ template {
     .stock {
       width: 330px;
       margin: 27px 0 0 20px;
+      vertical-align: top;
       display: inline-block; }
       .stock .proposition-stock {
         margin: 8px 0 0; }
