@@ -213,6 +213,7 @@
 
 	@media screen and (min-width: 1000px) {
 		width: 1000px;
+		margin: 9px auto 0;
 		text-align: left;
 
 			.logo {
@@ -224,7 +225,11 @@
 			}
 
 			.wrapper-call-search {
-				margin: 10px 0 0 15px;
+				margin: 0 0 0 13px;
+			}
+
+			.header-phone {
+				font-size: 29px;
 			}
 
 			.header-phone-bold {
@@ -233,18 +238,20 @@
 			}
 
 			.call-back {
+				margin: 5px 0 0 15px;
 				vertical-align: top;
+				display: inline-block;
 			}
 
 			.search {
 				width: 320px;
-				margin: 17px 0 0;
+				margin: 9px 0 0;;
 			}
 
 			.consultant {
 				width: 87px;
 				height: 88px;
-				margin: 0 0 0 95px;
+				margin: 0 0 0 93px;
 				border: 1px solid #6cbe68;
 				border-radius: 5px;
 				text-align: center;
@@ -315,7 +322,7 @@
 			}
 
 			.divisions {
-				width: 96.6%;
+				width: 97.9%;
 				height: 115px;
 				margin: -33px 0;
 				background: linear-gradient(to bottom, #ffffff 0%,#eaeaea 50%,#eaeaea 52%,#ffffff 100%);
@@ -330,7 +337,7 @@
 			}
 
 			.link-divisions {
-				margin: 42px 10px 0 0;
+				margin: 48px 10px 0 0;
 			    font-size: 15px;
 			    color: #105a8f;
 			    border-bottom: 1px solid #105a8f;
@@ -342,9 +349,10 @@
 			}
 
 			.full-menu {
-				width: 966px;
+				width: 979px;
 				height: 56px;
 				border: 1px solid #246188;
+				border-radius: 5px;
 				background-color: #0c5d92;
 				background-image: linear-gradient(to top, #5497c3 0%, #0e639a 5%, #044977 16%, #0c5c8f 60%, #186ca3 97%, #7dafcf 100%);
 				@include flexbox;
@@ -356,16 +364,21 @@
 				width: 159px;
 				text-align: left;
 				@include flexbox;
-				@include justify-content(center);
+				@include justify-content(space-between);
 				@include align-items(center);
 			}
 
 			.text-paragraph-menu {
 				width: 89px;
+				margin: 0 0 0 1px;
 				font-style: bold;
 				text-shadow: 0 1px 0 rgba(5, 6, 6, 0.3);
 				color: #fff;
 				display: inline-block;
+			}
+
+			.link-img-paragraph-menu {
+				margin: 0 13px 0 0;
 			}
 	}
 }
