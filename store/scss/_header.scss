@@ -362,10 +362,18 @@
 
 			.paragraph-menu {
 				width: 159px;
-				text-align: left;
+				height: 56px;
+				padding: 0 0 0 5px;
+			    box-shadow: -1px 0px 0px 0px #0c5d92;
+			    text-align: left;
 				@include flexbox;
 				@include justify-content(space-between);
 				@include align-items(center);
+
+				&:first-child {
+					padding: 0;
+			    	box-shadow: 0 0px 0px 0px #0c5d92;
+				}
 			}
 
 			.text-paragraph-menu {
