@@ -10,7 +10,6 @@
 
 	.tab-propositions {
 		position: relative;
-		width: 267px;
 		height: 56px;
 		border-radius: 5px 5px 0 0;
 		display: none;
@@ -21,6 +20,7 @@
 		}
 
 		&.is-active {
+			width: 267px;
 			border: 1px solid $key_clr;
 			border-bottom: 0;
 			@include flexbox;
@@ -188,14 +188,16 @@
 	}
 
 	@media screen and (min-width: 1000px) {
-		max-width: 967px;
+		max-width: 959px;
 
 		.tab-propositions {
-			width: 100%;
-			display: flex;
+			margin: 0 0 0 31px;
+			display: inline-flex;
+    		align-items: center;
 
 			&.is-active {
 				width: 267px;
+				margin: 0;
 			}
 		}
 	}

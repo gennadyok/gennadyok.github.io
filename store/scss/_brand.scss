@@ -147,7 +147,7 @@
 
 		.block-name-brand {
 			width: 240px;
-    		display: inline-block;
+    		background: url(img/line-grey.png) 50%/contain repeat;
 		}
 
 		.wrapper-name-brand {
@@ -157,6 +157,10 @@
 
 		.wrapper-link-brand {
 			width: 12%;
+		}
+
+		.for-high {
+			display: none;
 		}
 	}
 }

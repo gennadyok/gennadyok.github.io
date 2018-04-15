@@ -97,6 +97,11 @@
 	@media screen and (min-width: 1000px) {
 		max-width: 1000px;
 
+		.wrapper-news {
+			@include flexbox;
+			@include justify-content(space-between);
+		}
+
 		.news {
 			width: 203px;
 			margin: 28px 41px 0 0;
