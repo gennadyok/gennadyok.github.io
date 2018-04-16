@@ -28,4 +28,23 @@
 		color: #999;
 		display: inline-block;
 	}
+
+	@media screen and (min-width: 1000px) {
+		    margin: 0;
+		    height: 192px;
+		    margin: 45px 0 0;
+		    border-left: 1px solid;
+		    border-image: linear-gradient(rgba(0, 0, 0, 0), #c5bfbf, rgba(0, 0, 0, 0)) 1 10%;
+		    vertical-align: top;
+		    display: inline-block;
+
+		.developer {
+			    width: 150px;
+	    		text-align: left;
+		}
+
+		.about-developer {
+			margin: 0;
+		}
+	}
 }

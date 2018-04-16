@@ -1531,9 +1531,12 @@ template {
         margin: 0 0 0 80px; } }
   @media screen and (min-width: 1000px) {
     .contacts {
-      max-width: 1000px; }
+      max-width: 2000px;
+      display: inline-block; }
       .contacts .divisions {
         display: block; }
+      .contacts .conditions-time-payment-social {
+        display: inline-flex; }
       .contacts .wrapper-call-back-conditions {
         width: 200px;
         margin: 34px 0 0;
@@ -1545,15 +1548,18 @@ template {
       .contacts .conditions {
         margin: 36px 0 0; }
       .contacts .wrapper-time-payment {
-        width: 200px;
+        width: 220px;
         margin: 43px 0 0 48px;
         display: inline-block;
         vertical-align: top; }
       .contacts .payment {
         margin: 19px 0 0; }
       .contacts .wrapper-social {
+        margin: 34px 0 0 120px;
         display: inline-flex;
-        flex-flow: column; } }
+        flex-flow: column; }
+      .contacts .icon-social-name-social {
+        margin: 0; } }
 
 .articles {
   max-width: 390px;
@@ -1683,5 +1689,19 @@ template {
     font-size: 11px;
     color: #999;
     display: inline-block; }
+  @media screen and (min-width: 1000px) {
+    .futer {
+      margin: 0;
+      height: 192px;
+      margin: 45px 0 0;
+      border-left: 1px solid;
+      border-image: linear-gradient(rgba(0, 0, 0, 0), #c5bfbf, rgba(0, 0, 0, 0)) 1 10%;
+      vertical-align: top;
+      display: inline-block; }
+      .futer .developer {
+        width: 150px;
+        text-align: left; }
+      .futer .about-developer {
+        margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */
