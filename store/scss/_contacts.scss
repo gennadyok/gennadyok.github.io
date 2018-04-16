@@ -171,7 +171,8 @@
 		    display: inline-block;
 
 		    .divisions {
-		    	display: block;
+		    	list-style-type: none;
+				@include flexbox;
 		    }
 
 		    .conditions-time-payment-social {
