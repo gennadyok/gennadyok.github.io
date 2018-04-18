@@ -223,7 +223,7 @@
 				position: relative;
 				z-index: 2;
 				width: 1000px;
-				margin: 0 0 -33px 0;
+				margin: 0 0 -33px;
 			}
 
 			.logo {
@@ -277,11 +277,10 @@
 			}
 
 			.container-text-help {
-				width: 86px;
 				height: 27px;
 				border-radius: 5px;
 				background: linear-gradient(to top, #cecdcd, #fff);
-				display: inline-block;
+				display: block;
 			}
 
 			.text-help {
@@ -314,6 +313,7 @@
 			.sale-menu {
 				width: 209px;
 				height: 56px;
+				padding: 0 0 4px;
 				margin: 8px auto 0;
 				border: 1px solid #cecdcd;
 				border-radius: 5px;
@@ -329,6 +329,7 @@
 				font-weight: 700;
 				border-bottom: 1px dashed $key_clr;
 				color: $key_clr;
+				background: transparent;
 			}
 
 			.divisions {

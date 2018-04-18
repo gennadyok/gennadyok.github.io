@@ -654,7 +654,7 @@ template {
         position: relative;
         z-index: 2;
         width: 1000px;
-        margin: 0 0 -33px 0; }
+        margin: 0 0 -33px; }
       .header .logo {
         display: none; }
       .header .logo174x80 {
@@ -688,11 +688,10 @@ template {
         height: 62px;
         margin: -6px 0 0 1px; }
       .header .container-text-help {
-        width: 86px;
         height: 27px;
         border-radius: 5px;
         background: linear-gradient(to top, #cecdcd, #fff);
-        display: inline-block; }
+        display: block; }
       .header .text-help {
         text-shadow: 0 1px 0 #ffffff;
         color: #333333;
@@ -713,6 +712,7 @@ template {
       .header .sale-menu {
         width: 209px;
         height: 56px;
+        padding: 0 0 4px;
         margin: 8px auto 0;
         border: 1px solid #cecdcd;
         border-radius: 5px;
@@ -737,7 +737,8 @@ template {
         font-style: italic;
         font-weight: 700;
         border-bottom: 1px dashed #105a8f;
-        color: #105a8f; }
+        color: #105a8f;
+        background: transparent; }
       .header .divisions {
         position: relative;
         z-index: 1;
