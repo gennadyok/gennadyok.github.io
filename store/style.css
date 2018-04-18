@@ -54,15 +54,15 @@ a {
   min-width: 400px;
   margin: 0 auto; }
 
-.promo-and-stock {
-  width: 1000px;
-  margin: 0 auto;
-  display: block; }
+@media screen and (min-width: 1000px) {
+  .promo-and-stock {
+    width: 1000px;
+    margin: 0 auto;
+    display: block; }
 
-.wrapper-contacts-futer {
-  width: 1000px;
-  margin: 0 auto; }
-
+  .wrapper-contacts-futer {
+    width: 1000px;
+    margin: 0 auto; } }
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1416,6 +1416,10 @@ template {
   text-align: center; }
   .contacts .copyrite {
     display: block; }
+  .contacts .divisions {
+    list-style-type: none; }
+  .contacts .divisions-paragraph {
+    display: inline-block; }
   .contacts .link-divisions {
     margin: 8px 10px 0 0;
     font-size: 15px;
@@ -1551,7 +1555,6 @@ template {
       max-width: 2000px;
       display: inline-block; }
       .contacts .divisions {
-        list-style-type: none;
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-flex;

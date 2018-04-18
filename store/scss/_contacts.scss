@@ -9,6 +9,14 @@
 		display: block;
 	}
 
+	.divisions {
+		list-style-type: none;
+    }
+
+    .divisions-paragraph {
+    	display: inline-block;
+    }
+
 	.link-divisions {
 		margin: 8px 10px 0 0;
 		font-size: 15px;
@@ -171,7 +179,6 @@
 		    display: inline-block;
 
 		    .divisions {
-		    	list-style-type: none;
 				@include flexbox;
 		    }
 

@@ -84,13 +84,16 @@ a {
 	margin: 0 auto;
 }
 
-.promo-and-stock {
-	width: 1000px;
-	margin: 0 auto;
-	display: block;
-}
+@media screen and (min-width: 1000px) {
 
-.wrapper-contacts-futer {
-	width: 1000px;
-	margin: 0 auto;
+	.promo-and-stock {
+		width: 1000px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.wrapper-contacts-futer {
+		width: 1000px;
+		margin: 0 auto;
+	}
 }
