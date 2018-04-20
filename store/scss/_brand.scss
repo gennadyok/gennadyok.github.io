@@ -116,18 +116,14 @@
 		.list-link-brand {
 			width: 100%;
 			list-style-type: none;
-			@include flexbox;
-			@include justify-content(space-around);
-			@include flex-flow(wrap);
+			column-count: 4;
+			text-align: left;
 		}
 
 		.wrapper-link-brand {
 			width: 23%;
+			display: block;
 		 }
-
-		.list-link-brand {
-			text-align: left;
-		}
 	}
 
 	@media screen and (min-width: 1000px) {
@@ -166,8 +162,8 @@
 			width: 12%;
 		}
 
-		.for-high {
-			display: none;
+		.list-link-brand {
+			column-count: 8;
 		}
 	}
 }

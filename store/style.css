@@ -821,7 +821,13 @@ template {
         margin: 0 13px 0 0; } }
   @media screen and (min-width: 1200px) {
     .header .row-header {
-      width: 1200px; } }
+      width: 1200px; }
+    .header .wrapper-call-search {
+      margin: 0 0 0 46px; }
+    .header .consultant {
+      margin: 0 0 0 102px; }
+    .header .user-block {
+      margin: 0px 0 0 204px; } }
 
 .stock {
   margin: 15px auto 0;
@@ -1380,23 +1386,11 @@ template {
       .brand .list-link-brand {
         width: 100%;
         list-style-type: none;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        -webkit-justify-content: space-around;
-        -moz-justify-content: space-around;
-        justify-content: space-around;
-        -webkit-flex-flow: wrap;
-        -moz-flex-flow: wrap;
-        -ms-flex-flow: wrap;
-        flex-flow: wrap; }
+        column-count: 4;
+        text-align: left; }
       .brand .wrapper-link-brand {
-        width: 23%; }
-      .brand .list-link-brand {
-        text-align: left; } }
+        width: 23%;
+        display: block; } }
   @media screen and (min-width: 1000px) {
     .brand {
       max-width: 1000px; }
@@ -1419,8 +1413,8 @@ template {
         display: inline-block; }
       .brand .wrapper-link-brand {
         width: 12%; }
-      .brand .for-high {
-        display: none; } }
+      .brand .list-link-brand {
+        column-count: 8; } }
 
 .contacts {
   max-width: 390px;
