@@ -147,7 +147,14 @@
 
 		.block-name-brand {
 			width: 240px;
+			border-left: 1px solid;
+	        border-image: linear-gradient(rgba(0, 0, 0, 0), #c5bfbf, rgba(0, 0, 0, 0)) 1 10%;
     		background: url(img/line-grey.png) 50%/contain repeat;
+
+    		&:first-child {
+    			border-left: 0;
+	        	border-image: none;
+    		}
 		}
 
 		.wrapper-name-brand {

@@ -223,7 +223,7 @@
 				position: relative;
 				z-index: 2;
 				width: 1000px;
-				margin: 0 0 -33px;
+				margin: 0 auto -33px;
 			}
 
 			.logo {
@@ -405,5 +405,11 @@
 			.link-img-paragraph-menu {
 				margin: 0 13px 0 0;
 			}
+	}
+
+	@media screen and (min-width: 1200px) {
+		.row-header {
+			width: 1200px;
+		}
 	}
 }
