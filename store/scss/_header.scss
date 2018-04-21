@@ -116,6 +116,7 @@
 		font-weight: 700;
 		border-bottom: 1px dashed $key_clr;
 		color: $key_clr;
+		background: transparent;
 	}
 
 	.divisions {
@@ -329,7 +330,6 @@
 				font-weight: 700;
 				border-bottom: 1px dashed $key_clr;
 				color: $key_clr;
-				background: transparent;
 			}
 
 			.divisions {
@@ -344,7 +344,6 @@
 
 			.wrapper-link-divisions {
 				width: 1000px;
-				margin: 0 0 0 20px;
 				text-align: left;
     			list-style-type: none;
     			display: inline-flex;

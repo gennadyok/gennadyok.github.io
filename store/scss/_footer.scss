@@ -1,4 +1,4 @@
-.futer {
+.footer {
 	margin: 30px 0 0;
 	text-align: center;
 
@@ -30,13 +30,15 @@
 	}
 
 	@media screen and (min-width: 1000px) {
-		    margin: 0;
+			width: 210px;
 		    height: 192px;
 		    margin: 45px 0 0;
 		    border-left: 1px solid;
 		    border-image: linear-gradient(rgba(0, 0, 0, 0), #c5bfbf, rgba(0, 0, 0, 0)) 1 10%;
 		    vertical-align: top;
-		    display: inline-block;
+		    display: inline-flex;
+			@include justify-content(space-evenly);
+			@include align-items(center);
 
 		.developer {
 			    width: 150px;
