@@ -1387,6 +1387,7 @@ template {
         width: 100%;
         list-style-type: none;
         column-count: 4;
+        -webkit-column-count: 4;
         text-align: left; }
       .brand .wrapper-link-brand {
         width: 23%;
@@ -1414,7 +1415,8 @@ template {
       .brand .wrapper-link-brand {
         width: 12%; }
       .brand .list-link-brand {
-        column-count: 8; } }
+        column-count: 8;
+        -webkit-column-count: 8; } }
 
 .contacts {
   max-width: 390px;
