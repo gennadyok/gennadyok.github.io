@@ -8,18 +8,10 @@
 		@include flexbox;
 	}
 
-	.tab-propositions {
-		position: relative;
-		height: 56px;
-		border-radius: 5px 5px 0 0;
+	.input-tab {
 		display: none;
-		background: #fff;
 
-		&:first-of-type {
-			display: block;
-		}
-
-		&.is-active {
+		&:checked .wrapper-tab-propositions .tab-propositions {
 			width: 267px;
 			border: 1px solid $key_clr;
 			border-bottom: 0;
@@ -37,6 +29,39 @@
 				border: 0;
 			}
 		}
+	}
+
+
+
+	.tab-propositions {
+		// position: relative;
+		height: 56px;
+		border-radius: 5px 5px 0 0;
+		display: none;
+		background: #fff;
+
+		// &:first-of-type {
+		// 	display: block;
+		// }
+
+		// &.is-active {
+		// 	width: 267px;
+		// 	border: 1px solid $key_clr;
+		// 	border-bottom: 0;
+		// 	@include flexbox;
+		//     @include justify-content(center);
+		//     @include align-items(center);
+
+		// 	.tab-gradient,
+		// 	.tab-empty-block {
+		// 		display: block;
+		// 	}
+
+		// 	.tab-content {
+		// 		color: #d10000;
+		// 		border: 0;
+		// 	}
+		// }
 	}
 
 	.tab-empty-block {
@@ -75,6 +100,14 @@
 		color: $key_clr;
 	}
 
+	.tab1:checked ~ .wrapper-product,
+	.tab1:checked ~ .wrapper-product2,
+	.tab1:checked ~ .wrapper-product3,
+	.tab1:checked ~ .wrapper-product4 {
+		@include flexbox;
+		@include align-items(center);
+	}
+
 	.gamburger-menu {
 		position: relative;
 		z-index: 3;
@@ -85,9 +118,7 @@
 		height: 332px;
 		border: 1px solid $key_clr;
 		border-radius: 0 5px 5px 5px;
-		@include flexbox;
-		@include justify-content(space-evenly);
-		@include align-items(center)
+		display: none;
 	}
 
 	.product {
@@ -196,25 +227,12 @@
 	}
 
 	@media screen and (min-width: 1000px) {
-		max-width: 1000px;
+	 	max-width: 1000px;
 
-		.tab-propositions {
-			margin: 0 0 0 31px;
-			display: inline-flex;
-    		align-items: center;
-
-			&.is-active {
-				width: 267px;
-				margin: 0;
-			}
-		}
-
-		.product:nth-child(3) {
-				display: flex;
-			}
-
-		.product:nth-child(4) {
-				display: flex;
-			}
-	}
+	 	.tab-propositions {
+	 		margin: 0 0 0 31px;
+	 		@include flexbox;
+		    @include align-items(center);
+     	}
+     }
 }

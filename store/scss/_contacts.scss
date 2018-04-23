@@ -183,7 +183,7 @@
 		    }
 
 		    .conditions-time-payment-social {
-		    	display: inline-flex;
+		    	@include flexbox;
 		    }
 
 		    .wrapper-call-back-conditions {
@@ -217,7 +217,7 @@
 
 		    .wrapper-social {
 		    	margin: 34px 0 0 95px;
-		    	display: inline-flex;
+		    	@include flexbox;
     			flex-flow: column;
 		    }
 

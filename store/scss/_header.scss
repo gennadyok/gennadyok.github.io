@@ -346,7 +346,7 @@
 				width: 1000px;
 				text-align: left;
     			list-style-type: none;
-    			display: inline-flex;
+    			@include flexbox;
 			}
 
 			.link-divisions {

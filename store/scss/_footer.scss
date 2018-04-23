@@ -36,7 +36,7 @@
 		    border-left: 1px solid;
 		    border-image: linear-gradient(rgba(0, 0, 0, 0), #c5bfbf, rgba(0, 0, 0, 0)) 1 10%;
 		    vertical-align: top;
-		    display: inline-flex;
+		    @include flexbox;
 			@include justify-content(space-evenly);
 			@include align-items(center);
 
