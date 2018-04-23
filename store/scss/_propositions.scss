@@ -15,9 +15,7 @@
 			width: 267px;
 			border: 1px solid $key_clr;
 			border-bottom: 0;
-			@include flexbox;
-		    @include justify-content(center);
-		    @include align-items(center);
+			display: block;
 
 			.tab-gradient,
 			.tab-empty-block {
@@ -100,10 +98,10 @@
 		color: $key_clr;
 	}
 
-	.tab1:checked ~ .wrapper-product,
-	.tab1:checked ~ .wrapper-product2,
-	.tab1:checked ~ .wrapper-product3,
-	.tab1:checked ~ .wrapper-product4 {
+	.input-tab1:checked ~ .wrapper-product0,
+	.input-tab2:checked ~ .wrapper-product2,
+	.input-tab3:checked ~ .wrapper-product3,
+	.input-tab4:checked ~ .wrapper-product4 {
 		@include flexbox;
 		@include align-items(center);
 	}
@@ -212,10 +210,6 @@
 
 	@media screen and (min-width: 600px) {
 		max-width: 577px;
-
-		.wrapper-product {
-			@include justify-content(safe);
-		}
 
 		.product {
 			width: 189px;
