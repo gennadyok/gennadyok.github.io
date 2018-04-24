@@ -15,7 +15,9 @@
 			width: 267px;
 			border: 1px solid $key_clr;
 			border-bottom: 0;
-			display: block;
+			@include flexbox;
+		    @include justify-content(center);
+		    @include align-items(center);
 
 			.tab-gradient,
 			.tab-empty-block {
@@ -103,6 +105,7 @@
 	.input-tab3:checked ~ .wrapper-product3,
 	.input-tab4:checked ~ .wrapper-product4 {
 		@include flexbox;
+		@include justify-content(space-evenly);
 		@include align-items(center);
 	}
 
@@ -228,5 +231,13 @@
 	 		@include flexbox;
 		    @include align-items(center);
      	}
-     }
+
+     	.product:nth-child(3) {
+			display: block;
+		}
+
+		.product:nth-child(4) {
+			display: block;
+			}
+    }
 }

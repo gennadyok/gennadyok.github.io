@@ -17,6 +17,7 @@
 	}
 
 	.link-developer {
+		margin: 0 0 0 -105px;
 		font-size: 11px;
 		line-height: 15px;
 		color: #0066aa;
@@ -24,9 +25,10 @@
 	}
 	
 	.year {
+		margin: 0 0 0 -35px;
 		font-size: 11px;
 		color: #999;
-		display: inline-block;
+		display: block;
 	}
 
 	@media screen and (min-width: 1000px) {
@@ -36,17 +38,34 @@
 		    border-left: 1px solid;
 		    border-image: linear-gradient(rgba(0, 0, 0, 0), #c5bfbf, rgba(0, 0, 0, 0)) 1 10%;
 		    vertical-align: top;
-		    @include flexbox;
-			@include justify-content(space-evenly);
-			@include align-items(center);
+		    display: inline-block;
 
-		.developer {
-			    width: 150px;
-	    		text-align: left;
-		}
+			.wrapper-developer {
+				height: 100%;
+				@include flexbox;
+				@include align-items(center);
+			}
 
-		.about-developer {
-			margin: 0;
-		}
+			.developer {
+				margin: 0 0 0 15px;
+		    	text-align: left;
+		    	@include flexbox;
+				@include justify-content(left);
+				@include align-items(center);
+				@include flex-flow(wrap);
+			}
+
+			.about-developer {
+				width: 168px;
+				margin: 8px 0 0;
+			}
+
+			.link-developer {
+				width: 100%;
+			}
+
+			.year {
+				margin: 11px 0 0;
+			}
 	}
 }

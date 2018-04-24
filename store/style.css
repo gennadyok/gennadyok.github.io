@@ -749,6 +749,7 @@ template {
         display: block; }
       .header .wrapper-link-divisions {
         width: 1000px;
+        margin: 0 auto;
         text-align: left;
         list-style-type: none;
         display: -webkit-box;
@@ -1065,7 +1066,21 @@ template {
       width: 267px;
       border: 1px solid #105a8f;
       border-bottom: 0;
-      display: block; }
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center; }
       .propositions .input-tab:checked .wrapper-tab-propositions .tab-propositions .tab-gradient,
       .propositions .input-tab:checked .wrapper-tab-propositions .tab-propositions .tab-empty-block {
         display: block; }
@@ -1116,6 +1131,11 @@ template {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+    -moz-justify-content: space-evenly;
+    justify-content: space-evenly;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
@@ -1226,7 +1246,11 @@ template {
         -ms-flex-align: center;
         -webkit-align-items: center;
         -moz-align-items: center;
-        align-items: center; } }
+        align-items: center; }
+      .propositions .product:nth-child(3) {
+        display: block; }
+      .propositions .product:nth-child(4) {
+        display: block; } }
 
 .brand {
   max-width: 390px;
@@ -1716,14 +1740,16 @@ template {
     text-align: left;
     display: inline-block; }
   .footer .link-developer {
+    margin: 0 0 0 -105px;
     font-size: 11px;
     line-height: 15px;
     color: #0066aa;
     text-decoration: underline; }
   .footer .year {
+    margin: 0 0 0 -35px;
     font-size: 11px;
     color: #999;
-    display: inline-block; }
+    display: block; }
   @media screen and (min-width: 1000px) {
     .footer {
       width: 210px;
@@ -1732,25 +1758,47 @@ template {
       border-left: 1px solid;
       border-image: linear-gradient(rgba(0, 0, 0, 0), #c5bfbf, rgba(0, 0, 0, 0)) 1 10%;
       vertical-align: top;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-      -webkit-justify-content: space-evenly;
-      -moz-justify-content: space-evenly;
-      justify-content: space-evenly;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      align-items: center; }
+      display: inline-block; }
+      .footer .wrapper-developer {
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center; }
       .footer .developer {
-        width: 150px;
-        text-align: left; }
+        margin: 0 0 0 15px;
+        text-align: left;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
+        -webkit-justify-content: left;
+        -moz-justify-content: left;
+        justify-content: left;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-flex-flow: wrap;
+        -moz-flex-flow: wrap;
+        -ms-flex-flow: wrap;
+        flex-flow: wrap; }
       .footer .about-developer {
-        margin: 0; } }
+        width: 168px;
+        margin: 8px 0 0; }
+      .footer .link-developer {
+        width: 100%; }
+      .footer .year {
+        margin: 11px 0 0; } }
 
 /*# sourceMappingURL=style.css.map */
