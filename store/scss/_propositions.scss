@@ -10,31 +10,32 @@
 
 	.input-tab {
 		display: none;
+	}
 
-		&:checked .wrapper-tab-propositions .tab-propositions {
-			width: 267px;
-			border: 1px solid $key_clr;
-			border-bottom: 0;
-			@include flexbox;
-		    @include justify-content(center);
-		    @include align-items(center);
+	.input-tab1:checked ~ .wrapper-tab-propositions .tab1,
+	.input-tab2:checked ~ .wrapper-tab-propositions .tab2,
+	.input-tab3:checked ~ .wrapper-tab-propositions .tab3,
+	.input-tab4:checked ~ .wrapper-tab-propositions .tab4 {
+		width: 267px;
+		border: 2px solid $key_clr;
+		border-bottom: 0;
+		@include flexbox;
+	    @include justify-content(center);
+	    @include align-items(center);
 
-			.tab-gradient,
-			.tab-empty-block {
-				display: block;
-			}
+		.tab-gradient,
+		.tab-empty-block {
+			display: block;
+		}
 
-			.tab-content {
-				color: #d10000;
-				border: 0;
-			}
+		.tab-content {
+			color: #d10000;
+			border: 0;
 		}
 	}
 
-
-
 	.tab-propositions {
-		// position: relative;
+		position: relative;
 		height: 56px;
 		border-radius: 5px 5px 0 0;
 		display: none;
@@ -230,6 +231,10 @@
 	 		margin: 0 0 0 31px;
 	 		@include flexbox;
 		    @include align-items(center);
+
+		    &:nth-child(1) {
+		    	margin: 0;
+		    }
      	}
 
      	.product:nth-child(3) {

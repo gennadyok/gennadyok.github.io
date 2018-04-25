@@ -1062,32 +1062,45 @@ template {
     display: flex; }
   .propositions .input-tab {
     display: none; }
-    .propositions .input-tab:checked .wrapper-tab-propositions .tab-propositions {
-      width: 267px;
-      border: 1px solid #105a8f;
-      border-bottom: 0;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      -moz-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      align-items: center; }
-      .propositions .input-tab:checked .wrapper-tab-propositions .tab-propositions .tab-gradient,
-      .propositions .input-tab:checked .wrapper-tab-propositions .tab-propositions .tab-empty-block {
-        display: block; }
-      .propositions .input-tab:checked .wrapper-tab-propositions .tab-propositions .tab-content {
-        color: #d10000;
-        border: 0; }
+  .propositions .input-tab1:checked ~ .wrapper-tab-propositions .tab1,
+  .propositions .input-tab2:checked ~ .wrapper-tab-propositions .tab2,
+  .propositions .input-tab3:checked ~ .wrapper-tab-propositions .tab3,
+  .propositions .input-tab4:checked ~ .wrapper-tab-propositions .tab4 {
+    width: 267px;
+    border: 2px solid #105a8f;
+    border-bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center; }
+    .propositions .input-tab1:checked ~ .wrapper-tab-propositions .tab1 .tab-gradient,
+    .propositions .input-tab1:checked ~ .wrapper-tab-propositions .tab1 .tab-empty-block,
+    .propositions .input-tab2:checked ~ .wrapper-tab-propositions .tab2 .tab-gradient,
+    .propositions .input-tab2:checked ~ .wrapper-tab-propositions .tab2 .tab-empty-block,
+    .propositions .input-tab3:checked ~ .wrapper-tab-propositions .tab3 .tab-gradient,
+    .propositions .input-tab3:checked ~ .wrapper-tab-propositions .tab3 .tab-empty-block,
+    .propositions .input-tab4:checked ~ .wrapper-tab-propositions .tab4 .tab-gradient,
+    .propositions .input-tab4:checked ~ .wrapper-tab-propositions .tab4 .tab-empty-block {
+      display: block; }
+    .propositions .input-tab1:checked ~ .wrapper-tab-propositions .tab1 .tab-content,
+    .propositions .input-tab2:checked ~ .wrapper-tab-propositions .tab2 .tab-content,
+    .propositions .input-tab3:checked ~ .wrapper-tab-propositions .tab3 .tab-content,
+    .propositions .input-tab4:checked ~ .wrapper-tab-propositions .tab4 .tab-content {
+      color: #d10000;
+      border: 0; }
   .propositions .tab-propositions {
+    position: relative;
     height: 56px;
     border-radius: 5px 5px 0 0;
     display: none;
@@ -1247,6 +1260,8 @@ template {
         -webkit-align-items: center;
         -moz-align-items: center;
         align-items: center; }
+        .propositions .tab-propositions:nth-child(1) {
+          margin: 0; }
       .propositions .product:nth-child(3) {
         display: block; }
       .propositions .product:nth-child(4) {
@@ -1797,7 +1812,8 @@ template {
         width: 168px;
         margin: 8px 0 0; }
       .footer .link-developer {
-        width: 100%; }
+        width: 100%;
+        margin: 0; }
       .footer .year {
         margin: 11px 0 0; } }
 
