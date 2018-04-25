@@ -54,7 +54,30 @@ a {
   min-width: 400px;
   margin: 0 auto; }
 
+.gamburger-menu {
+  float: right;
+  width: 28px;
+  height: 23px;
+  margin: 5px 15px 0 0;
+  padding: 4px 3px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: #fff;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer; }
+
+.line-gamburger {
+  width: 15px;
+  height: 3px;
+  background: #d3d3d3; }
+
 @media screen and (min-width: 1000px) {
+  .gamburger-menu {
+    display: none; }
+
   .promo-and-stock {
     width: 1000px;
     margin: 0 auto;
