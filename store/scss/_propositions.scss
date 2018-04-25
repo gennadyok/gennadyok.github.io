@@ -17,7 +17,7 @@
 	.input-tab3:checked ~ .wrapper-tab-propositions .tab3,
 	.input-tab4:checked ~ .wrapper-tab-propositions .tab4 {
 		width: 267px;
-		border: 2px solid $key_clr;
+		border: 1px solid $key_clr;
 		border-bottom: 0;
 		@include flexbox;
 	    @include justify-content(center);

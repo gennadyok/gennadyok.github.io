@@ -1067,7 +1067,7 @@ template {
   .propositions .input-tab3:checked ~ .wrapper-tab-propositions .tab3,
   .propositions .input-tab4:checked ~ .wrapper-tab-propositions .tab4 {
     width: 267px;
-    border: 2px solid #105a8f;
+    border: 1px solid #105a8f;
     border-bottom: 0;
     display: -webkit-box;
     display: -webkit-flex;
