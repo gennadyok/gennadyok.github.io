@@ -34,6 +34,12 @@
 	src: local("Arial Black"), url(fonts/"Arial Black.woff2");
 }
 
+@font-face {
+	font-family: Arial-BoldMT;
+	src: local("Arial-BoldMT"), url(fonts/"Arial-BoldMT.woff");
+	src: local("Arial-BoldMT"), url(fonts/"Arial-BoldMT.woff2");
+}
+
 // color
 $key_clr: #105a8f;
 $border_clr: #d3d3d3;
@@ -120,5 +126,11 @@ a {
 	.wrapper-contacts-futer {
 		width: 1000px;
 		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.promo-and-stock {
+		width: 1200px;
 	}
 }

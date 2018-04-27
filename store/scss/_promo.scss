@@ -144,6 +144,10 @@
 			width: 579px;
 		}
 
+		.image-big-block-promo {
+			display: none;
+		}
+
 		.batton-gallery-decisions {
 			border: 0;
 			font-size: 18px;
@@ -159,5 +163,37 @@
 	@media screen and (min-width: 1000px) {
 		margin: 30px 0 0;
 		display: inline-block;
+	}
+
+	@media screen and (min-width: 1200px) {
+		max-width: 778px;
+		
+		.wrapper-block-promo {
+			width: 778px;
+		}
+
+		.image-block-promo {
+			display: none;
+		}
+
+		.image-big-block-promo {
+			display: block;
+		}
+
+		.block-promo {
+			width: 330px;
+		}
+
+		.title-promo {
+			margin: 0 0 0 10px;
+		}
+
+		.content-promos {
+			margin: 10px 0 0 10px;
+		}
+
+		.gallery-decisions {
+			margin: 12px 0 0 10px;
+		}
 	}
 }

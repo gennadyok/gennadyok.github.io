@@ -22,6 +22,10 @@
   font-family: Arial Black;
   src: local("Arial Black"), url(fonts/"Arial Black.woff");
   src: local("Arial Black"), url(fonts/"Arial Black.woff2"); }
+@font-face {
+  font-family: Arial-BoldMT;
+  src: local("Arial-BoldMT"), url(fonts/"Arial-BoldMT.woff");
+  src: local("Arial-BoldMT"), url(fonts/"Arial-BoldMT.woff2"); }
 body,
 .header {
   background: #fff; }
@@ -86,6 +90,9 @@ a {
   .wrapper-contacts-futer {
     width: 1000px;
     margin: 0 auto; } }
+@media screen and (min-width: 1200px) {
+  .promo-and-stock {
+    width: 1200px; } }
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -682,14 +689,17 @@ template {
       .header .logo {
         display: none; }
       .header .logo174x80 {
+        margin: 0 0 0 -25px;
         display: inline-block; }
       .header .wrapper-call-search {
         margin: 0 0 0 13px; }
       .header .header-phone {
-        font-size: 29px; }
+        font-size: 29px;
+        font-family: Arial-BoldMT; }
       .header .header-phone-bold {
         font-size: 34px;
-        letter-spacing: -0.45px; }
+        letter-spacing: -0.45px;
+        font-family: Arial-BoldMT; }
       .header .call-back {
         margin: 5px 0 0 15px;
         vertical-align: top;
@@ -700,7 +710,7 @@ template {
       .header .consultant {
         width: 87px;
         height: 88px;
-        margin: 0 0 0 93px;
+        margin: 0 0 0 99px;
         border: 1px solid #6cbe68;
         border-radius: 5px;
         text-align: center;
@@ -781,8 +791,8 @@ template {
         display: -ms-flexbox;
         display: flex; }
       .header .link-divisions {
-        margin: 48px 10px 0 0;
-        font-size: 15px;
+        margin: 48px 11px 0 0;
+        font-size: 13px;
         color: #105a8f;
         border-bottom: 1px solid #105a8f;
         display: inline-block; }
@@ -854,7 +864,13 @@ template {
     .header .consultant {
       margin: 0 0 0 102px; }
     .header .user-block {
-      margin: 0px 0 0 204px; } }
+      margin: 0px 0 0 204px; }
+    .header .wrapper-link-divisions {
+      width: 1190px; }
+    .header .full-menu {
+      width: 1200px; }
+    .header .paragraph-menu {
+      width: 195px; } }
 
 .stock {
   margin: 15px auto 0;
@@ -1060,6 +1076,8 @@ template {
       line-height: 43px; }
     .promo .image-block-promo {
       width: 579px; }
+    .promo .image-big-block-promo {
+      display: none; }
     .promo .batton-gallery-decisions {
       border: 0;
       font-size: 18px;
@@ -1071,6 +1089,23 @@ template {
     .promo {
       margin: 30px 0 0;
       display: inline-block; } }
+  @media screen and (min-width: 1200px) {
+    .promo {
+      max-width: 778px; }
+      .promo .wrapper-block-promo {
+        width: 778px; }
+      .promo .image-block-promo {
+        display: none; }
+      .promo .image-big-block-promo {
+        display: block; }
+      .promo .block-promo {
+        width: 330px; }
+      .promo .title-promo {
+        margin: 0 0 0 10px; }
+      .promo .content-promos {
+        margin: 10px 0 0 10px; }
+      .promo .gallery-decisions {
+        margin: 12px 0 0 10px; } }
 
 .propositions {
   max-width: 390px;
@@ -1089,7 +1124,7 @@ template {
   .propositions .input-tab2:checked ~ .wrapper-tab-propositions .tab2,
   .propositions .input-tab3:checked ~ .wrapper-tab-propositions .tab3,
   .propositions .input-tab4:checked ~ .wrapper-tab-propositions .tab4 {
-    width: 267px;
+    padding: 0 32px 0;
     border: 1px solid #105a8f;
     border-bottom: 0;
     display: -webkit-box;
@@ -1122,6 +1157,11 @@ template {
     .propositions .input-tab4:checked ~ .wrapper-tab-propositions .tab4 .tab-content {
       color: #d10000;
       border: 0; }
+    .propositions .input-tab1:checked ~ .wrapper-tab-propositions .tab1:nth-child(1),
+    .propositions .input-tab2:checked ~ .wrapper-tab-propositions .tab2:nth-child(1),
+    .propositions .input-tab3:checked ~ .wrapper-tab-propositions .tab3:nth-child(1),
+    .propositions .input-tab4:checked ~ .wrapper-tab-propositions .tab4:nth-child(1) {
+      margin: 0; }
   .propositions .tab-propositions {
     position: relative;
     height: 56px;
@@ -1273,6 +1313,8 @@ template {
       max-width: 1000px; }
       .propositions .tab-propositions {
         margin: 0 0 0 31px;
+        background: transparent;
+        cursor: pointer;
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-flex;
@@ -1283,12 +1325,13 @@ template {
         -webkit-align-items: center;
         -moz-align-items: center;
         align-items: center; }
-        .propositions .tab-propositions:nth-child(1) {
-          margin: 0; }
       .propositions .product:nth-child(3) {
         display: block; }
       .propositions .product:nth-child(4) {
         display: block; } }
+  @media screen and (min-width: 1200px) {
+    .propositions {
+      max-width: 1200px; } }
 
 .brand {
   max-width: 390px;
@@ -1462,6 +1505,11 @@ template {
       .brand .list-link-brand {
         column-count: 8;
         -webkit-column-count: 8; } }
+  @media screen and (min-width: 1200px) {
+    .brand {
+      min-width: 1200px; }
+      .brand .block-name-brand {
+        width: 293px; } }
 
 .contacts {
   max-width: 390px;

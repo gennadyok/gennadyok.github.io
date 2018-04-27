@@ -168,4 +168,12 @@
 			-webkit-column-count: 8;
 		}
 	}
+
+	@media screen and (min-width: 1200px) {
+		min-width: 1200px;
+
+		.block-name-brand {
+			width: 293px;
+		}
+	}
 }
