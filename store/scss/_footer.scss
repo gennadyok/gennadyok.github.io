@@ -34,7 +34,7 @@
 	@media screen and (min-width: 1000px) {
 			width: 210px;
 		    height: 192px;
-		    margin: 45px 0 0;
+		    margin: 45px 0 0 34px;
 		    border-left: 1px solid;
 		    border-image: linear-gradient(rgba(0, 0, 0, 0), #c5bfbf, rgba(0, 0, 0, 0)) 1 10%;
 		    vertical-align: top;
@@ -68,5 +68,13 @@
 			.year {
 				margin: 11px 0 0;
 			}
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin: 45px 0 0;
+
+		.developer {
+			margin: 0 0 0 67px;
+		}
 	}
 }

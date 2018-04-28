@@ -19,7 +19,7 @@
 
 	.link-divisions {
 		margin: 8px 10px 0 0;
-		font-size: 15px;
+		font-size: 13px;
 		color: $key_clr;
 		border-bottom: 1px solid $key_clr;
 		display: inline-block;
@@ -216,7 +216,7 @@
 		    }
 
 		    .wrapper-social {
-		    	margin: 34px 0 0 95px;
+		    	margin: 34px 0 0 55px;
 		    	@include flexbox;
     			flex-flow: column;
 		    }
@@ -224,5 +224,17 @@
 		    .icon-social-name-social {
 		    	margin: 0;
 		    }
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 870px;
+
+		.wrapper-time-payment {
+			margin: 43px 0 0 90px;
+		}
+
+		.wrapper-social {
+			margin: 34px 0 0 95px;
+		}
 	}
 }

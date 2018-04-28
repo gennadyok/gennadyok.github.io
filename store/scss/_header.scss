@@ -225,6 +225,7 @@
 				z-index: 2;
 				width: 1000px;
 				margin: 0 auto -33px;
+				text-align: right;
 			}
 
 			.logo {
@@ -263,6 +264,7 @@
 			}
 
 			.consultant {
+				position: relative;
 				width: 87px;
 				height: 88px;
 				margin: 0 0 0 99px;
@@ -272,9 +274,17 @@
 				display: inline-block;
 			}
 
+			.green-circle {
+				position: absolute;
+				top: 2px;
+				left: 75px;
+				width: 9px;
+				height: 9px;
+				border-radius: 50%;
+				background: #6cbe68;
+			}
+
 			.bearded-man {
-				position: static;
-				z-index: 1;
 				width: 89px;
 				height: 62px;
 				margin: -6px 0 0 1px;
@@ -295,6 +305,7 @@
 			}
 
 			.user-block {
+				margin: 0 0 0 70px;
 				vertical-align: top;
 			}
 
@@ -335,6 +346,31 @@
 				color: $key_clr;
 			}
 
+			.img-basket {
+				width: 38px;
+			}
+
+
+			.purchases {
+				width: 19px;
+				height: 19px;
+				margin: -23px 0px 0 -23px;
+				border: 1px solid #cecdcd;
+				border-radius: 50%;
+				background-color: #175b8e;
+				background-image: linear-gradient(to top, #f6f6f6 0%, #d7d6d6 11%, #dbdbdb 26%, #ffffff 100%);
+			}
+
+			.number-purchases {
+				width: 12px;
+				height: 13px;
+				text-shadow: 0 1px 0 rgba(255, 255, 255, 0.77);
+				color: #d10000;
+				font-family: "Arial-Black";
+				font-size: 18px;
+				letter-spacing: -0.45px;
+			}
+
 			.divisions {
 				position: relative;
 				z-index: 1;
@@ -353,8 +389,12 @@
     			@include flexbox;
 			}
 
+			.question {
+				margin: 0 2px -3px 0;
+			}
+
 			.link-divisions {
-				margin: 48px 11px 0 0;
+				margin: 48px 13px 0 0;
 			    font-size: 13px;
 			    color: #105a8f;
 			    border-bottom: 1px solid #105a8f;
@@ -387,7 +427,7 @@
 			    box-shadow: -1px 0px 0px 0px #0c5d92;
 			    text-align: left;
 				@include flexbox;
-				@include justify-content(space-between);
+				@include justify-content(space-around);
 				@include align-items(center);
 
 				&:first-child {
@@ -406,13 +446,16 @@
 			}
 
 			.link-img-paragraph-menu {
-				margin: 0 13px 0 0;
+				margin: 0px 0px 0 20px;
+				vertical-align: super;
+				display: inline-block;
 			}
 	}
 
 	@media screen and (min-width: 1200px) {
 		.row-header {
 			width: 1200px;
+			text-align: right;
 		}
 
 		.wrapper-call-search {
@@ -424,7 +467,7 @@
 		}
 
 		.user-block {
-			margin: 0px 0 0 204px;
+			margin: 0px 0 0 230px;
 		}
 
 		.wrapper-link-divisions {
