@@ -5,21 +5,21 @@
 }
 
 @font-face {
-	font-family: Arial-Bold;
-	src: local(Arial-Bold), url(fonts/Arial-Bold.woff);
-	src: local(Arial-Bold), url(fonts/Arial-Bold.woff2);
+	font-family: "Arial-BoldMT";
+	src: local("Arial-Bold"), url(fonts/Arial-BoldMT.woff);
+	src: local("Arial-Bold"), url(fonts/Arial-BoldMT.woff2);
 }
 
 @font-face {
-	font-family: Arial-Italic;
-	src: local(Arial-Italic), url(fonts/Arial-Italic.woff);
-	src: local(Arial-Italic), url(fonts/Arial-Italic.woff2);
+	font-family: "Arial-Italic";
+	src: local("Arial-Italic"), url(fonts/Arial-ItalicMT.woff);
+	src: local("Arial-Italic"), url(fonts/Arial-ItalicMT.woff2);
 }
 
 @font-face {
-	font-family: Arial-BoldItalic;
-	src: local(Arial-BoldItalic), url(fonts/Arial-BoldItalic.woff);
-	src: local(Arial-BoldItalic), url(fonts/Arial-BoldItalic.woff2);
+	font-family: "Arial-BoldItalicMT";
+	src: local("Arial-BoldItalic"), url(fonts/Arial-BoldItalicMT.woff);
+	src: local("Arial-BoldItalic"), url(fonts/Arial-BoldItalicMT.woff2);
 }
 
 @font-face {
@@ -29,15 +29,9 @@
 }
 
 @font-face {
-	font-family: Arial Black;
+	font-family: "Arial Black";
 	src: local("Arial Black"), url(fonts/"Arial Black.woff");
 	src: local("Arial Black"), url(fonts/"Arial Black.woff2");
-}
-
-@font-face {
-	font-family: Arial-BoldMT;
-	src: local("Arial-BoldMT"), url(fonts/"Arial-BoldMT.woff");
-	src: local("Arial-BoldMT"), url(fonts/"Arial-BoldMT.woff2");
 }
 
 // color

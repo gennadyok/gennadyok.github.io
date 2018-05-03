@@ -3,29 +3,25 @@
   src: local(Arial), url(fonts/Arial.woff);
   src: local(Arial), url(fonts/Arial.woff2); }
 @font-face {
-  font-family: Arial-Bold;
-  src: local(Arial-Bold), url(fonts/Arial-Bold.woff);
-  src: local(Arial-Bold), url(fonts/Arial-Bold.woff2); }
+  font-family: "Arial-BoldMT";
+  src: local("Arial-Bold"), url(fonts/Arial-BoldMT.woff);
+  src: local("Arial-Bold"), url(fonts/Arial-BoldMT.woff2); }
 @font-face {
-  font-family: Arial-Italic;
-  src: local(Arial-Italic), url(fonts/Arial-Italic.woff);
-  src: local(Arial-Italic), url(fonts/Arial-Italic.woff2); }
+  font-family: "Arial-Italic";
+  src: local("Arial-Italic"), url(fonts/Arial-ItalicMT.woff);
+  src: local("Arial-Italic"), url(fonts/Arial-ItalicMT.woff2); }
 @font-face {
-  font-family: Arial-BoldItalic;
-  src: local(Arial-BoldItalic), url(fonts/Arial-BoldItalic.woff);
-  src: local(Arial-BoldItalic), url(fonts/Arial-BoldItalic.woff2); }
+  font-family: "Arial-BoldItalicMT";
+  src: local("Arial-BoldItalic"), url(fonts/Arial-BoldItalicMT.woff);
+  src: local("Arial-BoldItalic"), url(fonts/Arial-BoldItalicMT.woff2); }
 @font-face {
   font-family: "Century Gothic";
   src: local("Century Gothic"), url(fonts/"Century Gothic.woff");
   src: local("Century Gothic"), url(fonts/"Century Gothic.woff2"); }
 @font-face {
-  font-family: Arial Black;
+  font-family: "Arial Black";
   src: local("Arial Black"), url(fonts/"Arial Black.woff");
   src: local("Arial Black"), url(fonts/"Arial Black.woff2"); }
-@font-face {
-  font-family: Arial-BoldMT;
-  src: local("Arial-BoldMT"), url(fonts/"Arial-BoldMT.woff");
-  src: local("Arial-BoldMT"), url(fonts/"Arial-BoldMT.woff2"); }
 body,
 .header {
   background: #fff; }
@@ -585,6 +581,8 @@ template {
     border-bottom: 1px dashed #105a8f;
     color: #105a8f;
     background: transparent; }
+  .header .number-purchases {
+    display: none; }
   .header .divisions {
     display: none; }
   .header .full-menu {
@@ -792,6 +790,7 @@ template {
         margin: -23px 0px 0 -23px;
         border: 1px solid #cecdcd;
         border-radius: 50%;
+        text-align: center;
         background-color: #175b8e;
         background-image: linear-gradient(to top, #f6f6f6 0%, #d7d6d6 11%, #dbdbdb 26%, #ffffff 100%); }
       .header .number-purchases {
@@ -799,9 +798,11 @@ template {
         height: 13px;
         text-shadow: 0 1px 0 rgba(255, 255, 255, 0.77);
         color: #d10000;
-        font-family: "Arial-Black";
+        font-family: "Arial Black";
         font-size: 18px;
-        letter-spacing: -0.45px; }
+        letter-spacing: -0.45px;
+        line-height: 18px;
+        display: inline-block; }
       .header .divisions {
         position: relative;
         z-index: 1;
@@ -1071,6 +1072,8 @@ template {
   .promo .nomber-promo-align {
     margin: 2px 0 0;
     display: inline-block; }
+  .promo .image-big-block-promo {
+    display: none; }
   .promo .is-active {
     width: 20px;
     height: 26px;
@@ -1110,8 +1113,6 @@ template {
       line-height: 43px; }
     .promo .image-block-promo {
       width: 579px; }
-    .promo .image-big-block-promo {
-      display: none; }
     .promo .batton-gallery-decisions {
       border: 0;
       font-size: 18px;
@@ -1260,6 +1261,9 @@ template {
     border: 1px solid #105a8f;
     border-radius: 0 5px 5px 5px;
     display: none; }
+  .propositions .link-pointer-grey,
+  .propositions .link-pointer-blue {
+    display: none; }
   .propositions .product {
     width: 45%;
     display: flex;
@@ -1267,6 +1271,8 @@ template {
     .propositions .product:nth-child(3) {
       display: none; }
     .propositions .product:nth-child(4) {
+      display: none; }
+    .propositions .product:nth-child(5) {
       display: none; }
   .propositions .img-sticker-product {
     position: relative;
@@ -1276,16 +1282,24 @@ template {
     position: absolute;
     top: -15px;
     left: -10px; }
-  .propositions .gift-text {
+  .propositions .gift-text,
+  .propositions .gift-text-price,
+  .propositions .gift-text-sale {
     position: absolute;
-    top: -2px;
-    left: -10px;
+    top: -1px;
+    left: -2px;
     text-shadow: 0 -1px 0 rgba(5, 6, 6, 0.5);
     color: #fff;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     font-style: italic;
     transform: rotate(-15deg); }
+  .propositions .gift-text-price {
+    top: -2px;
+    left: -8px; }
+  .propositions .gift-text-sale {
+    top: -1px;
+    left: 1px; }
   .propositions .description-gift {
     margin: 5px 0 0;
     font-size: 13px;
@@ -1345,6 +1359,12 @@ template {
   @media screen and (min-width: 1000px) {
     .propositions {
       max-width: 1000px; }
+      .propositions .link-pointer-grey {
+        margin: 0;
+        display: block; }
+      .propositions .link-pointer-blue {
+        margin: 0;
+        display: block; }
       .propositions .tab-propositions {
         margin: 0 0 0 31px;
         background: transparent;
@@ -1362,10 +1382,22 @@ template {
       .propositions .product:nth-child(3) {
         display: block; }
       .propositions .product:nth-child(4) {
-        display: block; } }
+        display: block; }
+      .propositions .product:nth-child(5) {
+        display: block; }
+      .propositions .product-additional {
+        display: none; }
+      .propositions .img-product-mac {
+        margin: -30px 0 0 0; } }
   @media screen and (min-width: 1200px) {
     .propositions {
-      max-width: 1200px; } }
+      max-width: 1200px; }
+      .propositions .link-pointer-grey {
+        margin: 0 0 0 -20px; }
+      .propositions .link-pointer-blue {
+        margin: 0 -20px 0 0; }
+      .propositions .product-additional {
+        display: block; } }
 
 .brand {
   max-width: 390px;

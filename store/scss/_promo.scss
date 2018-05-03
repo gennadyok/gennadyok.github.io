@@ -88,6 +88,10 @@
 		display: inline-block;
 	}
 
+	.image-big-block-promo {
+		display: none;
+	}
+
 	.is-active {
 		width: 20px;
 		height: 26px;
@@ -142,10 +146,6 @@
 
 		.image-block-promo {
 			width: 579px;
-		}
-
-		.image-big-block-promo {
-			display: none;
 		}
 
 		.batton-gallery-decisions {
