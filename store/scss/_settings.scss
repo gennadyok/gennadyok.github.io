@@ -1,37 +1,37 @@
 @font-face {
-	font-family: Arial;
-	src: local(Arial), url(fonts/Arial.woff);
-	src: local(Arial), url(fonts/Arial.woff2);
+	font-family: ArialMT;
+	src: local(Arial), url(fonts/arial-mt.woff);
+	src: local(Arial), url(fonts/arial-mt.woff2);
 }
 
 @font-face {
 	font-family: "Arial-BoldMT";
-	src: local("Arial-Bold"), url(fonts/Arial-BoldMT.woff);
-	src: local("Arial-Bold"), url(fonts/Arial-BoldMT.woff2);
+	src: local("Arial-Bold"), url(fonts/arial-bold-mt.woff);
+	src: local("Arial-Bold"), url(fonts/arial-bold-mt.woff2);
 }
 
 @font-face {
 	font-family: "Arial-Italic";
-	src: local("Arial-Italic"), url(fonts/Arial-ItalicMT.woff);
-	src: local("Arial-Italic"), url(fonts/Arial-ItalicMT.woff2);
+	src: local("Arial-Italic"), url(fonts/arial-italic-mt.woff);
+	src: local("Arial-Italic"), url(fonts/arial-italic-mt.woff2);
 }
 
 @font-face {
 	font-family: "Arial-BoldItalicMT";
-	src: local("Arial-BoldItalic"), url(fonts/Arial-BoldItalicMT.woff);
-	src: local("Arial-BoldItalic"), url(fonts/Arial-BoldItalicMT.woff2);
+	src: local("Arial-BoldItalic"), url(fonts/arial-bold-italic-mt.woff);
+	src: local("Arial-BoldItalic"), url(fonts/arial-bold-italic-mt.woff2);
 }
 
 @font-face {
 	font-family: "Century Gothic";
-	src: local("Century Gothic"), url(fonts/"Century Gothic.woff");
-	src: local("Century Gothic"), url(fonts/"Century Gothic.woff2");
+	src: local("Century Gothic"), url(fonts/"century-gothic.woff");
+	src: local("Century Gothic"), url(fonts/"century-gothic.woff2");
 }
 
 @font-face {
 	font-family: "Arial Black";
-	src: local("Arial Black"), url(fonts/"Arial Black.woff");
-	src: local("Arial Black"), url(fonts/"Arial Black.woff2");
+	src: local("Arial Black"), url(fonts/"arial-black.woff");
+	src: local("Arial Black"), url(fonts/"arial-black.woff2");
 }
 
 // color
@@ -43,8 +43,8 @@ $red: #d10000;
 // margin-padding
 
 // font-size
-$fs_13: 13px;
-$fs_18: 18px;
+$fs_constant: 13px;
+$fs_medium: 18px;
 
 body,
 .header {
@@ -63,8 +63,8 @@ div,
 body,
 button,
 input {
-	font-family: Arial, OpenSans, Georgia, Arial, Times New Roman;
-	font-size: 13px;
+	font-family: Arial, ArialMT, OpenSans, Georgia, Arial, Times New Roman;
+	font-size: $fs_constant;
 	color: #333;
 }
 

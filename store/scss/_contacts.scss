@@ -19,7 +19,7 @@
 
 	.link-divisions {
 		margin: 8px 10px 0 0;
-		font-size: 13px;
+		font-size: $fs_constant;
 		color: $key_clr;
 		border-bottom: 1px solid $key_clr;
 		display: inline-block;
@@ -31,7 +31,7 @@
 
 	.address {
 		margin: 10px 0 0;
-		font-size: 13px;
+		font-size: $fs_constant;
 	}
 
 	.call-back-phone {
@@ -47,7 +47,7 @@
 	}
 
 	.link-feedback {
-		font-size: 13px;
+		font-size: $fs_constant;
 		font-weight: 500;
 		color: $key_clr;
 		border-bottom: 1px dashed $key_clr;
@@ -76,7 +76,7 @@
 		border-bottom: 1px dashed $key_clr;
 		text-shadow: 0 1px 0 #ffffff;
 		color: $key_clr;
-		font-size: 13px;
+		font-size: $fs_constant;
 		display: inline-block;
 		transform: skew(20deg);
 	}

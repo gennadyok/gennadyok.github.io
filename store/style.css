@@ -1,27 +1,27 @@
 @font-face {
-  font-family: Arial;
-  src: local(Arial), url(fonts/Arial.woff);
-  src: local(Arial), url(fonts/Arial.woff2); }
+  font-family: ArialMT;
+  src: local(Arial), url(fonts/arial-mt.woff);
+  src: local(Arial), url(fonts/arial-mt.woff2); }
 @font-face {
   font-family: "Arial-BoldMT";
-  src: local("Arial-Bold"), url(fonts/Arial-BoldMT.woff);
-  src: local("Arial-Bold"), url(fonts/Arial-BoldMT.woff2); }
+  src: local("Arial-Bold"), url(fonts/arial-bold-mt.woff);
+  src: local("Arial-Bold"), url(fonts/arial-bold-mt.woff2); }
 @font-face {
   font-family: "Arial-Italic";
-  src: local("Arial-Italic"), url(fonts/Arial-ItalicMT.woff);
-  src: local("Arial-Italic"), url(fonts/Arial-ItalicMT.woff2); }
+  src: local("Arial-Italic"), url(fonts/arial-italic-mt.woff);
+  src: local("Arial-Italic"), url(fonts/arial-italic-mt.woff2); }
 @font-face {
   font-family: "Arial-BoldItalicMT";
-  src: local("Arial-BoldItalic"), url(fonts/Arial-BoldItalicMT.woff);
-  src: local("Arial-BoldItalic"), url(fonts/Arial-BoldItalicMT.woff2); }
+  src: local("Arial-BoldItalic"), url(fonts/arial-bold-italic-mt.woff);
+  src: local("Arial-BoldItalic"), url(fonts/arial-bold-italic-mt.woff2); }
 @font-face {
   font-family: "Century Gothic";
-  src: local("Century Gothic"), url(fonts/"Century Gothic.woff");
-  src: local("Century Gothic"), url(fonts/"Century Gothic.woff2"); }
+  src: local("Century Gothic"), url(fonts/"century-gothic.woff");
+  src: local("Century Gothic"), url(fonts/"century-gothic.woff2"); }
 @font-face {
   font-family: "Arial Black";
-  src: local("Arial Black"), url(fonts/"Arial Black.woff");
-  src: local("Arial Black"), url(fonts/"Arial Black.woff2"); }
+  src: local("Arial Black"), url(fonts/"arial-black.woff");
+  src: local("Arial Black"), url(fonts/"arial-black.woff2"); }
 body,
 .header {
   background: #fff; }
@@ -37,7 +37,7 @@ div,
 body,
 button,
 input {
-  font-family: Arial, OpenSans, Georgia, Arial, Times New Roman;
+  font-family: Arial, ArialMT, OpenSans, Georgia, Arial, Times New Roman;
   font-size: 13px;
   color: #333; }
 
@@ -486,10 +486,13 @@ template {
 .header {
   margin: 15px auto 0;
   text-align: center; }
+  .header .row-header {
+    max-width: 600px;
+    display: inline-block; }
   .header .logo {
     margin: 0 auto;
     display: block; }
-  .header .logo174x80 {
+  .header .logo-big {
     display: none; }
   .header .wrapper-call-search {
     margin: 10px 0 0;
@@ -501,7 +504,7 @@ template {
     font-style: italic; }
   .header .call-back {
     margin: 0 0 0 15px;
-    font-size: 13px;
+    font-size: 18px;
     font-style: italic;
     border-bottom: 1px dashed #105a8f;
     vertical-align: text-top;
@@ -550,6 +553,8 @@ template {
     font-size: 13px;
     border-bottom: 1px dashed #105a8f;
     color: #105a8f; }
+  .header .img-basket {
+    display: none; }
   .header .enter-link-constant {
     display: none; }
   .header .sale-menu {
@@ -580,11 +585,10 @@ template {
     font-weight: 700;
     border-bottom: 1px dashed #105a8f;
     color: #105a8f;
-    background: transparent; }
-  .header .number-purchases {
-    display: none; }
-  .header .divisions {
-    display: none; }
+    background: transparent;
+    cursor: pointer; }
+  .header .number-purchases,
+  .header .divisions,
   .header .full-menu {
     display: none; }
   .header .menu-site {
@@ -683,15 +687,16 @@ template {
       width: 100%;
       margin: 9px auto 0; }
       .header .row-header {
+        max-width: 1000px;
         position: relative;
         z-index: 2;
         width: 1000px;
         margin: 0 auto -33px;
-        text-align: right; }
+        text-align: left; }
       .header .logo {
         display: none; }
-      .header .logo174x80 {
-        margin: 0 0 0 -25px;
+      .header .logo-big {
+        margin: 0;
         display: inline-block; }
       .header .wrapper-call-search {
         margin: 0 0 0 13px; }
@@ -713,7 +718,7 @@ template {
         position: relative;
         width: 87px;
         height: 88px;
-        margin: 0 0 0 99px;
+        margin: 0 0 0 65px;
         border: 1px solid #6cbe68;
         border-radius: 5px;
         text-align: center;
@@ -741,7 +746,7 @@ template {
         font-weight: 900;
         font-size: 13px; }
       .header .user-block {
-        margin: 0 0 0 70px;
+        margin: 0 0 0 31px;
         vertical-align: top; }
       .header .enter {
         margin: 0; }
@@ -776,6 +781,7 @@ template {
         -moz-align-items: center;
         align-items: center; }
       .header .basket {
+        margin: 0 0 0 10px;
         border: 0;
         font-size: 23px;
         font-style: italic;
@@ -783,7 +789,8 @@ template {
         border-bottom: 1px dashed #105a8f;
         color: #105a8f; }
       .header .img-basket {
-        width: 38px; }
+        width: 38px;
+        display: inline-block; }
       .header .purchases {
         width: 19px;
         height: 19px;
@@ -820,7 +827,12 @@ template {
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flexbox;
-        display: flex; }
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center; }
       .header .question {
         margin: 0 2px -3px 0; }
       .header .link-divisions {
@@ -893,13 +905,14 @@ template {
   @media screen and (min-width: 1200px) {
     .header .row-header {
       width: 1200px;
-      text-align: right; }
+      max-width: 1200px;
+      text-align: left; }
     .header .wrapper-call-search {
       margin: 0 0 0 46px; }
     .header .consultant {
-      margin: 0 0 0 102px; }
+      margin: 0 0 0 85px; }
     .header .user-block {
-      margin: 0px 0 0 230px; }
+      margin: 0px 0 0 177px; }
     .header .wrapper-link-divisions {
       width: 1190px; }
     .header .full-menu {
@@ -925,11 +938,14 @@ template {
     -moz-align-items: center;
     align-items: center; }
   .stock .icon-proposition-kaspersky {
-    margin: 0 32px 0 0; }
+    margin: 0 32px 0 0;
+    flex-basis: 37px; }
   .stock .icon-proposition-abbyy {
-    margin: 0 20px 0 0; }
+    margin: 0 20px 0 0;
+    flex-basis: 49px; }
   .stock .icon-proposition-microsoft {
-    margin: 0 18px 0 0; }
+    margin: 0 18px 0 0;
+    flex-basis: 51px; }
   .stock .text-proposition {
     line-height: 20px;
     display: inline-block; }
@@ -1549,10 +1565,7 @@ template {
   @media screen and (min-width: 1000px) {
     .brand {
       max-width: 1000px; }
-      .brand .solution {
-        max-width: 100%; }
-      .brand .table-brand {
-        max-width: 100%; }
+      .brand .solution,
       .brand .table-brand {
         max-width: 100%; }
       .brand .block-name-brand {

@@ -44,29 +44,6 @@
 		border-radius: 5px 5px 0 0;
 		display: none;
 		background: #fff;
-
-		// &:first-of-type {
-		// 	display: block;
-		// }
-
-		// &.is-active {
-		// 	width: 267px;
-		// 	border: 1px solid $key_clr;
-		// 	border-bottom: 0;
-		// 	@include flexbox;
-		//     @include justify-content(center);
-		//     @include align-items(center);
-
-		// 	.tab-gradient,
-		// 	.tab-empty-block {
-		// 		display: block;
-		// 	}
-
-		// 	.tab-content {
-		// 		color: #d10000;
-		// 		border: 0;
-		// 	}
-		// }
 	}
 
 	.tab-empty-block {
@@ -189,14 +166,14 @@
 
 	.description-gift {
 		margin: 5px 0 0;
-		font-size: $fs_13;
+		font-size: $fs_constant;
 		color: #d10000;
 		display: block;
 	}
 
 	.name-link-product {
 		margin: 6px 0 0;
-		font-size: $fs_13;
+		font-size: $fs_constant;
 		text-decoration: underline;
 		color: $key_clr;
 		display: inline-block;
@@ -217,7 +194,7 @@
 	}
 
 	.cash {
-		font-size: $fs_18;
+		font-size: $fs_medium;
 		font-family: Arial Black;
 	}
 

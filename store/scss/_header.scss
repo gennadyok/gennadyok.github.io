@@ -2,12 +2,17 @@
 	margin: 15px auto 0;
 	text-align: center;
 
+	.row-header {
+		max-width: 600px;
+    	display: inline-block;
+	}
+
 	.logo {
 		margin: 0 auto;
 		display: block;
 	}
 
-	.logo174x80 {
+	.logo-big {
 		display: none;
 	}
 
@@ -19,13 +24,13 @@
 
 	.header-phone {
 		margin: 0 0 0 5px;
-		font-size: $fs_18;
+		font-size: $fs_medium;
 		font-style: italic;
 	}
 
 	.call-back {
 		margin: 0 0 0 15px;
-		font-size: $fs_13;
+		font-size: $fs_medium;
 		font-style: italic;
 		border-bottom: 1px dashed $key_clr;
 		vertical-align: text-top;
@@ -89,9 +94,13 @@
 
 	.enter-link {
 		vertical-align: text-top;
-		font-size: $fs_13;
+		font-size: $fs_constant;
 		border-bottom: 1px dashed $key_clr;
 		color: $key_clr;
+	}
+
+	.img-basket {
+		display: none;
 	}
 
 	.enter-link-constant {
@@ -111,22 +120,17 @@
 
 	.basket {
 		border: 0;
-		font-size: $fs_13;
+		font-size: $fs_constant;
 		font-style: italic;
 		font-weight: 700;
 		border-bottom: 1px dashed $key_clr;
 		color: $key_clr;
 		background: transparent;
+		cursor: pointer;
 	}
 
-	.number-purchases {
-		display: none;
-	}
-
-	.divisions {
-		display: none;
-	}
-
+	.number-purchases,
+	.divisions,
 	.full-menu {
 		display: none;
 	}
@@ -146,7 +150,7 @@
 		width: 300px;
 		height: 25px;
 		border: 1px solid $dark;
-		font-size: $fs_18;
+		font-size: $fs_medium;
 		font-weight: 700;
 	}
 
@@ -225,19 +229,20 @@
 		margin: 9px auto 0;
 
 			.row-header {
+				max-width: 1000px;
 				position: relative;
 				z-index: 2;
 				width: 1000px;
 				margin: 0 auto -33px;
-				text-align: right;
+				text-align: left;
 			}
 
 			.logo {
 				display: none;
 			}
 
-			.logo174x80 {
-				margin: 0 0 0 -25px;
+			.logo-big {
+				margin: 0;
 				display: inline-block;
 			}
 
@@ -271,7 +276,7 @@
 				position: relative;
 				width: 87px;
 				height: 88px;
-				margin: 0 0 0 99px;
+				margin: 0 0 0 65px;
 				border: 1px solid #6cbe68;
 				border-radius: 5px;
 				text-align: center;
@@ -309,7 +314,7 @@
 			}
 
 			.user-block {
-				margin: 0 0 0 70px;
+				margin: 0 0 0 31px;
 				vertical-align: top;
 			}
 
@@ -323,7 +328,7 @@
 
 			.enter-link-constant {
 				vertical-align: text-top;
-				font-size: $fs_13;
+				font-size: $fs_constant;
 				border-bottom: 1px dashed $key_clr;
 				color: $key_clr;
 				display: inline-block;
@@ -342,6 +347,7 @@
 			}
 
 			.basket {
+				margin: 0 0 0 10px;
 				border: 0;
 				font-size: 23px;
 				font-style: italic;
@@ -352,6 +358,7 @@
 
 			.img-basket {
 				width: 38px;
+				display: inline-block;
 			}
 
 
@@ -372,7 +379,7 @@
 				text-shadow: 0 1px 0 rgba(255, 255, 255, 0.77);
 				color: #d10000;
 				font-family: "Arial Black";
-				font-size: 18px;
+				font-size: $fs_medium;
 				letter-spacing: -0.45px;
 				line-height: 18px;
 				display: inline-block;
@@ -394,6 +401,7 @@
 				text-align: left;
     			list-style-type: none;
     			@include flexbox;
+    			@include align-items(center);
 			}
 
 			.question {
@@ -462,7 +470,8 @@
 	@media screen and (min-width: 1200px) {
 		.row-header {
 			width: 1200px;
-			text-align: right;
+			max-width: 1200px;
+   			text-align: left;
 		}
 
 		.wrapper-call-search {
@@ -470,11 +479,11 @@
 		}
 
 		.consultant {
-			margin: 0 0 0 102px;
+			margin: 0 0 0 85px;
 		}
 
 		.user-block {
-			margin: 0px 0 0 230px;
+			margin: 0px 0 0 177px;
 		}
 
 		.wrapper-link-divisions {
