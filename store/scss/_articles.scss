@@ -25,13 +25,12 @@
 		cursor: pointer;
 		background-image: linear-gradient(to top, #ffffff 0%, #eceded 37%, #ffffff 100%);
 		@include flexbox;
-		@include justify-content(space-evenly);
 		@include align-items(center);
 	}
 
 	.all-brand {
 		border-bottom: 2px solid $key_clr;
-		margin: 0 0 3px 0;
+		margin: 0 0 3px 10px;
 		text-shadow: 0 1px 0 #ffffff;
 		color: $key_clr;
 		font-size: 15px;
@@ -41,6 +40,7 @@
 	}
 
 	.all-stock-run {
+		margin: 0 0 0 10px;
 		transform: skew(20deg);
 	}
 

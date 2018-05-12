@@ -136,6 +136,10 @@
 		}
 	}
 
+	.icon-social {
+		flex-basis: 37px;
+	}
+
 	.name-social {
 		margin: 0 0 0 3px;
 		color: #105a8f;
@@ -165,8 +169,12 @@
 
 		.form-feedback-bottom {
 			@include flexbox;
-			@include justify-content(space-evenly);
+			@include justify-content(start);
 			@include align-items(center);
+		}
+
+		.form-feedback {
+			margin: 0 0 0 10px;
 		}
 
 		.payment {

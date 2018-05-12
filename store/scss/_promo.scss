@@ -66,13 +66,13 @@
 	.list-nomber-promo {
 		width: 112px;
 		@include flexbox;
-		@include justify-content(space-evenly);
 		@include align-items(center);
 	}
 
 	.nomber-promo {
 		width: 20px;
 		height: 26px;
+		margin: 0 2px 0 0px;
 		border-radius: 5px;
 		text-align: center;
 		font-size: 13px;

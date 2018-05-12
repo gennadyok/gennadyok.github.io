@@ -602,16 +602,18 @@ template {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-    -moz-justify-content: space-evenly;
-    justify-content: space-evenly;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
     -moz-align-items: center;
     align-items: center; }
+  .header .list-categories {
+    margin: 0 0 0 10px; }
   .header .categories {
     width: 300px;
     height: 25px;
@@ -621,6 +623,7 @@ template {
   .header .gamburger-menu {
     width: 28px;
     height: 23px;
+    margin: 0 10px 0 0;
     padding: 4px 3px;
     border: 1px solid #333;
     border-radius: 5px;
@@ -971,18 +974,13 @@ template {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-    -moz-justify-content: space-evenly;
-    justify-content: space-evenly;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
     -moz-align-items: center;
     align-items: center; }
   .stock .all-stock {
-    margin: 0 0 3px 0;
+    margin: 0 0 3px 10px;
     border-bottom: 2px solid #105a8f;
     font-size: 15px;
     font-weight: 700;
@@ -991,6 +989,7 @@ template {
     display: inline-block;
     transform: skew(20deg); }
   .stock .all-stock-run {
+    margin: 0 0 0 7px;
     transform: skew(20deg); }
   @media screen and (min-width: 600px) {
     .stock {
@@ -1064,11 +1063,6 @@ template {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-    -moz-justify-content: space-evenly;
-    justify-content: space-evenly;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
@@ -1077,6 +1071,7 @@ template {
   .promo .nomber-promo {
     width: 20px;
     height: 26px;
+    margin: 0 2px 0 0px;
     border-radius: 5px;
     text-align: center;
     font-size: 13px;
@@ -1258,11 +1253,11 @@ template {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-    -moz-justify-content: space-evenly;
-    justify-content: space-evenly;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
@@ -1341,17 +1336,13 @@ template {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-    -moz-justify-content: space-evenly;
-    justify-content: space-evenly;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
     -moz-align-items: center;
     align-items: center; }
   .propositions .cash {
+    margin: 0 0 0 9px;
     font-size: 18px;
     font-family: Arial Black; }
   .propositions .cash-uan {
@@ -1360,6 +1351,7 @@ template {
   .propositions .basket-propositions {
     width: 17px;
     height: 18px;
+    margin: 0 0 0 8px;
     transform: skew(20deg); }
   .propositions .price-dollar {
     margin: 5px 0 0 15px;
@@ -1369,17 +1361,16 @@ template {
     .propositions {
       max-width: 577px; }
       .propositions .product {
-        width: 189px; }
+        width: 189px;
+        margin: 0 15px 0; }
       .propositions .description-gift {
         width: 190px; } }
   @media screen and (min-width: 1000px) {
     .propositions {
       max-width: 1000px; }
-      .propositions .link-pointer-grey {
-        margin: 0;
-        display: block; }
+      .propositions .link-pointer-grey,
       .propositions .link-pointer-blue {
-        margin: 0;
+        margin: 0 15px 0;
         display: block; }
       .propositions .tab-propositions {
         margin: 0 0 0 31px;
@@ -1408,10 +1399,6 @@ template {
   @media screen and (min-width: 1200px) {
     .propositions {
       max-width: 1200px; }
-      .propositions .link-pointer-grey {
-        margin: 0 0 0 -20px; }
-      .propositions .link-pointer-blue {
-        margin: 0 -20px 0 0; }
       .propositions .product-additional {
         display: block; } }
 
@@ -1440,11 +1427,6 @@ template {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-    -moz-justify-content: space-evenly;
-    justify-content: space-evenly;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
@@ -1452,7 +1434,7 @@ template {
     align-items: center; }
   .brand .all-brand {
     border-bottom: 2px solid #105a8f;
-    margin: 0 0 3px 0;
+    margin: 0 0 3px 10px;
     text-shadow: 0 1px 0 #ffffff;
     color: #105a8f;
     font-size: 15px;
@@ -1460,6 +1442,7 @@ template {
     display: inline-block;
     transform: skew(20deg); }
   .brand .all-stock-run {
+    margin: 0 0 0 10px;
     transform: skew(20deg); }
   .brand .table-brand {
     max-width: 300px;
@@ -1693,6 +1676,8 @@ template {
     align-items: center; }
     .contacts .icon-social-name-social:nth-child(1) {
       margin: 0; }
+  .contacts .icon-social {
+    flex-basis: 37px; }
   .contacts .name-social {
     margin: 0 0 0 3px;
     color: #105a8f;
@@ -1720,16 +1705,18 @@ template {
         display: -moz-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-        -webkit-justify-content: space-evenly;
-        -moz-justify-content: space-evenly;
-        justify-content: space-evenly;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        -webkit-justify-content: start;
+        -moz-justify-content: start;
+        justify-content: start;
         -webkit-box-align: center;
         -ms-flex-align: center;
         -webkit-align-items: center;
         -moz-align-items: center;
         align-items: center; }
+      .contacts .form-feedback {
+        margin: 0 0 0 10px; }
       .contacts .payment {
         margin: 0 0 0 80px; } }
   @media screen and (min-width: 1000px) {
@@ -1809,11 +1796,6 @@ template {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-    -moz-justify-content: space-evenly;
-    justify-content: space-evenly;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
@@ -1821,7 +1803,7 @@ template {
     align-items: center; }
   .articles .all-brand {
     border-bottom: 2px solid #105a8f;
-    margin: 0 0 3px 0;
+    margin: 0 0 3px 10px;
     text-shadow: 0 1px 0 #ffffff;
     color: #105a8f;
     font-size: 15px;
@@ -1829,6 +1811,7 @@ template {
     display: inline-block;
     transform: skew(20deg); }
   .articles .all-stock-run {
+    margin: 0 0 0 10px;
     transform: skew(20deg); }
   .articles .wrapper-news {
     width: 100%;

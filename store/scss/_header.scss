@@ -142,8 +142,12 @@
 		border-radius: 5px;
 		background: $key_clr;
 		@include flexbox;
-		@include justify-content (space-evenly);
+		@include justify-content (space-between);
 		@include align-items(center);
+	}
+
+	.list-categories {
+		margin: 0 0 0 10px;
 	}
 
 	.categories {
@@ -157,6 +161,7 @@
 	.gamburger-menu {
 		width: 28px;
 		height: 23px;
+		margin: 0 10px 0 0;
 		padding: 4px 3px;
 		border: 1px solid $dark;
 		border-radius: 5px;
