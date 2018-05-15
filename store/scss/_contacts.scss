@@ -141,6 +141,7 @@
 	}
 
 	.name-social {
+		width: 140px;
 		margin: 0 0 0 3px;
 		color: #105a8f;
 		text-decoration: underline;
@@ -228,6 +229,10 @@
 		    	@include flexbox;
     			flex-flow: column;
 		    }
+
+		    .name-social {
+				width: 100px;
+			}
 
 		    .icon-social-name-social {
 		    	margin: 0;

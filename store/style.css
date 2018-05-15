@@ -662,9 +662,10 @@ template {
       width: 100%;
       display: inline-block; }
       .header .logo {
+        margin: 12px 0 0 0;
         display: inline-block; }
       .header .wrapper-call-search {
-        margin: 10px 0 0 38px; }
+        margin: 10px 3px 0 38px; }
       .header .search {
         margin: 15px 0; }
       .header .user-block {
@@ -725,7 +726,9 @@ template {
         border: 1px solid #6cbe68;
         border-radius: 5px;
         text-align: center;
-        display: inline-block; }
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer; }
       .header .green-circle {
         position: absolute;
         top: 2px;
@@ -744,10 +747,12 @@ template {
         background: linear-gradient(to top, #cecdcd, #fff);
         display: block; }
       .header .text-help {
+        margin: -3px 0 0;
         text-shadow: 0 1px 0 #ffffff;
         color: #333333;
         font-weight: 900;
-        font-size: 13px; }
+        font-size: 13px;
+        display: inline-block; }
       .header .user-block {
         margin: 0 0 0 31px;
         vertical-align: top; }
@@ -809,15 +814,16 @@ template {
         text-shadow: 0 1px 0 rgba(255, 255, 255, 0.77);
         color: #d10000;
         font-family: "Arial Black";
-        font-size: 18px;
+        font-size: 14px;
         letter-spacing: -0.45px;
-        line-height: 18px;
+        line-height: 16px;
         display: inline-block; }
       .header .divisions {
         position: relative;
         z-index: 1;
         width: 100%;
         height: 115px;
+        margin: 3px 0 0;
         background: linear-gradient(to bottom, #ffffff 0%, #eaeaea 50%, #eaeaea 52%, #ffffff 100%);
         background: -webkit-linear-gradient(top, #ffffff 0%, #eaeaea 50%, #eaeaea 52%, #ffffff 100%);
         display: block; }
@@ -1679,6 +1685,7 @@ template {
   .contacts .icon-social {
     flex-basis: 37px; }
   .contacts .name-social {
+    width: 140px;
     margin: 0 0 0 3px;
     color: #105a8f;
     text-decoration: underline; }
@@ -1760,6 +1767,8 @@ template {
         display: -ms-flexbox;
         display: flex;
         flex-flow: column; }
+      .contacts .name-social {
+        width: 100px; }
       .contacts .icon-social-name-social {
         margin: 0; } }
   @media screen and (min-width: 1200px) {
