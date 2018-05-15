@@ -511,7 +511,7 @@ a {
   width: 100%;
   padding: 20px 20px 25px;
   text-align: center; }
-  .header .agency-name {
+  .header .agency-name-logo {
     float: right;
     font-size: 24px;
     text-transform: uppercase;
@@ -576,7 +576,8 @@ a {
         padding: 0 10px; }
       .header .agency-name {
         float: left;
-        margin: 52px 0 0; }
+        margin: 52px 0 0;
+        text-decoration: none; }
       .header .hamburger-menu {
         display: none; }
       .header .menu {

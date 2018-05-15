@@ -3,7 +3,7 @@
 	padding: $padding_blocks;
 	text-align: center;
 
-	.agency-name {
+	.agency-name-logo {
 		float: right;
 		font-size: 24px;
 		text-transform: uppercase;
@@ -96,6 +96,7 @@
 		.agency-name {
 			float: left;
 			margin: 52px 0 0;
+			text-decoration: none;
 		}
 
 		.hamburger-menu {

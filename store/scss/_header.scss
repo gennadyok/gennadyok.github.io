@@ -312,10 +312,12 @@
 			}
 
 			.text-help {
+				margin: -3px 0 0;
 				text-shadow: 0 1px 0 #ffffff;
 				color: #333333;
 				font-weight: 900;
 				font-size: 13px;
+				display: inline-block;
 			}
 
 			.user-block {
