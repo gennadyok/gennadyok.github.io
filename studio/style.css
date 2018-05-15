@@ -1049,6 +1049,7 @@ a {
   .contacts .text-message {
     width: 100%;
     max-width: 300px;
+    padding: 10px;
     height: 80px;
     border: 1px solid #999; }
   .contacts .communications-submit {
@@ -1059,9 +1060,10 @@ a {
     font-size: 16px;
     color: #fff;
     text-transform: uppercase;
-    background: #fcac45; }
+    background: #fcac45;
+    transition: background .2s linear; }
   .contacts .info-user {
-    margin: 20px 0 0;
+    margin: 20px 0 5px 0;
     font-size: 14px; }
   .contacts .star {
     color: #db0000; }
@@ -1105,10 +1107,15 @@ a {
         width: 48%;
         text-align: left; }
       .contacts .requisites {
-        max-width: 100%; }
+        max-width: 100%;
+        padding: 10px; }
       .contacts .communications-submit {
         float: right;
-        margin: 30px 0 0; } }
+        margin: 30px 0 0;
+        cursor: pointer; }
+        .contacts .communications-submit:hover {
+          background: #fb9613;
+          transition: background .2s linear; } }
 
 .futer {
   padding: 0 0 20px;
