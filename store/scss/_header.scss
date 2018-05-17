@@ -191,11 +191,12 @@
 		    display: inline-block;
 
 			.logo {
+				margin: 12px 0 0 0;
 				display: inline-block;
 			}
 
 			.wrapper-call-search {
-				margin: 10px 0 0 38px;
+				margin: 10px 3px 0 38px;
 			}
 
 			.search {
@@ -285,7 +286,9 @@
 				border: 1px solid #6cbe68;
 				border-radius: 5px;
 				text-align: center;
+				text-decoration: none;
 				display: inline-block;
+				cursor: pointer;
 			}
 
 			.green-circle {
@@ -312,10 +315,12 @@
 			}
 
 			.text-help {
+				margin: -3px 0 0;
 				text-shadow: 0 1px 0 #ffffff;
 				color: #333333;
 				font-weight: 900;
 				font-size: 13px;
+				display: inline-block;
 			}
 
 			.user-block {
@@ -384,9 +389,9 @@
 				text-shadow: 0 1px 0 rgba(255, 255, 255, 0.77);
 				color: #d10000;
 				font-family: "Arial Black";
-				font-size: $fs_medium;
+				font-size: 14px;
 				letter-spacing: -0.45px;
-				line-height: 18px;
+				line-height: 16px;
 				display: inline-block;
 			}
 
@@ -395,6 +400,7 @@
 				z-index: 1;
 				width: 100%;
 				height: 115px;
+				margin: 3px 0 0;
 				background: linear-gradient(to bottom, #ffffff 0%,#eaeaea 50%,#eaeaea 52%,#ffffff 100%);
 				background: -webkit-linear-gradient(top, #ffffff 0%,#eaeaea 50%,#eaeaea 52%,#ffffff 100%);
 				display: block;

@@ -24,7 +24,7 @@
 	.text-message {
 		width: 100%;
 		max-width: 300px;
-		// full version height 165px
+		padding: 10px;
 		height: 80px;
 		border: 1px solid $key_color_fonts;
 	}
@@ -38,10 +38,11 @@
 		color: $key_color_wihte;
 		text-transform: uppercase;
 		background: $additional_color;
+		transition: background .2s linear;
 	}
 
 	.info-user {
-		margin: $margin_top_mobile;
+		margin: 20px 0 5px 0;
 		font-size: 14px;
 	}
 
@@ -112,11 +113,18 @@
 
 		.requisites {
 			max-width: 100%;
+			padding: 10px;
 		}
 
 		.communications-submit {
 			float: right;
 			margin: 30px 0 0;
+			cursor: pointer;
+
+			&:hover {
+				background: darken(#fcac45,10%);
+				transition: background .2s linear;
+			}
 		}
 	}
 }
