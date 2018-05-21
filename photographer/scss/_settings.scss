@@ -1,0 +1,40 @@
+// color
+$key_clr: #828282;
+$border_clr: #d3d3d3;
+$dark: #333;
+$red: #d10000;
+// margin-padding
+// font-size
+$fs_constant: 13px;
+$fs_medium: 18px;
+body,
+.header {
+    background: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p,
+a,
+div,
+body,
+button,
+input {
+    font-family: Arial, ArialMT, OpenSans, Georgia, Arial, Times New Roman;
+    font-size: $fs_constant;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

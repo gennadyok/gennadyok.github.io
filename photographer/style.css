@@ -1431,5 +1431,53 @@ html {
 
   .align-self-xl-stretch {
     align-self: stretch !important; } }
+body,
+.header {
+  background: #fff; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+p,
+a,
+div,
+body,
+button,
+input {
+  font-family: Arial, ArialMT, OpenSans, Georgia, Arial, Times New Roman;
+  font-size: 13px;
+  color: #333; }
+
+a {
+  text-decoration: none; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.header {
+  margin: 15px 0 0 0; }
+  .header .logo {
+    width: 108px;
+    margin: 0 0 0 -3px; }
+  .header .menu-gamburger {
+    margin: 11px 0 0 17px;
+    border: 0;
+    background: #fff;
+    -webkit-align-self: end;
+    -moz-align-self: end;
+    -ms-flex-item-align: end;
+    align-self: end; }
+  .header .line-gamburger {
+    width: 25px;
+    height: 0px;
+    margin: 0 0 3px 0;
+    border: 2px solid #828282; }
+
+.portfolio {
+  margin: 16px 0 0 0; }
 
 /*# sourceMappingURL=style.css.map */

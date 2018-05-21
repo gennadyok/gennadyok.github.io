@@ -1,0 +1,19 @@
+.header {
+    margin: 15px 0 0 0;
+    .logo {
+        width: 108px;
+        margin: 0 0 0 -3px;
+    }
+    .menu-gamburger {
+        margin: 11px 0 0 17px;
+        border: 0;
+        background: #fff;
+        @include align-self(end);
+    }
+    .line-gamburger {
+        width: 25px;
+        height: 0px;
+        margin: 0 0 3px 0;
+        border: 2px solid $key_clr;
+    }
+}
