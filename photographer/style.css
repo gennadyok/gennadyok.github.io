@@ -1463,14 +1463,21 @@ a {
   .header .logo {
     width: 108px;
     margin: 0 0 0 -3px; }
+  .header .wrapper-gamburger {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    justify-content: flex-end; }
   .header .menu-gamburger {
-    margin: 11px 0 0 17px;
+    margin: 11px -3px 0 17px;
     border: 0;
-    background: #fff;
-    -webkit-align-self: end;
-    -moz-align-self: end;
-    -ms-flex-item-align: end;
-    align-self: end; }
+    background: #fff; }
   .header .line-gamburger {
     width: 25px;
     height: 0px;
@@ -1479,5 +1486,18 @@ a {
 
 .portfolio {
   margin: 16px 0 0 0; }
+
+.home-contacts .wrapper-business-card,
+.home-contacts .wrapper-business-card-profession {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center; }
 
 /*# sourceMappingURL=style.css.map */

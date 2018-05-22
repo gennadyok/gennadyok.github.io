@@ -1,0 +1,7 @@
+.home-contacts {
+    .wrapper-business-card,
+    .wrapper-business-card-profession {
+        @include flexbox;
+        @include justify-content(center);
+    }
+}

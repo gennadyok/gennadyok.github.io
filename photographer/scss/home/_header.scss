@@ -4,11 +4,14 @@
         width: 108px;
         margin: 0 0 0 -3px;
     }
+    .wrapper-gamburger {
+        @include flexbox;
+        @include justify-content(flex-end);
+    }
     .menu-gamburger {
-        margin: 11px 0 0 17px;
+        margin: 11px -3px 0 17px;
         border: 0;
         background: #fff;
-        @include align-self(end);
     }
     .line-gamburger {
         width: 25px;
