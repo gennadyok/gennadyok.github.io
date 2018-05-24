@@ -1,7 +1,30 @@
 .home-contacts {
+    margin-top: 25px;
+    padding-bottom: 20px;
     .wrapper-business-card,
     .wrapper-business-card-profession {
+        line-height: 17px;
         @include flexbox;
         @include justify-content(center);
+    }
+    .wrapper-home-phone {
+        margin: 24px 0 0 0;
+    }
+    .home-phone-kyivstar,
+    .home-phone-life {
+        line-height: 17px;
+        @include flexbox;
+        @include justify-content(center);
+    }
+    .social {
+        margin: 25px 0 0 0;
+        @include flexbox;
+        @include justify-content(center);
+        .icon-social {
+            margin: 0 10px 0 0;
+            &:last-child {
+                margin: 0;
+            }
+        }
     }
 }

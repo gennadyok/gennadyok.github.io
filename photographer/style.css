@@ -1459,7 +1459,7 @@ a {
   clear: both; }
 
 .header {
-  margin: 15px 0 0 0; }
+  margin-top: 15px; }
   .header .logo {
     width: 108px;
     margin: 0 0 0 -3px; }
@@ -1475,7 +1475,7 @@ a {
     -moz-justify-content: flex-end;
     justify-content: flex-end; }
   .header .menu-gamburger {
-    margin: 11px -3px 0 17px;
+    margin: 11px 12px 0 17px;
     border: 0;
     background: #fff; }
   .header .line-gamburger {
@@ -1483,21 +1483,62 @@ a {
     height: 0px;
     margin: 0 0 3px 0;
     border: 2px solid #828282; }
+  @media screen and (min-width: 768px) {
+    .header .logo {
+      width: 143px; } }
 
 .portfolio {
-  margin: 16px 0 0 0; }
+  margin-top: 16px; }
+  .portfolio .img-portfolio {
+    margin: 2px 0 0 0;
+    text-align: center; }
 
-.home-contacts .wrapper-business-card,
-.home-contacts .wrapper-business-card-profession {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  justify-content: center; }
+.home-contacts {
+  margin-top: 25px;
+  padding-bottom: 20px; }
+  .home-contacts .wrapper-business-card,
+  .home-contacts .wrapper-business-card-profession {
+    line-height: 17px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+  .home-contacts .wrapper-home-phone {
+    margin: 24px 0 0 0; }
+  .home-contacts .home-phone-kyivstar,
+  .home-contacts .home-phone-life {
+    line-height: 17px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+  .home-contacts .social {
+    margin: 25px 0 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+    .home-contacts .social .icon-social {
+      margin: 0 10px 0 0; }
+      .home-contacts .social .icon-social:last-child {
+        margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
