@@ -1,11 +1,19 @@
+@font-face {
+	font-family: OpenSans;
+	src: local(OpenSans), url(fonts/OpenSans.woff);
+	src: local(OpenSans-Regular), url(fonts/OpenSans-Regular.woff2);
+}
+
 // color
 $key_clr: #828282;
 $border_clr: #d3d3d3;
 $dark: #333;
 $red: #d10000;
+$light_grey_clr: #E0E0E0;
+$hover_clr: #2D9CDB;
 // margin-padding
 // font-size
-$fs_constant: 13px;
+$fs_constant: 16px;
 $fs_medium: 18px;
 body,
 .header {
@@ -24,7 +32,7 @@ div,
 body,
 button,
 input {
-    font-family: Arial, ArialMT, OpenSans, Georgia, Arial, Times New Roman;
+    font-family: OpenSans, Arial, ArialMT, Georgia, Arial, Times New Roman;
     font-size: $fs_constant;
     color: #333;
 }

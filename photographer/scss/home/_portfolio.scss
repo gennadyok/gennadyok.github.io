@@ -4,4 +4,30 @@
         margin: 2px 0 0 0;
         text-align: center;
     }
+
+    .photo-wedding {
+        display: none;
+    }
+
+    .portrait-photo,
+    .advertising-photography {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 44px;
+        .img-home {
+            display: none;
+        }
+
+        .photo-wedding,
+        .portrait-photo,
+        .advertising-photography {
+            display: inline-block;
+        }
+
+        .img-portfolio {
+            margin: -6px 0 0 0;
+        }
+    }
 }

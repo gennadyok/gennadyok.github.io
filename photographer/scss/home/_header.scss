@@ -23,5 +23,46 @@
             .logo {
                 width: 143px;
             }
+
+            .wrapper-gamburger {
+                display: none;
+            }
+
+            .full-menu {
+                width: 509px;
+                height: 40px;
+                margin: 0 0 0 28px;
+            }
+
+            .wrapper-menu-section {
+                border-radius: 5px;
+                list-style-type: none;
+                background: $light_grey_clr;
+                display: inline-block;
+            }
+
+            .link-logo {
+                padding: 0 18px 0;
+                border-radius: 5px;
+                display: inline-block;
+                transition: 0.4s linear; 
+
+                &:hover {
+                    background: $hover_clr;
+                    transition: 0.4s linear;
+                }
+            }
+
+            .menu-section {
+                line-height: 38px;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: 0.4s linear;
+
+                &:hover {
+                    color: #ffffff;
+                    transition: 0.4s linear;
+                }
+            }
         }
     }

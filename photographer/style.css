@@ -1431,6 +1431,10 @@ html {
 
   .align-self-xl-stretch {
     align-self: stretch !important; } }
+@font-face {
+  font-family: OpenSans;
+  src: local(OpenSans), url(fonts/OpenSans.woff);
+  src: local(OpenSans-Regular), url(fonts/OpenSans-Regular.woff2); }
 body,
 .header {
   background: #fff; }
@@ -1446,8 +1450,8 @@ div,
 body,
 button,
 input {
-  font-family: Arial, ArialMT, OpenSans, Georgia, Arial, Times New Roman;
-  font-size: 13px;
+  font-family: OpenSans, Arial, ArialMT, Georgia, Arial, Times New Roman;
+  font-size: 16px;
   color: #333; }
 
 a {
@@ -1485,13 +1489,56 @@ a {
     border: 2px solid #828282; }
   @media screen and (min-width: 768px) {
     .header .logo {
-      width: 143px; } }
+      width: 143px; }
+    .header .wrapper-gamburger {
+      display: none; }
+    .header .full-menu {
+      width: 509px;
+      height: 40px;
+      margin: 0 0 0 28px; }
+    .header .wrapper-menu-section {
+      border-radius: 5px;
+      list-style-type: none;
+      background: #E0E0E0;
+      display: inline-block; }
+    .header .link-logo {
+      padding: 0 18px 0;
+      border-radius: 5px;
+      display: inline-block;
+      transition: 0.4s linear; }
+      .header .link-logo:hover {
+        background: #2D9CDB;
+        transition: 0.4s linear; }
+    .header .menu-section {
+      line-height: 38px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.4s linear; }
+      .header .menu-section:hover {
+        color: #ffffff;
+        transition: 0.4s linear; } }
 
 .portfolio {
   margin-top: 16px; }
   .portfolio .img-portfolio {
     margin: 2px 0 0 0;
     text-align: center; }
+  .portfolio .photo-wedding {
+    display: none; }
+  .portfolio .portrait-photo,
+  .portfolio .advertising-photography {
+    display: none; }
+  @media screen and (min-width: 768px) {
+    .portfolio {
+      margin-top: 44px; }
+      .portfolio .img-home {
+        display: none; }
+      .portfolio .photo-wedding,
+      .portfolio .portrait-photo,
+      .portfolio .advertising-photography {
+        display: inline-block; }
+      .portfolio .img-portfolio {
+        margin: -6px 0 0 0; } }
 
 .home-contacts {
   margin-top: 25px;
