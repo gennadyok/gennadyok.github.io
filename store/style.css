@@ -1254,6 +1254,17 @@ template {
   .propositions .input-tab2:checked ~ .wrapper-product2,
   .propositions .input-tab3:checked ~ .wrapper-product3,
   .propositions .input-tab4:checked ~ .wrapper-product4 {
+    display: block; }
+  .propositions .gamburger-menu {
+    position: relative;
+    z-index: 3;
+    margin: 0 0 0 15px; }
+  .propositions .wrapper-product {
+    height: 332px;
+    border: 1px solid #105a8f;
+    border-radius: 0 5px 5px 5px;
+    display: none; }
+  .propositions .slider-item {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -1268,16 +1279,8 @@ template {
     -ms-flex-align: center;
     -webkit-align-items: center;
     -moz-align-items: center;
-    align-items: center; }
-  .propositions .gamburger-menu {
-    position: relative;
-    z-index: 3;
-    margin: 0 0 0 15px; }
-  .propositions .wrapper-product {
-    height: 332px;
-    border: 1px solid #105a8f;
-    border-radius: 0 5px 5px 5px;
-    display: none; }
+    align-items: center;
+    height: 332px; }
   .propositions .link-pointer-grey,
   .propositions .link-pointer-blue {
     display: none; }

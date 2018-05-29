@@ -7,6 +7,9 @@
         @include flexbox;
         @include justify-content(center);
     }
+    .dash {
+        display: none;
+    }
     .wrapper-home-phone {
         margin: 24px 0 0 0;
     }
@@ -25,6 +28,34 @@
             &:last-child {
                 margin: 0;
             }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        margin: 45px 0 0 0;
+        .dash {
+            display: inline-block;
+        }
+        .wrapper-business-card {
+            @include justify-content(flex-end);
+        }
+        .business-card {
+            margin: 0 5px 0 0;
+        }
+        .phone-kyivstar-life {
+            width: 160px;
+        }
+        .wrapper-business-card-profession {
+            @include justify-content(flex-start);
+        }
+        .wrapper-home-phone {
+            margin: 34px 0 0 0;
+            @include flexbox;
+            @include justify-content(flex-end);
+        }
+        .social {
+            margin: 35px 0 0 0;
+            @include flexbox;
+            @include justify-content(flex-start);
         }
     }
 }

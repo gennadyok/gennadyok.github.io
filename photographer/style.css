@@ -1478,6 +1478,8 @@ a {
     -webkit-justify-content: flex-end;
     -moz-justify-content: flex-end;
     justify-content: flex-end; }
+  .header .full-menu {
+    display: none; }
   .header .menu-gamburger {
     margin: 11px 12px 0 17px;
     border: 0;
@@ -1495,7 +1497,8 @@ a {
     .header .full-menu {
       width: 509px;
       height: 40px;
-      margin: 0 0 0 28px; }
+      margin: 0 0 0 28px;
+      display: inline-block; }
     .header .wrapper-menu-section {
       border-radius: 5px;
       list-style-type: none;
@@ -1556,6 +1559,8 @@ a {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center; }
+  .home-contacts .dash {
+    display: none; }
   .home-contacts .wrapper-home-phone {
     margin: 24px 0 0 0; }
   .home-contacts .home-phone-kyivstar,
@@ -1587,5 +1592,50 @@ a {
       margin: 0 10px 0 0; }
       .home-contacts .social .icon-social:last-child {
         margin: 0; }
+  @media screen and (min-width: 768px) {
+    .home-contacts {
+      margin: 45px 0 0 0; }
+      .home-contacts .dash {
+        display: inline-block; }
+      .home-contacts .wrapper-business-card {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        -webkit-justify-content: flex-end;
+        -moz-justify-content: flex-end;
+        justify-content: flex-end; }
+      .home-contacts .business-card {
+        margin: 0 5px 0 0; }
+      .home-contacts .phone-kyivstar-life {
+        width: 160px; }
+      .home-contacts .wrapper-business-card-profession {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        -webkit-justify-content: flex-start;
+        -moz-justify-content: flex-start;
+        justify-content: flex-start; }
+      .home-contacts .wrapper-home-phone {
+        margin: 34px 0 0 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        -webkit-justify-content: flex-end;
+        -moz-justify-content: flex-end;
+        justify-content: flex-end; }
+      .home-contacts .social {
+        margin: 35px 0 0 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        -webkit-justify-content: flex-start;
+        -moz-justify-content: flex-start;
+        justify-content: flex-start; } }
 
 /*# sourceMappingURL=style.css.map */

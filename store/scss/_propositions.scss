@@ -86,9 +86,7 @@
 	.input-tab2:checked ~ .wrapper-product2,
 	.input-tab3:checked ~ .wrapper-product3,
 	.input-tab4:checked ~ .wrapper-product4 {
-		@include flexbox;
-		@include justify-content(center);
-		@include align-items(center);
+		display: block;
 	}
 
 	.gamburger-menu {
@@ -102,6 +100,13 @@
 		border: 1px solid $key_clr;
 		border-radius: 0 5px 5px 5px;
 		display: none;
+	}
+
+	.slider-item {
+		@include flexbox;
+		@include justify-content(center);
+		@include align-items(center);
+		height: 332px;
 	}
 
 	.link-pointer-grey,
