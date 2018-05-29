@@ -1,241 +1,277 @@
 .propositions {
-    max-width: 390px;
-    margin: 35px auto 0;
-    border-radius: 5px;
-    .wrapper-tab-propositions {
-        background: #fff;
-        @include flexbox;
+	max-width: 390px;
+	margin: 35px auto 0;
+	border-radius: 5px;
+
+	.wrapper-tab-propositions {
+		background: #fff;
+		@include flexbox;
+	}
+
+	.input-tab {
+		display: none;
+	}
+
+	.input-tab1:checked ~ .wrapper-tab-propositions .tab1,
+	.input-tab2:checked ~ .wrapper-tab-propositions .tab2,
+	.input-tab3:checked ~ .wrapper-tab-propositions .tab3,
+	.input-tab4:checked ~ .wrapper-tab-propositions .tab4 {
+		padding: 0 32px 0;
+		border: 1px solid $key_clr;
+		border-bottom: 0;
+		@include flexbox;
+	    @include justify-content(center);
+	    @include align-items(center);
+
+		.tab-gradient,
+		.tab-empty-block {
+			display: block;
+		}
+
+		.tab-content {
+			color: #d10000;
+			border: 0;
+		}
+
+		&:nth-child(1) {
+		    	margin: 0;
+		    }
+	}
+
+	.tab-propositions {
+		position: relative;
+		height: 56px;
+		border-radius: 5px 5px 0 0;
+		display: none;
+		background: #fff;
+	}
+
+	.tab-empty-block {
+	    position: absolute;
+	    top: 2px;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    display: none;
+	    background: #fff;
+	}
+
+	.tab-gradient {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, #b9b9b9 40%, #f5f4f4 95%, #ffffff 100%);
+		opacity: .3;
+		display: none;
+	}
+
+	.tab-content {
+		position: relative;
+		z-index: 2;
+		font-family: Arial Black;
+		font-size: 20px;
+		font-style: italic;
+		letter-spacing: -0.45px;
+		color: #105a8f;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.77);
+		border-bottom: 1px dashed $key_clr;
+		color: $key_clr;
+	}
+
+	.input-tab1:checked ~ .wrapper-product0,
+	.input-tab2:checked ~ .wrapper-product2,
+	.input-tab3:checked ~ .wrapper-product3,
+	.input-tab4:checked ~ .wrapper-product4 {
+		@include flexbox;
+		@include justify-content(center);
+		@include align-items(center);
+	}
+
+	.gamburger-menu {
+		position: relative;
+		z-index: 3;
+		margin: 0 0 0 15px;
+	}
+
+	.wrapper-product {
+		height: 332px;
+		border: 1px solid $key_clr;
+		border-radius: 0 5px 5px 5px;
+		display: none;
+	}
+
+	.link-pointer-grey,
+	.link-pointer-blue {
+		display: none;
+	}
+
+	.product {
+		width: 45%;
+		display: flex;
+		flex-flow: column;
+
+			&:nth-child(3) {
+				display: none;
+			}
+
+			&:nth-child(4) {
+				display: none;
+			}
+
+			&:nth-child(5) {
+				display: none;
+			}
+
+	}
+
+	.img-sticker-product {
+		position: relative;
+		width: 155px;
+		height: 125px;
+	}
+
+	.gift {
+		position: absolute;
+		top: -15px;
+		left: -10px;
+	}
+
+	.gift-text,
+	.gift-text-price,
+	.gift-text-sale {
+		position: absolute;
+		top: -1px;
+		left: -2px;
+		text-shadow: 0 -1px 0 rgba(5, 6, 6, 0.5);
+		color: #fff;
+		font-size: 12px;
+		font-weight: 700;
+		font-style: italic;
+		transform: rotate(-15deg);
+	}
+
+	.gift-text-price {
+		top: -2px;
+		left: -8px;
+	}
+
+	.gift-text-sale {
+		top: -1px;
+		left: 1px;
+	}
+
+	.description-gift {
+		margin: 5px 0 0;
+		font-size: $fs_constant;
+		color: #d10000;
+		display: block;
+	}
+
+	.name-link-product {
+		margin: 6px 0 0;
+		font-size: $fs_constant;
+		text-decoration: underline;
+		color: $key_clr;
+		display: inline-block;
+	}
+
+	.price-list {
+		width: 133px;
+		height: 27px;
+		margin: 10px 0 0;
+		border: 1px solid #e4e4e4;
+		border-radius: 5px;
+		background-image: linear-gradient(to top, #ffffff 0%, #eceded 37%, #ffffff 100%);
+		transform: skew(-20deg);
+		cursor: pointer;
+		@include flexbox;
+		@include align-items(center)
+	}
+
+	.cash {
+		margin: 0 0 0 9px;
+		font-size: $fs_medium;
+		font-family: Arial Black;
+	}
+
+	.cash-uan {
+		font-size: 13px;
+		font-weight: 700;
+	}
+
+	.basket-propositions {
+		width: 17px;
+		height: 18px;
+		margin: 0 0 0 8px;
+		transform: skew(20deg);
+	}
+
+	.price-dollar {
+		margin: 5px 0 0 15px;
+		font-size: 11px;
+		color: #5c9559;
+	}
+
+	@media screen and (min-width: 600px) {
+		max-width: 577px;
+
+		.product {
+			width: 189px;
+			margin: 0 15px 0;
+		}
+
+		.description-gift {
+			width: 190px;
+		}
+	}
+
+	@media screen and (min-width: 1000px) {
+	 	max-width: 1000px;
+
+	 	.link-pointer-grey,
+	 	.link-pointer-blue {
+			margin: 0 15px 0;
+			display: block;
+		}
+
+	 	.tab-propositions {
+	 		margin: 0 0 0 31px;
+	 		background: transparent;
+	 		cursor: pointer;
+	 		@include flexbox;
+		    @include align-items(center);
+     	}
+
+     	.product:nth-child(3) {
+			display: block;
+		}
+
+		.product:nth-child(4) {
+			display: block;
+		}
+
+		.product:nth-child(5) {
+			display: block;
+		}
+
+		.product-additional {
+			display: none;
+		}
+
+		.img-product-mac {
+			margin: -30px 0 0 0;
+		}
     }
-    .input-tab {
-        display: none;
-    }
-    .input-tab1:checked~.wrapper-tab-propositions .tab1,
-    .input-tab2:checked~.wrapper-tab-propositions .tab2,
-    .input-tab3:checked~.wrapper-tab-propositions .tab3,
-    .input-tab4:checked~.wrapper-tab-propositions .tab4 {
-        padding: 0 32px 0;
-        border: 1px solid $key_clr;
-        border-bottom: 0;
-        @include flexbox;
-        @include justify-content(center);
-        @include align-items(center);
-        .tab-gradient,
-        .tab-empty-block {
-            display: block;
-        }
-        .tab-content {
-            color: #d10000;
-            border: 0;
-        }
-        &:nth-child(1) {
-            margin: 0;
-        }
-    }
-    .tab-propositions {
-        position: relative;
-        height: 56px;
-        border-radius: 5px 5px 0 0;
-        display: none;
-        background: #fff;
-    }
-    .tab-empty-block {
-        position: absolute;
-        top: 2px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: none;
-        background: #fff;
-    }
-    .tab-gradient {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        background-color: #fff;
-        background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, #b9b9b9 40%, #f5f4f4 95%, #ffffff 100%);
-        opacity: .3;
-        display: none;
-    }
-    .tab-content {
-        position: relative;
-        z-index: 2;
-        font-family: Arial Black;
-        font-size: 20px;
-        font-style: italic;
-        letter-spacing: -0.45px;
-        color: #105a8f;
-        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.77);
-        border-bottom: 1px dashed $key_clr;
-        color: $key_clr;
-    }
-    .input-tab1:checked~.wrapper-product0,
-    .input-tab2:checked~.wrapper-product2,
-    .input-tab3:checked~.wrapper-product3,
-    .input-tab4:checked~.wrapper-product4 {
-        display: block;
-    }
-    .gamburger-menu {
-        position: relative;
-        z-index: 3;
-        margin: 0 0 0 15px;
-    }
-    .wrapper-product {
-        height: 332px;
-        border: 1px solid $key_clr;
-        border-radius: 0 5px 5px 5px;
-        display: none;
-    }
-    .slider-product {
-        @include flexbox;
-        @include align-items(center);
-    }
-    .slider-item {
-        @include flexbox;
-        @include justify-content(center);
-        @include align-items(center);
-        height: 332px;
-    }
-    .link-pointer-grey,
-    .link-pointer-blue {
-        display: none;
-    }
-    .product {
-        width: 45%;
-        display: flex;
-        flex-flow: column;
-        &:nth-child(3) {
-            display: none;
-        }
-        &:nth-child(4) {
-            display: none;
-        }
-        &:nth-child(5) {
-            display: none;
-        }
-    }
-    .img-sticker-product {
-        position: relative;
-        width: 155px;
-        height: 125px;
-    }
-    .gift {
-        position: absolute;
-        top: -15px;
-        left: -10px;
-    }
-    .gift-text,
-    .gift-text-price,
-    .gift-text-sale {
-        position: absolute;
-        top: -1px;
-        left: -2px;
-        text-shadow: 0 -1px 0 rgba(5, 6, 6, 0.5);
-        color: #fff;
-        font-size: 12px;
-        font-weight: 700;
-        font-style: italic;
-        transform: rotate(-15deg);
-    }
-    .gift-text-price {
-        top: -2px;
-        left: -8px;
-    }
-    .gift-text-sale {
-        top: -1px;
-        left: 1px;
-    }
-    .description-gift {
-        margin: 5px 0 0;
-        font-size: $fs_constant;
-        color: #d10000;
-        display: block;
-    }
-    .name-link-product {
-        margin: 6px 0 0;
-        font-size: $fs_constant;
-        text-decoration: underline;
-        color: $key_clr;
-        display: inline-block;
-    }
-    .price-list {
-        width: 133px;
-        height: 27px;
-        margin: 10px 0 0;
-        border: 1px solid #e4e4e4;
-        border-radius: 5px;
-        background-image: linear-gradient(to top, #ffffff 0%, #eceded 37%, #ffffff 100%);
-        transform: skew(-20deg);
-        cursor: pointer;
-        @include flexbox;
-        @include align-items(center)
-    }
-    .cash {
-        margin: 0 0 0 9px;
-        font-size: $fs_medium;
-        font-family: Arial Black;
-    }
-    .cash-uan {
-        font-size: 13px;
-        font-weight: 700;
-    }
-    .basket-propositions {
-        width: 17px;
-        height: 18px;
-        margin: 0 0 0 8px;
-        transform: skew(20deg);
-    }
-    .price-dollar {
-        margin: 5px 0 0 15px;
-        font-size: 11px;
-        color: #5c9559;
-    }
-    @media screen and (min-width: 600px) {
-        max-width: 577px;
-        .product {
-            width: 189px;
-            margin: 0 15px 0;
-        }
-        .description-gift {
-            width: 190px;
-        }
-    }
-    @media screen and (min-width: 1000px) {
-        max-width: 1000px;
-        .link-pointer-grey,
-        .link-pointer-blue {
-            margin: 0 15px 0;
-            display: block;
-        }
-        .tab-propositions {
-            margin: 0 0 0 31px;
-            background: transparent;
-            cursor: pointer;
-            @include flexbox;
-            @include align-items(center);
-        }
-        .product:nth-child(3) {
-            display: block;
-        }
-        .product:nth-child(4) {
-            display: block;
-        }
-        .product-additional {
-            display: none;
-        }
-        .img-product-mac {
-            margin: -30px 0 0 0;
-        }
-    }
+
     @media screen and (min-width: 1200px) {
-        max-width: 1200px;
-        .product:nth-child(5) {
-            display: block;
-        }
-        .product-additional {
-            display: block;
-        }
+    	max-width: 1200px;
+
+		.product-additional {
+			display: block;
+		}
     }
 }
