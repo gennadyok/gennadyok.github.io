@@ -1,7 +1,7 @@
 @font-face {
-	font-family: OpenSans;
-	src: local(OpenSans), url(fonts/OpenSans.woff);
-	src: local(OpenSans-Regular), url(fonts/OpenSans-Regular.woff2);
+    font-family: OpenSans;
+    src: local(OpenSans), url(fonts/OpenSans.woff);
+    src: local(OpenSans-Regular), url(fonts/OpenSans-Regular.woff2);
 }
 
 // color
@@ -35,6 +35,11 @@ input {
     font-family: OpenSans, Arial, ArialMT, Georgia, Arial, Times New Roman;
     font-size: $fs_constant;
     color: #333;
+}
+
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 a {

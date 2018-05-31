@@ -1454,6 +1454,10 @@ input {
   font-size: 16px;
   color: #333; }
 
+.row {
+  margin: 0 !important;
+  padding: 0 !important; }
+
 a {
   text-decoration: none; }
 
@@ -1614,7 +1618,7 @@ a {
         -moz-justify-content: flex-start;
         justify-content: flex-start; }
       .home-contacts .wrapper-home-phone {
-        margin: 34px 0 0 0;
+        margin: 34px 28px 0 0;
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-flex;
@@ -1626,7 +1630,7 @@ a {
         -moz-justify-content: flex-end;
         justify-content: flex-end; }
       .home-contacts .social {
-        margin: 35px 0 0 0;
+        margin: 35px 0 0 35px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-flex;

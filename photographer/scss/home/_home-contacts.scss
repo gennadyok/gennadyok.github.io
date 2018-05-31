@@ -48,12 +48,12 @@
             @include justify-content(flex-start);
         }
         .wrapper-home-phone {
-            margin: 34px 0 0 0;
+            margin: 34px 28px 0 0;
             @include flexbox;
             @include justify-content(flex-end);
         }
         .social {
-            margin: 35px 0 0 0;
+            margin: 35px 0 0 35px;
             @include flexbox;
             @include justify-content(flex-start);
         }
