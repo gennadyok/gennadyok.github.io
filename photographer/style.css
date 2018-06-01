@@ -1524,6 +1524,13 @@ a {
       .header .menu-section:hover {
         color: #ffffff;
         transition: 0.4s linear; } }
+  @media screen and (min-width: 992px) {
+    .header .full-menu {
+      width: 815px;
+      height: 58px; }
+    .header .menu-section {
+      font-size: 24px;
+      line-height: 48px; } }
 
 .portfolio {
   margin-top: 16px; }
