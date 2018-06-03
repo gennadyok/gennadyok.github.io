@@ -1,8 +1,8 @@
-    .header {
+    .header-index {
         margin-top: 15px;
         .logo {
             width: 108px;
-            margin: 0 0 0 -3px;
+            margin: 0 0 0 10px;
         }
         .wrapper-gamburger {
             @include flexbox;
@@ -12,7 +12,7 @@
             display: none;
         }
         .menu-gamburger {
-            margin: 11px 12px 0 17px;
+            margin: 9px 12px 0 17px;
             border: 0;
             background: #fff;
         }
@@ -30,19 +30,18 @@
                 display: none;
             }
             .full-menu {
-                width: 509px;
-                height: 40px;
-                margin: 0 0 0 28px;
-                display: inline-block;
+                @include flexbox;
+                @include justify-content(flex-end);
             }
             .wrapper-menu-section {
+                margin: 0 27px 0 0;
                 border-radius: 5px;
                 list-style-type: none;
                 background: $light_grey_clr;
-                display: inline-block;
+                font-size: 0;
             }
             .link-logo {
-                padding: 0 18px 0;
+                padding: 0 20px 0;
                 border-radius: 5px;
                 display: inline-block;
                 transition: 0.4s linear;
@@ -52,7 +51,7 @@
                 }
             }
             .menu-section {
-                line-height: 38px;
+                line-height: 40px;
                 text-transform: uppercase;
                 cursor: pointer;
                 transition: 0.4s linear;
@@ -62,14 +61,10 @@
                 }
             }
         }
-        @media screen and (min-width: 992px) {
-            .full-menu {
-                width: 815px;
-                height: 58px;
-            }
+        @media screen and (min-width: 1200px) {
             .menu-section {
                 font-size: 24px;
-                line-height: 48px;
+                line-height: 58px;
             }
         }
     }

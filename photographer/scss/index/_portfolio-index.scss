@@ -1,0 +1,24 @@
+.portfolio-index {
+    margin: 11px 0 0 0;
+    .img-portfolio {
+        text-align: center;
+    }
+    .img-home {
+        width: 100%;
+    }
+    .portrait-photo,
+    .advertising-photography {
+        display: none;
+    }
+    @media screen and (min-width: 768px) {
+        margin: 44px 0 0 0;
+    }
+    @media screen and (min-width: 992px) {
+        .img-portfolio {
+            display: none;
+            &:first-child {
+                display: inline-block;
+            }
+        }
+    }
+}

@@ -37,9 +37,13 @@ input {
     color: #333;
 }
 
-.row {
-    margin: 0 !important;
-    padding: 0 !important;
+.no-gutters {
+    padding: 0;
+}
+
+.img {
+    width: 100%;
+    height: auto;
 }
 
 a {

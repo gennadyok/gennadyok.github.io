@@ -1,6 +1,7 @@
-.home-contacts {
-    margin-top: 25px;
-    padding-bottom: 20px;
+.contacts-index {
+    margin: 25px 0 0 0;
+    padding: 0 0 20px 0;
+    text-align: center;
     .wrapper-business-card,
     .wrapper-business-card-profession {
         line-height: 17px;
@@ -9,6 +10,10 @@
     }
     .dash {
         display: none;
+    }
+    .wrapper-business-card,
+    .wrapper-business-card-profession {
+        display: inline-block;
     }
     .wrapper-home-phone {
         margin: 24px 0 0 0;
@@ -30,22 +35,13 @@
             }
         }
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 578px) {
         margin: 45px 0 0 0;
         .dash {
             display: inline-block;
         }
-        .wrapper-business-card {
-            @include justify-content(flex-end);
-        }
-        .business-card {
-            margin: 0 5px 0 0;
-        }
         .phone-kyivstar-life {
             width: 160px;
-        }
-        .wrapper-business-card-profession {
-            @include justify-content(flex-start);
         }
         .wrapper-home-phone {
             margin: 34px 28px 0 0;
@@ -56,6 +52,18 @@
             margin: 35px 0 0 35px;
             @include flexbox;
             @include justify-content(flex-start);
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .wrapper-home-phone {
+            margin: 0;
+        }
+        .wrapper-business-contact {
+            @include flexbox;
+            @include align-items(center);
+        }
+        .social {
+            margin: 0;
         }
     }
 }
