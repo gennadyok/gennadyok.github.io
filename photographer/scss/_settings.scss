@@ -11,10 +11,12 @@ $dark: #333;
 $red: #d10000;
 $light_grey_clr: #E0E0E0;
 $hover_clr: #2D9CDB;
+$tape_clr: #79BBE1;
 // margin-padding
 // font-size
 $fs_constant: 16px;
 $fs_medium: 18px;
+$fs_large: 24px;
 body,
 .header {
     background: #fff;
@@ -48,6 +50,10 @@ input {
 
 a {
     text-decoration: none;
+}
+
+span {
+    color: #fff;
 }
 
 .clearfix:after {

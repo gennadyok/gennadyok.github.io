@@ -62,9 +62,12 @@
             }
         }
         @media screen and (min-width: 1200px) {
+            .link-logo {
+                padding: 0 44px 0;
+            }
             .menu-section {
-                font-size: 24px;
-                line-height: 58px;
+                font-size: $fs_large;
+                line-height: 55px;
             }
         }
     }

@@ -10,15 +10,36 @@
     .advertising-photography {
         display: none;
     }
+    .vector-left,
+    .vector-right {
+        display: none;
+    }
     @media screen and (min-width: 768px) {
         margin: 44px 0 0 0;
     }
     @media screen and (min-width: 992px) {
+        // temp (feature - plug js)
         .img-portfolio {
             display: none;
             &:first-child {
                 display: inline-block;
             }
+        }
+        .wedding-photography {
+            position: relative;
+        }
+        // end temp
+        .vector-left {
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            display: inline-block;
+        }
+        .vector-right {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            display: inline-block;
         }
     }
 }

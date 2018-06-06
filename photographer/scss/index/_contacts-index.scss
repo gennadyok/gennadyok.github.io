@@ -2,6 +2,10 @@
     margin: 25px 0 0 0;
     padding: 0 0 20px 0;
     text-align: center;
+    .wrapper-business-contact {
+        max-width: 250px;
+        display: inline-block;
+    }
     .wrapper-business-card,
     .wrapper-business-card-profession {
         line-height: 17px;
@@ -21,6 +25,7 @@
     .home-phone-kyivstar,
     .home-phone-life {
         line-height: 17px;
+        color: $dark;
         @include flexbox;
         @include justify-content(center);
     }
@@ -57,6 +62,7 @@
     @media screen and (min-width: 1200px) {
         .wrapper-home-phone {
             margin: 0;
+            padding: 0 62px 0 0;
         }
         .wrapper-business-contact {
             @include flexbox;
@@ -64,6 +70,7 @@
         }
         .social {
             margin: 0;
+            padding: 0 0 0 62px;
         }
     }
 }
