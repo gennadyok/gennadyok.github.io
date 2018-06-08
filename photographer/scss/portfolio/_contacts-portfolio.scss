@@ -1,0 +1,25 @@
+.contacts-portfolio {
+    @media screen and (min-width: 1200px) {
+        .name-and-profession {
+            padding: 0 0 0 12px;
+            @include flexbox;
+            @include justify-content(start);
+            @include align-items(center);
+        }
+        .wrapper-home-phone {
+            margin: 34px 28px 0 0;
+        }
+        .icon-social {
+            max-height: 40px;
+        }
+        .social {
+            margin: 11px 0 0 35px;
+        }
+        .wrapper-business-contact {
+            max-width: 505px;
+        }
+        .wrapper-home-phone {
+            margin: 10px 28px 0 0;
+        }
+    }
+}
