@@ -43,6 +43,7 @@
     @media screen and (min-width: 578px) {
         margin: 45px 0 0 0;
         .dash {
+            margin: 0 0 0 4px;
             display: inline-block;
         }
         .phone-kyivstar-life {
@@ -65,8 +66,12 @@
             padding: 0 62px 0 0;
         }
         .wrapper-business-contact {
+            min-width: 505px;
             @include flexbox;
             @include align-items(center);
+        }
+        .business-card-profession {
+            display: inline-block;
         }
         .social {
             margin: 0;

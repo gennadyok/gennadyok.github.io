@@ -1,0 +1,15 @@
+.wedding-portfolio {
+    .wedding-photography:nth-child(9) {
+        display: none;
+    }
+    @media screen and (min-width: 320px) {
+        .img-home {
+            width: 100%;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .wedding-photography:nth-child(9) {
+            display: inline-block;
+        }
+    }
+}

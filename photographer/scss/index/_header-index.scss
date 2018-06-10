@@ -49,16 +49,16 @@
                     background: $hover_clr;
                     transition: 0.4s linear;
                 }
+                &:hover>.menu-section {
+                    color: #ffffff;
+                    transition: 0.4s linear;
+                }
             }
             .menu-section {
                 line-height: 40px;
                 text-transform: uppercase;
                 cursor: pointer;
                 transition: 0.4s linear;
-                &:hover {
-                    color: #ffffff;
-                    transition: 0.4s linear;
-                }
             }
         }
         @media screen and (min-width: 1200px) {
@@ -67,7 +67,7 @@
             }
             .menu-section {
                 font-size: $fs_large;
-                line-height: 55px;
+                line-height: 58px;
             }
         }
     }

@@ -22,7 +22,7 @@
         .img-portfolio {
             display: none;
             &:first-child {
-                display: inline-block;
+                display: block;
             }
         }
         .wedding-photography {
@@ -31,13 +31,13 @@
         // end temp
         .vector-left {
             position: absolute;
-            top: 50%;
+            top: 45.4%;
             left: 30px;
             display: inline-block;
         }
         .vector-right {
             position: absolute;
-            top: 50%;
+            top: 45.4%;
             right: 30px;
             display: inline-block;
         }
