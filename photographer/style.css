@@ -1520,15 +1520,15 @@ span {
       list-style-type: none;
       background: #E0E0E0;
       font-size: 0; }
-    .header-index .link-logo {
+    .header-index .link-menu-section {
       padding: 0 20px 0;
       border-radius: 5px;
       display: inline-block;
       transition: 0.4s linear; }
-      .header-index .link-logo:hover {
+      .header-index .link-menu-section:hover {
         background: #2D9CDB;
         transition: 0.4s linear; }
-      .header-index .link-logo:hover > .menu-section {
+      .header-index .link-menu-section:hover > .menu-section {
         color: #ffffff;
         transition: 0.4s linear; }
     .header-index .menu-section {
@@ -1537,11 +1537,13 @@ span {
       cursor: pointer;
       transition: 0.4s linear; } }
   @media screen and (min-width: 1200px) {
-    .header-index .link-logo {
-      padding: 0 44px 0; }
-    .header-index .menu-section {
-      font-size: 24px;
-      line-height: 58px; } }
+    .header-index {
+      max-width: 1173px; }
+      .header-index .link-logo {
+        padding: 0 44px 0; }
+      .header-index .menu-section {
+        font-size: 24px;
+        line-height: 58px; } }
 
 .portfolio-index {
   margin: 11px 0 0 0; }
@@ -1768,5 +1770,11 @@ span {
 @media screen and (min-width: 1200px) {
   .wedding-portfolio .wedding-photography:nth-child(9) {
     display: inline-block; } }
+
+.about-photographer .goncharenko {
+  width: 100%;
+  max-width: 352px;
+  margin: 0 auto;
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */
