@@ -33,14 +33,14 @@
                 @include flexbox;
                 @include justify-content(flex-end);
             }
-            .wrapper-menu-section {
+            .menu-section {
                 margin: 0 27px 0 0;
                 border-radius: 5px;
                 list-style-type: none;
                 background: $light_grey_clr;
                 font-size: 0;
             }
-            .link-menu-section {
+            .item-menu {
                 border-radius: 5px;
                 display: inline-block;
                 transition: background 0.4s linear;
@@ -53,7 +53,7 @@
                     transition: color 0.4s linear;
                 }
             }
-            .menu-section {
+            .link-item-menu {
                 padding: 0 20px 0;
                 line-height: 40px;
                 text-transform: uppercase;
@@ -67,7 +67,7 @@
             .link-logo {
                 padding: 0 44px 0;
             }
-            .menu-section {
+            .link-item-menu {
                 font-size: $fs_large;
                 line-height: 58px;
             }
