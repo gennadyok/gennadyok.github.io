@@ -52,6 +52,12 @@ a {
     text-decoration: none;
 }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 span {
     color: #fff;
 }

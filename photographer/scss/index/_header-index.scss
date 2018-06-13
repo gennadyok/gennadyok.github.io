@@ -41,24 +41,25 @@
                 font-size: 0;
             }
             .link-menu-section {
-                padding: 0 20px 0;
                 border-radius: 5px;
                 display: inline-block;
-                transition: 0.4s linear;
+                transition: background 0.4s linear;
                 &:hover {
                     background: $hover_clr;
-                    transition: 0.4s linear;
+                    transition: background 0.4s linear;
                 }
                 &:hover>.menu-section {
                     color: #ffffff;
-                    transition: 0.4s linear;
+                    transition: color 0.4s linear;
                 }
             }
             .menu-section {
+                padding: 0 20px 0;
                 line-height: 40px;
                 text-transform: uppercase;
                 cursor: pointer;
-                transition: 0.4s linear;
+                transition: color 0.4s linear;
+                display: inline-block;
             }
         }
         @media screen and (min-width: 1200px) {

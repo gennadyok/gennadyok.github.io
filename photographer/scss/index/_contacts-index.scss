@@ -42,10 +42,6 @@
     }
     @media screen and (min-width: 578px) {
         margin: 45px 0 0 0;
-        .dash {
-            margin: 0 0 0 4px;
-            display: inline-block;
-        }
         .phone-kyivstar-life {
             width: 160px;
         }
@@ -61,6 +57,10 @@
         }
     }
     @media screen and (min-width: 1200px) {
+        .dash {
+            margin: 0 0 0 4px;
+            display: inline-block;
+        }
         .wrapper-home-phone {
             margin: 0;
             padding: 0 62px 0 0;

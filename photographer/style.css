@@ -1464,6 +1464,11 @@ input {
 a {
   text-decoration: none; }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 span {
   color: #fff; }
 
@@ -1521,21 +1526,22 @@ span {
       background: #E0E0E0;
       font-size: 0; }
     .header-index .link-menu-section {
-      padding: 0 20px 0;
       border-radius: 5px;
       display: inline-block;
-      transition: 0.4s linear; }
+      transition: background 0.4s linear; }
       .header-index .link-menu-section:hover {
         background: #2D9CDB;
-        transition: 0.4s linear; }
+        transition: background 0.4s linear; }
       .header-index .link-menu-section:hover > .menu-section {
         color: #ffffff;
-        transition: 0.4s linear; }
+        transition: color 0.4s linear; }
     .header-index .menu-section {
+      padding: 0 20px 0;
       line-height: 40px;
       text-transform: uppercase;
       cursor: pointer;
-      transition: 0.4s linear; } }
+      transition: color 0.4s linear;
+      display: inline-block; } }
   @media screen and (min-width: 1200px) {
     .header-index {
       max-width: 1173px; }
@@ -1638,9 +1644,6 @@ span {
   @media screen and (min-width: 578px) {
     .contacts-index {
       margin: 45px 0 0 0; }
-      .contacts-index .dash {
-        margin: 0 0 0 4px;
-        display: inline-block; }
       .contacts-index .phone-kyivstar-life {
         width: 160px; }
       .contacts-index .wrapper-home-phone {
@@ -1668,6 +1671,9 @@ span {
         -moz-justify-content: flex-start;
         justify-content: flex-start; } }
   @media screen and (min-width: 1200px) {
+    .contacts-index .dash {
+      margin: 0 0 0 4px;
+      display: inline-block; }
     .contacts-index .wrapper-home-phone {
       margin: 0;
       padding: 0 62px 0 0; }
@@ -1780,5 +1786,8 @@ span {
 .about-photographer .text-about-me {
   margin: 15px 0 0 0;
   padding: 0 10px 0; }
+@media screen and (min-width: 576px) {
+  .about-photographer .goncharenko {
+    float: left; } }
 
 /*# sourceMappingURL=style.css.map */
