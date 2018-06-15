@@ -41,14 +41,14 @@
                 font-size: 0;
             }
             .item-menu {
-                border-radius: 5px;
+                border-radius: 7px;
                 display: inline-block;
                 transition: background 0.4s linear;
                 &:hover {
                     background: $hover_clr;
                     transition: background 0.4s linear;
                 }
-                &:hover>.menu-section {
+                &:hover>.link-item-menu {
                     color: #ffffff;
                     transition: color 0.4s linear;
                 }
@@ -57,6 +57,7 @@
                 padding: 0 20px 0;
                 line-height: 40px;
                 text-transform: uppercase;
+                color: $key_clr;
                 cursor: pointer;
                 transition: color 0.4s linear;
                 display: inline-block;

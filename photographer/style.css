@@ -1526,19 +1526,20 @@ span {
       background: #E0E0E0;
       font-size: 0; }
     .header-index .item-menu {
-      border-radius: 5px;
+      border-radius: 7px;
       display: inline-block;
       transition: background 0.4s linear; }
       .header-index .item-menu:hover {
-        background: #2D9CDB;
+        background: rgba(45, 156, 219, 0.6);
         transition: background 0.4s linear; }
-      .header-index .item-menu:hover > .menu-section {
+      .header-index .item-menu:hover > .link-item-menu {
         color: #ffffff;
         transition: color 0.4s linear; }
     .header-index .link-item-menu {
       padding: 0 20px 0;
       line-height: 40px;
       text-transform: uppercase;
+      color: #828282;
       cursor: pointer;
       transition: color 0.4s linear;
       display: inline-block; } }
