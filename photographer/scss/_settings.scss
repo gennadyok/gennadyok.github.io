@@ -31,6 +31,7 @@ body,
 p,
 a,
 div,
+span,
 body,
 button,
 input {
@@ -56,10 +57,6 @@ a {
     content: "";
     display: table;
     clear: both;
-}
-
-span {
-    color: #fff;
 }
 
 .wrapper {

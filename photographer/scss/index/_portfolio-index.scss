@@ -10,9 +10,10 @@
     .advertising-photography {
         display: none;
     }
-    .vector-left,
-    .vector-right {
-        display: none;
+    // спросить у Ромы - как сделать это:
+    .slider-goods .vector-left,
+    .slider-goods .vector-right {
+        display: none !important;
     }
     @media screen and (min-width: 768px) {
         margin: 44px 0 0 0;
@@ -34,12 +35,14 @@
             top: 45.4%;
             left: 30px;
             display: inline-block;
+            z-index: 2;
         }
         .vector-right {
             position: absolute;
             top: 45.4%;
             right: 30px;
             display: inline-block;
+            z-index: 2;
         }
     }
 }

@@ -1,0 +1,113 @@
+.contacts-info {
+    margin: 15px 0 0 0;
+    // для класса link-logo требуется маржин слева - подумать, как лучше реализовать?
+    .wrapper-phons,
+    .social-profile-icon {
+        margin: 20px 0 0 0;
+        @include flexbox;
+        @include justify-content(center);
+    }
+    .phone-kyivstar-life,
+    .wrapper-social {
+        text-align: center;
+        @include flexbox;
+        @include flex-flow(column);
+    }
+    .wrapper-social {
+        margin: 0 0 0 4px;
+    }
+    .address {
+        margin: 71px 0 0 0;
+        font-size: $fs_medium;
+        text-decoration: none;
+        @include flexbox;
+        @include flex-flow(column);
+        @include align-items(center);
+    }
+    .wrapper-direction {
+        max-width: 350px;
+        text-align: center;
+    }
+    .direction {
+        font-size: $fs_medium;
+        max-width: 355px;
+    }
+    .direction-city {
+        text-transform: none;
+    }
+    .maps {
+        width: 100%;
+        max-width: 405px;
+        height: 257px;
+        margin: 50px 5px 0;
+        background: $key_clr;
+    }
+    .home-phone-kyivstar,
+    .home-phone-life {
+        font-size: $fs_medium;
+    }
+    .home-phone-life {
+        margin: 4px 0 0 0;
+    }
+    .skype,
+    .profile-social,
+    .direction {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    .icon-social {
+        margin: 0 0 0 10px;
+    }
+    .skype {
+        margin: 20px 0 0 0;
+    }
+    .profile-icon {
+        margin: 9px 0 0 0;
+        @include flexbox;
+        @include justify-content(space-between);
+        @include align-items(center);
+    }
+    @media screen and (min-width: 576px) {
+        .skype,
+        .profile-social,
+        .direction {
+            font-size: $fs_medium;
+        }
+        .wrapper-direction {
+            text-align: left;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        padding: 25px 0 0 0;
+        .wrapper-phons,
+        .social-profile-icon {
+            margin: 0;
+            @include flexbox;
+            @include justify-content(start);
+        }
+        .phone-kyivstar-life {
+            margin: 22px 0 0 50px;
+            text-align: left;
+        }
+        .wrapper-social {
+            text-align: left;
+        }
+        .profile-icon {
+            width: 350px;
+            @include align-items(baseline);
+            &:first-of-type {
+                margin: 0;
+            }
+        }
+        .icon-social {
+            margin: 0;
+        }
+        .skype {
+            margin: 57px 0 0 0;
+        }
+    }
+}
+
+// Задать вопрос Роме насчет отступа внизу, под картой - край контейнера
+// Отцентрировать блоки социалок и телефоны на разрешении 1000+
+// Сделать левый отступ логотипу

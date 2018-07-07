@@ -26,6 +26,7 @@
     .home-phone-life {
         line-height: 17px;
         color: $dark;
+        text-decoration: none !important;
         @include flexbox;
         @include justify-content(center);
     }

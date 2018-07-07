@@ -1,18 +1,57 @@
-.about-photographer {
+.about-me {
+    .logo {
+        padding: 0 0 0 14px;
+        display: block;
+    }
+    .goncharenko-and-text-about {
+        margin: 24px 0 0 0;
+        padding: 0 20px 0;
+        display: inline-block;
+    }
     .goncharenko {
         width: 100%;
-        max-width: 352px;
-        margin: 15px auto 0;
+        max-width: 373px;
+        margin: 15px 15px 0;
         padding: 0 10px 0;
         display: block;
     }
     .text-about-me {
-        margin: 15px 0 0 0;
+        max-width: 1077px;
+        margin: 23px 0 0 0;
         padding: 0 10px 0;
+        font-size: 18px;
+        line-height: 25px;
+        &:first-of-type {
+            margin: 18px 0 0 0;
+        }
+    }
+    .special-paragraph {
+        margin: 16px 0 0 0;
     }
     @media screen and (min-width: 576px) {
         .goncharenko {
             float: left;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .logo {
+            width: 237px;
+            padding: 0 23px 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .full-menu {
+            @include flexbox;
+            @include justify-content(flex-start);
+        }
+        .menu-section {
+            margin: 0 27px 0 3px;
+        }
+        .link-item-menu {
+            padding: 0 40px 0;
+        }
+        .contacts-index {
+            margin: 55px 0 0 0;
         }
     }
 }
