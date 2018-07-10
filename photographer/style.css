@@ -1953,5 +1953,16 @@ a {
         margin: 0; }
       .contacts-info .skype {
         margin: 57px 0 0 0; } }
+  @media screen and (min-width: 1200px) {
+    .contacts-info .logo {
+      width: 190px; }
+    .contacts-info .address {
+      margin: 22px 0 0 0; }
+    .contacts-info .phone-kyivstar-life {
+      margin: 22px 0 0 140px; }
+    .contacts-info .wrapper-direction {
+      margin: 0 10px 0 0; }
+    .contacts-info .maps {
+      margin: 50px 10px 0 0; } }
 
 /*# sourceMappingURL=style.css.map */
