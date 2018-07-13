@@ -1478,7 +1478,7 @@ a {
   margin-top: 15px; }
   .header-index .logo {
     width: 108px;
-    margin: 0 0 0 10px; }
+    margin: 0 0 0 18px; }
   .header-index .wrapper-gamburger {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1544,6 +1544,8 @@ a {
   @media screen and (min-width: 1170px) {
     .header-index {
       max-width: 1173px; }
+      .header-index .logo {
+        width: 190px; }
       .header-index .link-logo {
         padding: 0 44px 0; }
       .header-index .link-item-menu {
@@ -1572,17 +1574,17 @@ a {
         display: block; }
     .portfolio-index .wedding-photography {
       position: relative; }
-    .portfolio-index .vector-left {
+    .portfolio-index .slider-goods .vector-left {
       position: absolute;
       top: 45.4%;
       left: 30px;
-      display: inline-block;
+      display: inline-block !important;
       z-index: 2; }
-    .portfolio-index .vector-right {
+    .portfolio-index .slider-goods .vector-right {
       position: absolute;
       top: 45.4%;
       right: 30px;
-      display: inline-block;
+      display: inline-block !important;
       z-index: 2; } }
 
 .contacts-index {
@@ -1847,8 +1849,6 @@ a {
     -moz-flex-flow: column;
     -ms-flex-flow: column;
     flex-flow: column; }
-  .contacts-info .wrapper-social {
-    margin: 0 0 0 4px; }
   .contacts-info .address {
     margin: 71px 0 0 0;
     font-size: 18px;
@@ -1881,6 +1881,10 @@ a {
     height: 257px;
     margin: 50px 5px 0;
     background: #828282; }
+  .contacts-info .google-maps {
+    width: 100%;
+    height: 100%;
+    border: 0; }
   .contacts-info .home-phone-kyivstar,
   .contacts-info .home-phone-life {
     font-size: 18px; }
@@ -1922,8 +1926,12 @@ a {
   @media screen and (min-width: 768px) {
     .contacts-info {
       padding: 25px 0 0 0; }
+      .contacts-info .wrapper-phons-social-profile-icon {
+        width: 100%;
+        display: flex; }
       .contacts-info .wrapper-phons,
       .contacts-info .social-profile-icon {
+        width: 50%;
         margin: 0;
         display: -webkit-box;
         display: -webkit-flex;
@@ -1953,16 +1961,42 @@ a {
         margin: 0; }
       .contacts-info .skype {
         margin: 57px 0 0 0; } }
+  @media screen and (min-width: 992px) {
+    .contacts-info .wrapper-phons-social-profile-icon {
+      -webkit-flex-flow: column;
+      -moz-flex-flow: column;
+      -ms-flex-flow: column;
+      flex-flow: column; }
+    .contacts-info .wrapper-phons {
+      width: 69%;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center; }
+    .contacts-info .social-profile-icon {
+      width: 99%;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center; }
+    .contacts-info .wrapper-social {
+      margin: 30px 0 0 50px; }
+    .contacts-info .address {
+      margin: 22px 0 0 0; } }
   @media screen and (min-width: 1200px) {
-    .contacts-info .logo {
-      width: 190px; }
+    .contacts-info .social-profile-icon {
+      width: 91%; }
+    .contacts-info .profile-icon {
+      width: 383px; }
     .contacts-info .address {
       margin: 22px 0 0 0; }
     .contacts-info .phone-kyivstar-life {
-      margin: 22px 0 0 140px; }
+      margin: 22px 0 0 0; }
     .contacts-info .wrapper-direction {
-      margin: 0 10px 0 0; }
+      margin: 0 80px 0 0; }
     .contacts-info .maps {
-      margin: 50px 10px 0 0; } }
+      margin: 50px 64px 0 0; } }
 
 /*# sourceMappingURL=style.css.map */

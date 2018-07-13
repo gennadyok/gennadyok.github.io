@@ -30,18 +30,18 @@
             position: relative;
         }
         // end temp
-        .vector-left {
+        .slider-goods .vector-left {
             position: absolute;
             top: 45.4%;
             left: 30px;
-            display: inline-block;
+            display: inline-block !important;
             z-index: 2;
         }
-        .vector-right {
+        .slider-goods .vector-right {
             position: absolute;
             top: 45.4%;
             right: 30px;
-            display: inline-block;
+            display: inline-block !important;
             z-index: 2;
         }
     }
