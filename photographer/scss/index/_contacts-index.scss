@@ -12,6 +12,9 @@
         @include flexbox;
         @include justify-content(center);
     }
+    .business-card {
+        display: inline-block;
+    }
     .dash {
         display: none;
     }
@@ -21,14 +24,13 @@
     }
     .wrapper-home-phone {
         margin: 24px 0 0 0;
+        text-align: center;
     }
     .home-phone-kyivstar,
     .home-phone-life {
         line-height: 17px;
         color: $dark;
-        text-decoration: none !important;
-        @include flexbox;
-        @include justify-content(center);
+        display: inline-block;
     }
     .social {
         margin: 25px 0 0 0;

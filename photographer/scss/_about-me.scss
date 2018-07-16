@@ -6,14 +6,17 @@
     .goncharenko-and-text-about {
         margin: 24px 0 0 0;
         padding: 0 20px 0;
+        text-align: center;
         display: inline-block;
     }
     .goncharenko {
         width: 100%;
         max-width: 373px;
-        margin: 15px 15px 0;
         padding: 0 10px 0;
-        display: block;
+        
+    }
+    .wrapper-text-about-me {
+        text-align: left;
     }
     .text-about-me {
         max-width: 1077px;
@@ -28,9 +31,11 @@
     .special-paragraph {
         margin: 16px 0 0 0;
     }
-    @media screen and (min-width: 576px) {
+    @media screen and (min-width: 768px) {
         .goncharenko {
             float: left;
+            margin: 15px 15px 0;
+            display: block;
         }
     }
     @media screen and (min-width: 1200px) {

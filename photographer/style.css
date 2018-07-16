@@ -1607,28 +1607,21 @@ a {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center; }
+  .contacts-index .business-card {
+    display: inline-block; }
   .contacts-index .dash {
     display: none; }
   .contacts-index .wrapper-business-card,
   .contacts-index .wrapper-business-card-profession {
     display: inline-block; }
   .contacts-index .wrapper-home-phone {
-    margin: 24px 0 0 0; }
+    margin: 24px 0 0 0;
+    text-align: center; }
   .contacts-index .home-phone-kyivstar,
   .contacts-index .home-phone-life {
     line-height: 17px;
     color: #333;
-    text-decoration: none !important;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    justify-content: center; }
+    display: inline-block; }
   .contacts-index .social {
     margin: 25px 0 0 0;
     display: -webkit-box;
@@ -1778,13 +1771,14 @@ a {
 .about-me .goncharenko-and-text-about {
   margin: 24px 0 0 0;
   padding: 0 20px 0;
+  text-align: center;
   display: inline-block; }
 .about-me .goncharenko {
   width: 100%;
   max-width: 373px;
-  margin: 15px 15px 0;
-  padding: 0 10px 0;
-  display: block; }
+  padding: 0 10px 0; }
+.about-me .wrapper-text-about-me {
+  text-align: left; }
 .about-me .text-about-me {
   max-width: 1077px;
   margin: 23px 0 0 0;
@@ -1795,9 +1789,11 @@ a {
     margin: 18px 0 0 0; }
 .about-me .special-paragraph {
   margin: 16px 0 0 0; }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .about-me .goncharenko {
-    float: left; } }
+    float: left;
+    margin: 15px 15px 0;
+    display: block; } }
 @media screen and (min-width: 1200px) {
   .about-me .logo {
     width: 237px;
