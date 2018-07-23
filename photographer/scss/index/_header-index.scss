@@ -43,14 +43,14 @@
             .item-menu {
                 border-radius: 7px;
                 display: inline-block;
-                transition: background 0.4s linear;
+                transition: background 0.2s linear;
                 &:hover {
                     background: $hover_clr;
-                    transition: background 0.4s linear;
+                    transition: background 0.2s linear;
                 }
                 &:hover>.link-item-menu {
                     color: #ffffff;
-                    transition: color 0.4s linear;
+                    transition: color 0.2s linear;
                 }
             }
             .link-item-menu {
@@ -59,7 +59,7 @@
                 text-transform: uppercase;
                 color: $key_clr;
                 cursor: pointer;
-                transition: color 0.4s linear;
+                transition: color 0.2s linear;
                 display: inline-block;
             }
         }

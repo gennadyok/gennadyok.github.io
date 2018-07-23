@@ -1526,20 +1526,20 @@ a {
     .header-index .item-menu {
       border-radius: 7px;
       display: inline-block;
-      transition: background 0.4s linear; }
+      transition: background 0.2s linear; }
       .header-index .item-menu:hover {
         background: rgba(45, 156, 219, 0.6);
-        transition: background 0.4s linear; }
+        transition: background 0.2s linear; }
       .header-index .item-menu:hover > .link-item-menu {
         color: #ffffff;
-        transition: color 0.4s linear; }
+        transition: color 0.2s linear; }
     .header-index .link-item-menu {
       padding: 0 20px 0;
       line-height: 40px;
       text-transform: uppercase;
       color: #828282;
       cursor: pointer;
-      transition: color 0.4s linear;
+      transition: color 0.2s linear;
       display: inline-block; } }
   @media screen and (min-width: 1170px) {
     .header-index {
