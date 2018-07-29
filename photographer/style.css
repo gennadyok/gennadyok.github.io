@@ -1622,22 +1622,28 @@ a {
     line-height: 17px;
     color: #333;
     display: inline-block; }
-  .contacts-index .social {
-    margin: 25px 0 0 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    justify-content: center; }
-    .contacts-index .social .icon-social {
-      margin: 0 10px 0 0; }
-      .contacts-index .social .icon-social:last-child {
-        margin: 0; }
+  .contacts-index .social-grey-blue {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(45, 156, 219, 0.6);
+    border-radius: 50%;
+    display: inline-block; }
+    .contacts-index .social-grey-blue:hover {
+      border: #828282; }
+      .contacts-index .social-grey-blue:hover .icon-social-blue {
+        opacity: 0;
+        display: block; }
+      .contacts-index .social-grey-blue:hover .icon-social-grey {
+        opacity: 1;
+        display: block; }
+  .contacts-index .icon-social {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    display: inline-block;
+    cursor: pointer; }
   @media screen and (min-width: 578px) {
     .contacts-index {
       margin: 45px 0 0 0; }

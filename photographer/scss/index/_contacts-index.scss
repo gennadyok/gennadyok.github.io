@@ -32,16 +32,43 @@
         color: $dark;
         display: inline-block;
     }
-    .social {
-        margin: 25px 0 0 0;
-        @include flexbox;
-        @include justify-content(center);
-        .icon-social {
-            margin: 0 10px 0 0;
-            &:last-child {
-                margin: 0;
+    // .social {
+    //     margin: 25px 0 0 0;
+    //     @include flexbox;
+    //     @include justify-content(center);
+    //     .icon-social {
+    //         margin: 0 10px 0 0;
+    //         &:last-child {
+    //             margin: 0;
+    //         }
+    //     }
+    // }
+    .social-grey-blue {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgba(45, 156, 219, 0.6);
+        border-radius: 50%;
+        display: inline-block;
+        &:hover {
+            border: #828282;
+            .icon-social-blue {
+                opacity: 0;
+                display: block;
+            }
+            .icon-social-grey {
+                opacity: 1;
+                display: block;
             }
         }
+    }
+    .icon-social {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: auto;
+        display: inline-block;
+        cursor: pointer;
     }
     @media screen and (min-width: 578px) {
         margin: 45px 0 0 0;
