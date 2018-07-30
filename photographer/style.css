@@ -1622,25 +1622,46 @@ a {
     line-height: 17px;
     color: #333;
     display: inline-block; }
+  .contacts-index .social {
+    margin: 25px 0 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+  .contacts-index .icon-social-grey {
+    opacity: 0;
+    transition: opacity 0.2s linear; }
   .contacts-index .social-grey-blue {
     position: relative;
     width: 40px;
     height: 40px;
+    margin: 0 10px 0 0;
     border: 2px solid rgba(45, 156, 219, 0.6);
     border-radius: 50%;
-    display: inline-block; }
+    transition: border 0.2s linear; }
+    .contacts-index .social-grey-blue:last-child {
+      margin: 0; }
     .contacts-index .social-grey-blue:hover {
-      border: #828282; }
+      border: 2px solid #828282;
+      transition: border 0.2s linear; }
       .contacts-index .social-grey-blue:hover .icon-social-blue {
         opacity: 0;
-        display: block; }
+        transition: opacity 0.2s linear; }
       .contacts-index .social-grey-blue:hover .icon-social-grey {
         opacity: 1;
-        display: block; }
+        transition: opacity 0.2s linear; }
   .contacts-index .icon-social {
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
+    right: 0;
     margin: auto;
     display: inline-block;
     cursor: pointer; }
