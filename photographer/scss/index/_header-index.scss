@@ -36,31 +36,38 @@
             .menu-section {
                 margin: 0 27px 0 0;
                 border-radius: 5px;
+                font-size: 0;
                 list-style-type: none;
                 background: $menu_back_clr;
                 font-size: 0;
             }
-            .item-menu {
+            .item-menu,
+            .page_item {
                 border-radius: 7px;
+                text-decoration: none;
                 display: inline-block;
-                transition: background 0.2s linear;
+                transition: 0.2s linear;
                 &:hover {
                     background: $hover_clr;
-                    transition: background 0.2s linear;
+                    transition: 0.2s linear;
                 }
-                &:hover>.link-item-menu {
+                &:hover>a {
                     color: #ffffff;
                     transition: color 0.2s linear;
                 }
             }
-            .link-item-menu {
+            .item-menu,
+            .page_item>a {
                 padding: 0 20px 0;
-                line-height: 40px;
                 text-transform: uppercase;
                 color: $key_clr;
                 cursor: pointer;
                 transition: color 0.2s linear;
                 display: inline-block;
+            }
+            .link-item-menu,
+            .page_item>a {
+                line-height: 40px;
             }
         }
         @media screen and (min-width: 1170px) {
@@ -71,7 +78,8 @@
             .link-logo {
                 padding: 0 44px 0;
             }
-            .link-item-menu {
+            .item-menu,
+            .page_item>a {
                 font-size: $fs_large;
                 line-height: 58px;
             }
