@@ -1431,6 +1431,625 @@ html {
 
   .align-self-xl-stretch {
     align-self: stretch !important; } }
+@font-face {
+  font-family: OpenSans;
+  src: local(OpenSans), url(fonts/OpenSans.woff);
+  src: local(OpenSans-Regular), url(fonts/OpenSans-Regular.woff2); }
+body,
+.header {
+  background: #fff; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+p,
+a,
+div,
+span,
+body,
+button,
+input {
+  font-family: OpenSans, Arial, ArialMT, Georgia, Arial, Times New Roman;
+  font-size: 16px;
+  color: #333; }
+
+.no-gutters {
+  padding: 0; }
+
+.img {
+  width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.header-index {
+  margin-top: 15px; }
+  .header-index .logo {
+    width: 108px;
+    margin: 0 0 0 18px; }
+  .header-index .wrapper-gamburger {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    justify-content: flex-end; }
+  .header-index .full-menu {
+    display: none; }
+  .header-index .menu-gamburger {
+    margin: 9px 12px 0 17px;
+    border: 0;
+    background: #fff; }
+  .header-index .line-gamburger {
+    width: 25px;
+    height: 0px;
+    margin: 0 0 3px 0;
+    border: 2px solid #828282; }
+  @media screen and (min-width: 768px) {
+    .header-index .logo {
+      width: 143px; }
+    .header-index .wrapper-gamburger {
+      display: none; }
+    .header-index .full-menu {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      -webkit-justify-content: flex-end;
+      -moz-justify-content: flex-end;
+      justify-content: flex-end; }
+    .header-index .menu-section {
+      margin: 0 27px 0 0;
+      border-radius: 5px;
+      font-size: 0;
+      list-style-type: none;
+      background: rgba(224, 224, 224, 0.4);
+      font-size: 0; }
+    .header-index .item-menu,
+    .header-index .page_item {
+      border-radius: 7px;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.2s linear; }
+      .header-index .item-menu:hover,
+      .header-index .page_item:hover {
+        background: rgba(45, 156, 219, 0.6);
+        transition: 0.2s linear; }
+      .header-index .item-menu:hover > a,
+      .header-index .page_item:hover > a {
+        color: #ffffff;
+        transition: color 0.2s linear; }
+    .header-index .item-menu,
+    .header-index .page_item > a {
+      padding: 0 20px 0;
+      text-transform: uppercase;
+      color: #828282;
+      cursor: pointer;
+      transition: color 0.2s linear;
+      display: inline-block; }
+    .header-index .link-item-menu,
+    .header-index .page_item > a {
+      line-height: 40px; } }
+  @media screen and (min-width: 1170px) {
+    .header-index {
+      max-width: 1173px; }
+      .header-index .logo {
+        width: 190px; }
+      .header-index .link-logo {
+        padding: 0 44px 0; }
+      .header-index .link-item-menu,
+      .header-index .page_item > a {
+        font-size: 20px;
+        line-height: 58px; } }
+
+.portfolio-index {
+  margin: 11px 0 0 0; }
+  .portfolio-index .img-portfolio {
+    text-align: center; }
+  .portfolio-index .img-home {
+    width: 100%; }
+  .portfolio-index .portrait-photo,
+  .portfolio-index .advertising-photography {
+    display: none; }
+  .portfolio-index .slider-goods .vector-left,
+  .portfolio-index .slider-goods .vector-right {
+    display: none !important; }
+  @media screen and (min-width: 768px) {
+    .portfolio-index {
+      margin: 44px 0 0 0; } }
+  @media screen and (min-width: 992px) {
+    .portfolio-index .img-portfolio {
+      display: none; }
+      .portfolio-index .img-portfolio:first-child {
+        display: block; }
+    .portfolio-index .wedding-photography {
+      position: relative; }
+    .portfolio-index .slider-goods .vector-left {
+      position: absolute;
+      top: 45.4%;
+      left: 30px;
+      display: inline-block !important;
+      z-index: 2; }
+    .portfolio-index .slider-goods .vector-right {
+      position: absolute;
+      top: 45.4%;
+      right: 30px;
+      display: inline-block !important;
+      z-index: 2; } }
+
+.contacts-index {
+  margin: 25px 0 0 0;
+  padding: 0 0 20px 0;
+  text-align: center; }
+  .contacts-index .contact-card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center; }
+  .contacts-index .wrapper-business-contact {
+    max-width: 250px;
+    display: inline-block; }
+  .contacts-index .wrapper-business-card,
+  .contacts-index .wrapper-business-card-profession {
+    line-height: 17px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+  .contacts-index .business-card {
+    display: inline-block; }
+  .contacts-index .dash {
+    display: none; }
+  .contacts-index .wrapper-business-card,
+  .contacts-index .wrapper-business-card-profession {
+    display: inline-block; }
+  .contacts-index .wrapper-home-phone {
+    margin: 24px 0 0 0;
+    text-align: center; }
+  .contacts-index .home-phone-kyivstar,
+  .contacts-index .home-phone-life {
+    line-height: 17px;
+    color: #333;
+    display: inline-block; }
+  .contacts-index .social {
+    margin: 25px 0 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+  .contacts-index .icon-social-grey {
+    opacity: 0;
+    transition: opacity 0.2s linear; }
+  .contacts-index .icon-social-grey {
+    opacity: 1;
+    transition: opacity 0.2s linear; }
+  .contacts-index .icon-social-blue {
+    opacity: 0;
+    transition: opacity 0.2s linear; }
+  .contacts-index .social-grey-blue {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    transition: border 0.2s linear; }
+    .contacts-index .social-grey-blue:last-child {
+      margin: 0; }
+    .contacts-index .social-grey-blue:hover {
+      border: 2px solid rgba(45, 156, 219, 0.6);
+      transition: border 0.2s linear; }
+      .contacts-index .social-grey-blue:hover .icon-social-blue {
+        opacity: 1;
+        transition: opacity 0.2s linear; }
+      .contacts-index .social-grey-blue:hover .icon-social-grey {
+        opacity: 0;
+        transition: opacity 0.2s linear; }
+  .contacts-index .icon-social {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: inline-block;
+    cursor: pointer; }
+  @media screen and (min-width: 578px) {
+    .contacts-index {
+      margin: 45px 0 0 0; }
+      .contacts-index .phone-kyivstar-life {
+        width: 160px; }
+      .contacts-index .wrapper-home-phone {
+        margin: 34px 28px 0 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        -webkit-justify-content: flex-end;
+        -moz-justify-content: flex-end;
+        justify-content: flex-end; }
+      .contacts-index .social {
+        margin: 35px 0 0 35px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        -webkit-justify-content: flex-start;
+        -moz-justify-content: flex-start;
+        justify-content: flex-start; } }
+  @media screen and (min-width: 1200px) {
+    .contacts-index .dash {
+      margin: 0 0 0 4px;
+      display: inline-block; }
+    .contacts-index .wrapper-home-phone {
+      margin: 0;
+      padding: 0 62px 0 0; }
+    .contacts-index .wrapper-business-contact {
+      min-width: 505px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center; }
+    .contacts-index .business-card-profession {
+      display: inline-block; }
+    .contacts-index .social {
+      margin: 0;
+      padding: 0 0 0 62px; } }
+
+.portfolio {
+  margin: 11px 0 0 0; }
+  .portfolio .img-portfolio {
+    position: relative;
+    text-align: center; }
+  .portfolio .img-home {
+    max-width: 375px; }
+  .portfolio .link-section {
+    cursor: pointer; }
+  .portfolio .portrait-photo,
+  .portfolio .advertising-photo {
+    display: none; }
+  .portfolio .tape-category {
+    width: 360px;
+    height: 45px;
+    background: #79BBE1;
+    opacity: 0.7;
+    display: inline-block; }
+  .portfolio .wrapper-text-category {
+    position: absolute;
+    left: 0;
+    bottom: 19px;
+    width: 100%;
+    text-align: center; }
+  .portfolio .text-category {
+    font-size: 20px;
+    line-height: 59px; }
+  @media screen and (min-width: 768px) {
+    .portfolio {
+      margin: 44px 0 0 0; }
+      .portfolio .wrapper-img-portfolio {
+        max-width: 768px;
+        margin: 0 auto; }
+      .portfolio .img-portfolio {
+        margin: 0 -12px -5px; }
+      .portfolio .portrait-photo,
+      .portfolio .advertising-photo {
+        display: inline-block; } }
+  @media screen and (min-width: 1200px) {
+    .portfolio .wrapper-img-portfolio {
+      max-width: 1200px; }
+    .portfolio .img-portfolio {
+      margin: 0px -20px -5px; } }
+
+@media screen and (min-width: 1200px) {
+  .contacts-portfolio .name-and-profession {
+    padding: 0 0 0 12px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    -moz-justify-content: start;
+    justify-content: start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center; }
+  .contacts-portfolio .wrapper-home-phone {
+    margin: 34px 28px 0 0; }
+  .contacts-portfolio .icon-social {
+    max-height: 40px; }
+  .contacts-portfolio .social {
+    margin: 11px 0 0 35px; }
+  .contacts-portfolio .wrapper-business-contact {
+    max-width: 505px; }
+  .contacts-portfolio .wrapper-home-phone {
+    margin: 10px 28px 0 0; } }
+
+.about-me .logo {
+  padding: 0 0 0 14px;
+  display: block; }
+.about-me .goncharenko-and-text-about {
+  margin: 24px 0 0 0;
+  padding: 0 20px 0;
+  text-align: center;
+  display: inline-block; }
+.about-me .goncharenko {
+  width: 100%;
+  max-width: 373px;
+  padding: 0 10px 0; }
+.about-me .wrapper-text-about-me {
+  text-align: left; }
+.about-me .text-about-me {
+  max-width: 1077px;
+  margin: 23px 0 0 0;
+  padding: 0 10px 0;
+  font-size: 18px;
+  line-height: 25px; }
+  .about-me .text-about-me:first-of-type {
+    margin: 18px 0 0 0; }
+.about-me .special-paragraph {
+  margin: 16px 0 0 0; }
+@media screen and (min-width: 768px) {
+  .about-me .goncharenko {
+    float: left;
+    margin: 15px 15px 0;
+    display: block; } }
+@media screen and (min-width: 1200px) {
+  .about-me .logo {
+    width: 237px;
+    padding: 0 23px 0;
+    display: flex;
+    justify-content: flex-start; }
+  .about-me .full-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    justify-content: flex-end; }
+  .about-me .menu-section {
+    margin: 0 27px 0 3px; }
+  .about-me .contacts-index {
+    margin: 55px 0 0 0; } }
+
+.contacts-info {
+  margin: 15px 0 0 0; }
+  .contacts-info .wrapper-phons,
+  .contacts-info .social-profile-icon {
+    margin: 20px 0 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+  .contacts-info .phone-kyivstar-life,
+  .contacts-info .wrapper-social {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column;
+    -moz-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column; }
+  .contacts-info .address {
+    margin: 71px 0 0 0;
+    font-size: 18px;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column;
+    -moz-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center; }
+  .contacts-info .wrapper-direction {
+    max-width: 350px;
+    text-align: center; }
+  .contacts-info .direction {
+    font-size: 18px;
+    max-width: 355px; }
+  .contacts-info .direction-city {
+    text-transform: none; }
+  .contacts-info .maps {
+    width: 100%;
+    max-width: 405px;
+    height: 257px;
+    margin: 50px 5px 0;
+    background: #828282; }
+  .contacts-info .google-maps {
+    width: 100%;
+    height: 100%;
+    border: 0; }
+  .contacts-info .home-phone-kyivstar,
+  .contacts-info .home-phone-life {
+    font-size: 18px; }
+  .contacts-info .home-phone-life {
+    margin: 4px 0 0 0; }
+  .contacts-info .skype,
+  .contacts-info .profile-social,
+  .contacts-info .direction {
+    font-size: 14px;
+    text-transform: uppercase; }
+  .contacts-info .icon-social {
+    margin: 0 0 0 10px; }
+  .contacts-info .skype {
+    margin: 20px 0 0 0; }
+  .contacts-info .profile-icon {
+    margin: 9px 0 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center; }
+  @media screen and (min-width: 576px) {
+    .contacts-info .skype,
+    .contacts-info .profile-social,
+    .contacts-info .direction {
+      font-size: 18px; }
+    .contacts-info .wrapper-direction {
+      text-align: left; } }
+  @media screen and (min-width: 768px) {
+    .contacts-info {
+      padding: 25px 0 0 0; }
+      .contacts-info .wrapper-phons-social-profile-icon {
+        width: 100%;
+        display: flex; }
+      .contacts-info .wrapper-phons,
+      .contacts-info .social-profile-icon {
+        width: 50%;
+        margin: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        -webkit-justify-content: start;
+        -moz-justify-content: start;
+        justify-content: start; }
+      .contacts-info .phone-kyivstar-life {
+        margin: 22px 0 0 50px;
+        text-align: left; }
+      .contacts-info .wrapper-social {
+        text-align: left; }
+      .contacts-info .profile-icon {
+        width: 350px;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        -webkit-align-items: baseline;
+        -moz-align-items: baseline;
+        align-items: baseline; }
+        .contacts-info .profile-icon:first-of-type {
+          margin: 0; }
+      .contacts-info .icon-social {
+        margin: 0; }
+      .contacts-info .skype {
+        margin: 57px 0 0 0; } }
+  @media screen and (min-width: 992px) {
+    .contacts-info .wrapper-phons-social-profile-icon {
+      -webkit-flex-flow: column;
+      -moz-flex-flow: column;
+      -ms-flex-flow: column;
+      flex-flow: column; }
+    .contacts-info .wrapper-phons {
+      width: 69%;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center; }
+    .contacts-info .social-profile-icon {
+      width: 99%;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center; }
+    .contacts-info .wrapper-social {
+      margin: 30px 0 0 50px; }
+    .contacts-info .address {
+      margin: 22px 0 0 0; } }
+  @media screen and (min-width: 1200px) {
+    .contacts-info .social-profile-icon {
+      width: 91%; }
+    .contacts-info .profile-icon {
+      width: 383px; }
+    .contacts-info .address {
+      margin: 22px 0 0 0; }
+    .contacts-info .phone-kyivstar-life {
+      margin: 22px 0 0 0; }
+    .contacts-info .wrapper-direction {
+      margin: 0 80px 0 0; }
+    .contacts-info .maps {
+      margin: 50px 64px 0 0; } }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1821,625 +2440,5 @@ template {
  */
 [hidden] {
   display: none; }
-
-@font-face {
-  font-family: OpenSans;
-  src: local(OpenSans), url(fonts/OpenSans.woff);
-  src: local(OpenSans-Regular), url(fonts/OpenSans-Regular.woff2); }
-body,
-.header {
-  background: #fff; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-p,
-a,
-div,
-span,
-body,
-button,
-input {
-  font-family: OpenSans, Arial, ArialMT, Georgia, Arial, Times New Roman;
-  font-size: 16px;
-  color: #333; }
-
-.no-gutters {
-  padding: 0; }
-
-.img {
-  width: 100%;
-  height: auto; }
-
-a {
-  text-decoration: none; }
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto; }
-
-.header-index {
-  margin-top: 15px; }
-  .header-index .logo {
-    width: 108px;
-    margin: 0 0 0 18px; }
-  .header-index .wrapper-gamburger {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    -moz-justify-content: flex-end;
-    justify-content: flex-end; }
-  .header-index .full-menu {
-    display: none; }
-  .header-index .menu-gamburger {
-    margin: 9px 12px 0 17px;
-    border: 0;
-    background: #fff; }
-  .header-index .line-gamburger {
-    width: 25px;
-    height: 0px;
-    margin: 0 0 3px 0;
-    border: 2px solid #828282; }
-  @media screen and (min-width: 768px) {
-    .header-index .logo {
-      width: 143px; }
-    .header-index .wrapper-gamburger {
-      display: none; }
-    .header-index .full-menu {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      -webkit-justify-content: flex-end;
-      -moz-justify-content: flex-end;
-      justify-content: flex-end; }
-    .header-index .menu-section {
-      margin: 0 27px 0 0;
-      border-radius: 5px;
-      font-size: 0;
-      list-style-type: none;
-      background: rgba(224, 224, 224, 0.4);
-      font-size: 0; }
-    .header-index .item-menu,
-    .header-index .page_item {
-      border-radius: 7px;
-      text-decoration: none;
-      display: inline-block;
-      transition: 0.2s linear; }
-      .header-index .item-menu:hover,
-      .header-index .page_item:hover {
-        background: rgba(45, 156, 219, 0.6);
-        transition: 0.2s linear; }
-      .header-index .item-menu:hover > a,
-      .header-index .page_item:hover > a {
-        color: #ffffff;
-        transition: color 0.2s linear; }
-    .header-index .item-menu,
-    .header-index .page_item > a {
-      padding: 0 20px 0;
-      text-transform: uppercase;
-      color: #828282;
-      cursor: pointer;
-      transition: color 0.2s linear;
-      display: inline-block; }
-    .header-index .link-item-menu,
-    .header-index .page_item > a {
-      line-height: 40px; } }
-  @media screen and (min-width: 1170px) {
-    .header-index {
-      max-width: 1173px; }
-      .header-index .logo {
-        width: 190px; }
-      .header-index .link-logo {
-        padding: 0 44px 0; }
-      .header-index .link-item-menu,
-      .header-index .page_item > a {
-        font-size: 20px;
-        line-height: 58px; } }
-
-.portfolio-index {
-  margin: 11px 0 0 0; }
-  .portfolio-index .img-portfolio {
-    text-align: center; }
-  .portfolio-index .img-home {
-    width: 100%; }
-  .portfolio-index .portrait-photo,
-  .portfolio-index .advertising-photography {
-    display: none; }
-  .portfolio-index .slider-goods .vector-left,
-  .portfolio-index .slider-goods .vector-right {
-    display: none !important; }
-  @media screen and (min-width: 768px) {
-    .portfolio-index {
-      margin: 44px 0 0 0; } }
-  @media screen and (min-width: 992px) {
-    .portfolio-index .img-portfolio {
-      display: none; }
-      .portfolio-index .img-portfolio:first-child {
-        display: block; }
-    .portfolio-index .wedding-photography {
-      position: relative; }
-    .portfolio-index .slider-goods .vector-left {
-      position: absolute;
-      top: 45.4%;
-      left: 30px;
-      display: inline-block !important;
-      z-index: 2; }
-    .portfolio-index .slider-goods .vector-right {
-      position: absolute;
-      top: 45.4%;
-      right: 30px;
-      display: inline-block !important;
-      z-index: 2; } }
-
-.contacts-index {
-  margin: 25px 0 0 0;
-  padding: 0 0 20px 0;
-  text-align: center; }
-  .contacts-index .contact-card {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    align-items: center; }
-  .contacts-index .wrapper-business-contact {
-    max-width: 250px;
-    display: inline-block; }
-  .contacts-index .wrapper-business-card,
-  .contacts-index .wrapper-business-card-profession {
-    line-height: 17px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    justify-content: center; }
-  .contacts-index .business-card {
-    display: inline-block; }
-  .contacts-index .dash {
-    display: none; }
-  .contacts-index .wrapper-business-card,
-  .contacts-index .wrapper-business-card-profession {
-    display: inline-block; }
-  .contacts-index .wrapper-home-phone {
-    margin: 24px 0 0 0;
-    text-align: center; }
-  .contacts-index .home-phone-kyivstar,
-  .contacts-index .home-phone-life {
-    line-height: 17px;
-    color: #333;
-    display: inline-block; }
-  .contacts-index .social {
-    margin: 25px 0 0 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    justify-content: center; }
-  .contacts-index .icon-social-grey {
-    opacity: 0;
-    transition: opacity 0.2s linear; }
-  .contacts-index .icon-social-grey {
-    opacity: 1;
-    transition: opacity 0.2s linear; }
-  .contacts-index .icon-social-blue {
-    opacity: 0;
-    transition: opacity 0.2s linear; }
-  .contacts-index .social-grey-blue {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    margin: 0 10px 0 0;
-    border: 2px solid #828282;
-    border-radius: 50%;
-    transition: border 0.2s linear; }
-    .contacts-index .social-grey-blue:last-child {
-      margin: 0; }
-    .contacts-index .social-grey-blue:hover {
-      border: 2px solid rgba(45, 156, 219, 0.6);
-      transition: border 0.2s linear; }
-      .contacts-index .social-grey-blue:hover .icon-social-blue {
-        opacity: 1;
-        transition: opacity 0.2s linear; }
-      .contacts-index .social-grey-blue:hover .icon-social-grey {
-        opacity: 0;
-        transition: opacity 0.2s linear; }
-  .contacts-index .icon-social {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    display: inline-block;
-    cursor: pointer; }
-  @media screen and (min-width: 578px) {
-    .contacts-index {
-      margin: 45px 0 0 0; }
-      .contacts-index .phone-kyivstar-life {
-        width: 160px; }
-      .contacts-index .wrapper-home-phone {
-        margin: 34px 28px 0 0;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: end;
-        -ms-flex-pack: end;
-        -webkit-justify-content: flex-end;
-        -moz-justify-content: flex-end;
-        justify-content: flex-end; }
-      .contacts-index .social {
-        margin: 35px 0 0 35px;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        -webkit-justify-content: flex-start;
-        -moz-justify-content: flex-start;
-        justify-content: flex-start; } }
-  @media screen and (min-width: 1200px) {
-    .contacts-index .dash {
-      margin: 0 0 0 4px;
-      display: inline-block; }
-    .contacts-index .wrapper-home-phone {
-      margin: 0;
-      padding: 0 62px 0 0; }
-    .contacts-index .wrapper-business-contact {
-      min-width: 505px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      align-items: center; }
-    .contacts-index .business-card-profession {
-      display: inline-block; }
-    .contacts-index .social {
-      margin: 0;
-      padding: 0 0 0 62px; } }
-
-.portfolio {
-  margin: 11px 0 0 0; }
-  .portfolio .img-portfolio {
-    position: relative;
-    text-align: center; }
-  .portfolio .img-home {
-    max-width: 375px; }
-  .portfolio .link-section {
-    cursor: pointer; }
-  .portfolio .portrait-photo,
-  .portfolio .advertising-photo {
-    display: none; }
-  .portfolio .tape-category {
-    width: 360px;
-    height: 45px;
-    background: #79BBE1;
-    opacity: 0.7;
-    display: inline-block; }
-  .portfolio .wrapper-text-category {
-    position: absolute;
-    left: 0;
-    bottom: 19px;
-    width: 100%;
-    text-align: center; }
-  .portfolio .text-category {
-    font-size: 20px;
-    line-height: 59px; }
-  @media screen and (min-width: 768px) {
-    .portfolio {
-      margin: 44px 0 0 0; }
-      .portfolio .wrapper-img-portfolio {
-        max-width: 768px;
-        margin: 0 auto; }
-      .portfolio .img-portfolio {
-        margin: 0 -12px -5px; }
-      .portfolio .portrait-photo,
-      .portfolio .advertising-photo {
-        display: inline-block; } }
-  @media screen and (min-width: 1200px) {
-    .portfolio .wrapper-img-portfolio {
-      max-width: 1200px; }
-    .portfolio .img-portfolio {
-      margin: 0px -20px -5px; } }
-
-@media screen and (min-width: 1200px) {
-  .contacts-portfolio .name-and-profession {
-    padding: 0 0 0 12px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    -webkit-justify-content: start;
-    -moz-justify-content: start;
-    justify-content: start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    align-items: center; }
-  .contacts-portfolio .wrapper-home-phone {
-    margin: 34px 28px 0 0; }
-  .contacts-portfolio .icon-social {
-    max-height: 40px; }
-  .contacts-portfolio .social {
-    margin: 11px 0 0 35px; }
-  .contacts-portfolio .wrapper-business-contact {
-    max-width: 505px; }
-  .contacts-portfolio .wrapper-home-phone {
-    margin: 10px 28px 0 0; } }
-
-.about-me .logo {
-  padding: 0 0 0 14px;
-  display: block; }
-.about-me .goncharenko-and-text-about {
-  margin: 24px 0 0 0;
-  padding: 0 20px 0;
-  text-align: center;
-  display: inline-block; }
-.about-me .goncharenko {
-  width: 100%;
-  max-width: 373px;
-  padding: 0 10px 0; }
-.about-me .wrapper-text-about-me {
-  text-align: left; }
-.about-me .text-about-me {
-  max-width: 1077px;
-  margin: 23px 0 0 0;
-  padding: 0 10px 0;
-  font-size: 18px;
-  line-height: 25px; }
-  .about-me .text-about-me:first-of-type {
-    margin: 18px 0 0 0; }
-.about-me .special-paragraph {
-  margin: 16px 0 0 0; }
-@media screen and (min-width: 768px) {
-  .about-me .goncharenko {
-    float: left;
-    margin: 15px 15px 0;
-    display: block; } }
-@media screen and (min-width: 1200px) {
-  .about-me .logo {
-    width: 237px;
-    padding: 0 23px 0;
-    display: flex;
-    justify-content: flex-start; }
-  .about-me .full-menu {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    -moz-justify-content: flex-end;
-    justify-content: flex-end; }
-  .about-me .menu-section {
-    margin: 0 27px 0 3px; }
-  .about-me .contacts-index {
-    margin: 55px 0 0 0; } }
-
-.contacts-info {
-  margin: 15px 0 0 0; }
-  .contacts-info .wrapper-phons,
-  .contacts-info .social-profile-icon {
-    margin: 20px 0 0 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    justify-content: center; }
-  .contacts-info .phone-kyivstar-life,
-  .contacts-info .wrapper-social {
-    text-align: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: column;
-    -moz-flex-flow: column;
-    -ms-flex-flow: column;
-    flex-flow: column; }
-  .contacts-info .address {
-    margin: 71px 0 0 0;
-    font-size: 18px;
-    text-decoration: none;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: column;
-    -moz-flex-flow: column;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    align-items: center; }
-  .contacts-info .wrapper-direction {
-    max-width: 350px;
-    text-align: center; }
-  .contacts-info .direction {
-    font-size: 18px;
-    max-width: 355px; }
-  .contacts-info .direction-city {
-    text-transform: none; }
-  .contacts-info .maps {
-    width: 100%;
-    max-width: 405px;
-    height: 257px;
-    margin: 50px 5px 0;
-    background: #828282; }
-  .contacts-info .google-maps {
-    width: 100%;
-    height: 100%;
-    border: 0; }
-  .contacts-info .home-phone-kyivstar,
-  .contacts-info .home-phone-life {
-    font-size: 18px; }
-  .contacts-info .home-phone-life {
-    margin: 4px 0 0 0; }
-  .contacts-info .skype,
-  .contacts-info .profile-social,
-  .contacts-info .direction {
-    font-size: 14px;
-    text-transform: uppercase; }
-  .contacts-info .icon-social {
-    margin: 0 0 0 10px; }
-  .contacts-info .skype {
-    margin: 20px 0 0 0; }
-  .contacts-info .profile-icon {
-    margin: 9px 0 0 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    align-items: center; }
-  @media screen and (min-width: 576px) {
-    .contacts-info .skype,
-    .contacts-info .profile-social,
-    .contacts-info .direction {
-      font-size: 18px; }
-    .contacts-info .wrapper-direction {
-      text-align: left; } }
-  @media screen and (min-width: 768px) {
-    .contacts-info {
-      padding: 25px 0 0 0; }
-      .contacts-info .wrapper-phons-social-profile-icon {
-        width: 100%;
-        display: flex; }
-      .contacts-info .wrapper-phons,
-      .contacts-info .social-profile-icon {
-        width: 50%;
-        margin: 0;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        -webkit-justify-content: start;
-        -moz-justify-content: start;
-        justify-content: start; }
-      .contacts-info .phone-kyivstar-life {
-        margin: 22px 0 0 50px;
-        text-align: left; }
-      .contacts-info .wrapper-social {
-        text-align: left; }
-      .contacts-info .profile-icon {
-        width: 350px;
-        -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-        -webkit-align-items: baseline;
-        -moz-align-items: baseline;
-        align-items: baseline; }
-        .contacts-info .profile-icon:first-of-type {
-          margin: 0; }
-      .contacts-info .icon-social {
-        margin: 0; }
-      .contacts-info .skype {
-        margin: 57px 0 0 0; } }
-  @media screen and (min-width: 992px) {
-    .contacts-info .wrapper-phons-social-profile-icon {
-      -webkit-flex-flow: column;
-      -moz-flex-flow: column;
-      -ms-flex-flow: column;
-      flex-flow: column; }
-    .contacts-info .wrapper-phons {
-      width: 69%;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      -moz-justify-content: center;
-      justify-content: center; }
-    .contacts-info .social-profile-icon {
-      width: 99%;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      -moz-justify-content: center;
-      justify-content: center; }
-    .contacts-info .wrapper-social {
-      margin: 30px 0 0 50px; }
-    .contacts-info .address {
-      margin: 22px 0 0 0; } }
-  @media screen and (min-width: 1200px) {
-    .contacts-info .social-profile-icon {
-      width: 91%; }
-    .contacts-info .profile-icon {
-      width: 383px; }
-    .contacts-info .address {
-      margin: 22px 0 0 0; }
-    .contacts-info .phone-kyivstar-life {
-      margin: 22px 0 0 0; }
-    .contacts-info .wrapper-direction {
-      margin: 0 80px 0 0; }
-    .contacts-info .maps {
-      margin: 50px 64px 0 0; } }
 
 /*# sourceMappingURL=style.css.map */
