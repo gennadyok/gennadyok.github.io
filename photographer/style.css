@@ -1556,9 +1556,9 @@ a {
         width: 190px; }
       .header-index .link-logo {
         padding: 0 44px 0; }
-      .header-index .item-menu,
+      .header-index .link-item-menu,
       .header-index .page_item > a {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 58px; } }
 
 .portfolio-index {
@@ -1600,6 +1600,22 @@ a {
   margin: 25px 0 0 0;
   padding: 0 0 20px 0;
   text-align: center; }
+  .contacts-index .contact-card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center; }
   .contacts-index .wrapper-business-contact {
     max-width: 250px;
     display: inline-block; }
@@ -1646,24 +1662,30 @@ a {
   .contacts-index .icon-social-grey {
     opacity: 0;
     transition: opacity 0.2s linear; }
+  .contacts-index .icon-social-grey {
+    opacity: 1;
+    transition: opacity 0.2s linear; }
+  .contacts-index .icon-social-blue {
+    opacity: 0;
+    transition: opacity 0.2s linear; }
   .contacts-index .social-grey-blue {
     position: relative;
     width: 40px;
     height: 40px;
     margin: 0 10px 0 0;
-    border: 2px solid rgba(45, 156, 219, 0.6);
+    border: 2px solid #828282;
     border-radius: 50%;
     transition: border 0.2s linear; }
     .contacts-index .social-grey-blue:last-child {
       margin: 0; }
     .contacts-index .social-grey-blue:hover {
-      border: 2px solid #828282;
+      border: 2px solid rgba(45, 156, 219, 0.6);
       transition: border 0.2s linear; }
       .contacts-index .social-grey-blue:hover .icon-social-blue {
-        opacity: 0;
+        opacity: 1;
         transition: opacity 0.2s linear; }
       .contacts-index .social-grey-blue:hover .icon-social-grey {
-        opacity: 1;
+        opacity: 0;
         transition: opacity 0.2s linear; }
   .contacts-index .icon-social {
     position: absolute;
@@ -1753,7 +1775,7 @@ a {
     width: 100%;
     text-align: center; }
   .portfolio .text-category {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 59px; }
   @media screen and (min-width: 768px) {
     .portfolio {
@@ -1842,15 +1864,13 @@ a {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    -webkit-justify-content: flex-start;
-    -moz-justify-content: flex-start;
-    justify-content: flex-start; }
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    justify-content: flex-end; }
   .about-me .menu-section {
     margin: 0 27px 0 3px; }
-  .about-me .link-item-menu {
-    padding: 0 40px 0; }
   .about-me .contacts-index {
     margin: 55px 0 0 0; } }
 

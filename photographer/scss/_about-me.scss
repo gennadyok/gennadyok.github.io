@@ -13,7 +13,6 @@
         width: 100%;
         max-width: 373px;
         padding: 0 10px 0;
-        
     }
     .wrapper-text-about-me {
         text-align: left;
@@ -47,13 +46,10 @@
         }
         .full-menu {
             @include flexbox;
-            @include justify-content(flex-start);
+            @include justify-content(flex-end);
         }
         .menu-section {
             margin: 0 27px 0 3px;
-        }
-        .link-item-menu {
-            padding: 0 40px 0;
         }
         .contacts-index {
             margin: 55px 0 0 0;
