@@ -1828,7 +1828,10 @@ template {
   src: local(OpenSans-Regular), url(fonts/OpenSans-Regular.woff2); }
 body,
 .header {
-  background: #fff; }
+  background: rgba(242, 242, 242, 0.22); }
+
+.wrapper {
+  min-width: 320px; }
 
 * {
   margin: 0;
@@ -1939,7 +1942,8 @@ a {
       display: inline-block; }
     .header-index .link-item-menu,
     .header-index .page_item > a {
-      line-height: 40px; } }
+      line-height: 40px;
+      display: inline-block; } }
   @media screen and (min-width: 1170px) {
     .header-index {
       max-width: 1173px; }
@@ -1979,13 +1983,15 @@ a {
       top: 45.4%;
       left: 30px;
       display: inline-block !important;
-      z-index: 2; }
+      z-index: 2;
+      cursor: pointer; }
     .portfolio-index .slider-goods .vector-right {
       position: absolute;
       top: 45.4%;
       right: 30px;
       display: inline-block !important;
-      z-index: 2; } }
+      z-index: 2;
+      cursor: pointer; } }
 
 .contacts-index {
   margin: 25px 0 0 0;
@@ -2090,7 +2096,7 @@ a {
     .contacts-index {
       margin: 45px 0 0 0; }
       .contacts-index .phone-kyivstar-life {
-        width: 160px; }
+        width: 166px; }
       .contacts-index .wrapper-home-phone {
         margin: 34px 28px 0 0;
         display: -webkit-box;
@@ -2358,6 +2364,40 @@ a {
     -webkit-align-items: center;
     -moz-align-items: center;
     align-items: center; }
+  .contacts-info .icon-social-grey {
+    opacity: 0;
+    transition: opacity 0.2s linear; }
+  .contacts-info .icon-social-grey {
+    opacity: 1;
+    transition: opacity 0.2s linear; }
+  .contacts-info .icon-social-blue {
+    opacity: 0;
+    transition: opacity 0.2s linear; }
+  .contacts-info .social-grey-blue {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 0 0 10px;
+    border-radius: 50%;
+    transition: border 0.2s linear; }
+    .contacts-info .social-grey-blue:hover {
+      border: 2px solid rgba(45, 156, 219, 0.6);
+      transition: border 0.2s linear; }
+      .contacts-info .social-grey-blue:hover .icon-social-blue {
+        opacity: 1;
+        transition: opacity 0.2s linear; }
+      .contacts-info .social-grey-blue:hover .icon-social-grey {
+        opacity: 0;
+        transition: opacity 0.2s linear; }
+  .contacts-info .icon-social {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: inline-block;
+    cursor: pointer; }
   @media screen and (min-width: 576px) {
     .contacts-info .skype,
     .contacts-info .profile-social,
@@ -2371,6 +2411,8 @@ a {
       .contacts-info .wrapper-phons-social-profile-icon {
         width: 100%;
         display: flex; }
+      .contacts-info .social-grey-blue {
+        margin: 0 10px 0 0; }
       .contacts-info .wrapper-phons,
       .contacts-info .social-profile-icon {
         width: 50%;
@@ -2399,8 +2441,6 @@ a {
         align-items: baseline; }
         .contacts-info .profile-icon:first-of-type {
           margin: 0; }
-      .contacts-info .icon-social {
-        margin: 0; }
       .contacts-info .skype {
         margin: 57px 0 0 0; } }
   @media screen and (min-width: 992px) {

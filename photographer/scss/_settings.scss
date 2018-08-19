@@ -20,7 +20,11 @@ $fs_medium: 18px;
 $fs_large: 20px;
 body,
 .header {
-    background: #fff;
+    background: rgba(242, 242, 242, 0.22);
+}
+
+.wrapper {
+    min-width: 320px;
 }
 
 * {

@@ -36,6 +36,7 @@
             left: 30px;
             display: inline-block !important;
             z-index: 2;
+            cursor: pointer;
         }
         .slider-goods .vector-right {
             position: absolute;
@@ -43,6 +44,7 @@
             right: 30px;
             display: inline-block !important;
             z-index: 2;
+            cursor: pointer;
         }
     }
 }

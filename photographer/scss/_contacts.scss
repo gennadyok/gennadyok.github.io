@@ -46,7 +46,6 @@
     .home-phone-kyivstar,
     .home-phone-life {
         font-size: $fs_medium;
-        
     }
     .home-phone-life {
         margin: 4px 0 0 0;
@@ -69,6 +68,48 @@
         @include justify-content(space-between);
         @include align-items(center);
     }
+    .icon-social-grey {
+        opacity: 0;
+        transition: opacity 0.2s linear;
+    }
+    .icon-social-grey {
+        opacity: 1;
+        transition: opacity 0.2s linear;
+    }
+    .icon-social-blue {
+        opacity: 0;
+        transition: opacity 0.2s linear;
+    }
+    .social-grey-blue {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin: 0 0 0 10px;
+        border-radius: 50%;
+        transition: border 0.2s linear;
+        &:hover {
+            border: 2px solid rgba(45, 156, 219, 0.6);
+            transition: border 0.2s linear;
+            .icon-social-blue {
+                opacity: 1;
+                transition: opacity 0.2s linear;
+            }
+            .icon-social-grey {
+                opacity: 0;
+                transition: opacity 0.2s linear;
+            }
+        }
+    }
+    .icon-social {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: inline-block;
+        cursor: pointer;
+    }
     @media screen and (min-width: 576px) {
         .skype,
         .profile-social,
@@ -84,6 +125,9 @@
         .wrapper-phons-social-profile-icon {
             width: 100%;
             display: flex;
+        }
+        .social-grey-blue {
+            margin: 0 10px 0 0;
         }
         .wrapper-phons,
         .social-profile-icon {
@@ -105,9 +149,6 @@
             &:first-of-type {
                 margin: 0;
             }
-        }
-        .icon-social {
-            margin: 0;
         }
         .skype {
             margin: 57px 0 0 0;
